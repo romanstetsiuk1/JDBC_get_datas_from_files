@@ -17,9 +17,6 @@ public class App {
         try (Connection connection = DriverManager.getConnection(connectionUrl, userName, password);
              Statement statement = connection.createStatement()) {
 
-//            delete table from db in MySQL
-//            statement.executeUpdate("DROP TABLE RUNS");
-
             statement.executeUpdate("CREATE TABLE IF NOT EXISTS accountBalance(" +
                     "accountBalance_id INT NOT NULL AUTO_INCREMENT," +
                     "accountBalance_date VARCHAR(12)," +
@@ -28,22 +25,57 @@ public class App {
                     "margin VARCHAR(12)," +
                     "freeMargin VARCHAR(12)," +
                     "PRIMARY KEY (accountBalance_id))");
-            statement.executeUpdate("INSERT INTO accountBalance (balance) VALUES('Test')");
-            statement.executeUpdate("INSERT INTO accountBalance SET balance='Test_2', equity='new_value'");
 
-            ResultSet resultSet = statement.executeQuery("SELECT * FROM accountBalance");
-            while (resultSet.next()) {
-                System.out.println(resultSet.getInt("accountBalance_id"));
-                System.out.println(resultSet.getString("balance"));
-                System.out.println(resultSet.getString("equity"));
-                System.out.println("------------------------------------------");
-            }
+            statement.executeUpdate("CREATE TABLE IF NOT EXISTS closedTransactions(" +
+                    "closedTransaction_id INT NOT NULL AUTO_INCREMENT," +
+                    "raportDate VARCHAR(12)," +
+                    "ticket VARCHAR(15)," +
+                    "openTimeTransactions VARCHAR(25)," +
+                    "typeTransactions VARCHAR(5)," +
+                    "lots VARCHAR(5)," +
+                    "symbol VARCHAR(10)," +
+                    "exchangeCode VARCHAR(5)," +
+                    "assetClass VARCHAR(20)," +
+                    "openPrice VARCHAR(10)," +
+                    "closeTime VARCHAR(25)," +
+                    "closePrise VARCHAR(10)," +
+                    "conversionRate VARCHAR(15)," +
+                    "commissions VARCHAR(10)," +
+                    "swap VARCHAR(10)," +
+                    "profit VARCHAR(10)," +
+                    "PRIMARY  KEY (closedTransaction_id))");
 
-            System.out.println("****************************************");
-            ResultSet resultSet1 = statement.executeQuery("SELECT balance FROM accountBalance WHERE accountBalance_id = 1");
-            while (resultSet1.next()) {
-                System.out.println(resultSet1.getString(1));
-            }
+
+            statement.executeUpdate("CREATE TABLE IF NOT EXISTS openTransactions(" +
+                    "openTransactions_id INT NOT NULL AUTO_INCREMENT," +
+                    "raportDate VARCHAR(12)," +
+                    "ticket VARCHAR(15)," +
+                    "openTimeTransactions VARCHAR(25)," +
+                    "typeTransactions VARCHAR(5)," +
+                    "lots VARCHAR(5)," +
+                    "symbol VARCHAR(10)," +
+                    "exchangeCode VARCHAR(5)," +
+                    "assetClass VARCHAR(20)," +
+                    "openPrice VARCHAR(10)," +
+                    "marketPrise VARCHAR(10)," +
+                    "conversionRate VARCHAR(15)," +
+                    "commissions VARCHAR(10)," +
+                    "swap VARCHAR(10)," +
+                    "profit VARCHAR(10)," +
+                    "PRIMARY  KEY (openTransactions_id))");
+
+            statement.executeUpdate("CREATE TABLE  IF NOT EXISTS totalValues(" +
+                    "totalValues_id INT NOT NULL AUTO_INCREMENT," +
+                    "raportDate VARCHAR(12)," +
+                    "closedTransactions_commission VARCHAR(10)," +
+                    "closedTransactions_swap VARCHAR(10)," +
+                    "closedTransactions_profit VARCHAR(10)," +
+                    "closedTransactions_closedTrade VARCHAR(10)," +
+                    "openTransactions_commission VARCHAR(10)," +
+                    "openTransactions_swap VARCHAR(10)," +
+                    "openTransactions_profit VARCHAR(10)," +
+                    "openTransactions_floating VARCHAR(10)," +
+                    "PRIMARY KEY (totalValues_id))");
 
         }
 
