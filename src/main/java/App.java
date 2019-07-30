@@ -64,6 +64,18 @@ public class App {
                     "profit VARCHAR(10)," +
                     "PRIMARY  KEY (openTransactions_id))");
 
+            statement.executeUpdate("CREATE TABLE  IF NOT EXISTS depositsWithdrawals(" +
+                    "depositsWithdrawals_id INT NOT NULL AUTO_INCREMENT," +
+                    "raportDate VARCHAR(12)," +
+                    "ticket VARCHAR(12)," +
+                    "openTime VARCHAR(25)," +
+                    "typeOperation VARCHAR(15)," +
+                    "comment VARCHAR(150)," +
+                    "deposit VARCHAR(10)," +
+                    "withdraw VARCHAR(10)," +
+                    "netDeposit VARCHAR(10)," +
+                    "PRIMARY KEY (depositsWithdrawals_id))");
+
             statement.executeUpdate("CREATE TABLE  IF NOT EXISTS totalValues(" +
                     "totalValues_id INT NOT NULL AUTO_INCREMENT," +
                     "raportDate VARCHAR(12)," +
@@ -75,13 +87,11 @@ public class App {
                     "openTransactions_swap VARCHAR(10)," +
                     "openTransactions_profit VARCHAR(10)," +
                     "openTransactions_floating VARCHAR(10)," +
+                    "depositWithdrawal VARCHAR(10)," +
                     "PRIMARY KEY (totalValues_id))");
 
         }
 
-//        Get list of file in PC directory
-        File directory = new File("C:\\Users\\roman.stetsiuk\\Documents\\VK\\XTB_raports");
-        File[] filesList = directory.listFiles();
 
     }
 }
