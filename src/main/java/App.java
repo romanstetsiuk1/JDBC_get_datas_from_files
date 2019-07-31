@@ -1,3 +1,5 @@
+import org.apache.log4j.Logger;
+
 import javax.xml.parsers.ParserConfigurationException;
 import java.io.File;
 import java.io.IOException;
@@ -6,6 +8,8 @@ import java.sql.*;
 public class App {
 
     public static void main(String[] args) throws ClassNotFoundException, SQLException {
+
+        final Logger logger = Logger.getLogger(App.class);
 
 //        connect with DB MySQL
         String userName = "root";
@@ -92,6 +96,7 @@ public class App {
 
         }
 
+        logger.info("Hello word!");
 
     }
 }
