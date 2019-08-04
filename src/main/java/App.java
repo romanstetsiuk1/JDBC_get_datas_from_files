@@ -1,13 +1,18 @@
 import org.apache.log4j.Logger;
 
 import javax.xml.parsers.ParserConfigurationException;
+import java.io.BufferedReader;
 import java.io.File;
+import java.io.FileReader;
 import java.io.IOException;
 import java.sql.*;
 
 public class App {
 
     public static void main(String[] args) throws ClassNotFoundException, SQLException {
+
+        String endOfDay = "";
+
 
         final Logger logger = Logger.getLogger(App.class);
 
@@ -30,7 +35,40 @@ public class App {
 
         }
 
-        logger.info("Hello word!");
+        String filesDirectory = "/home/roman/Roman/tradeDoc/reports";
+        String filesDoneDirectory = "/home/roman/Roman/tradeDoc/reports/DONE";
+
+        //        Get list of file in PC directory
+        File directory = new File(filesDirectory);
+        File[] filesList = directory.listFiles();
+
+        //            Read lines from files
+        for (File file : filesList) {
+            if (file.isFile()) {
+                try (BufferedReader bufferedReader = new BufferedReader(new FileReader(file))) {
+                    String currentLine;
+
+//                        Get Date report and write this information in LogFile
+                    while ((currentLine = bufferedReader.readLine()) != null) {
+                        if (currentLine.contains("End of day")) {
+                            endOfDay = currentLine;
+                            endOfDay.trim();
+                            logger.info("\n**********************************************************\n" +
+                                    endOfDay +
+                                    "\n**********************************************************\n");
+                        }
+
+                    }
+
+
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+
+            }
+
+        }
+
 
     }
 

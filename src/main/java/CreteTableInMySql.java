@@ -90,7 +90,6 @@ public class CreteTableInMySql implements CreateTableInterface {
                 "margin VARCHAR(12)," +
                 "freeMargin VARCHAR(12)," +
                 "PRIMARY KEY (accountBalance_id))");
-
     }
 
 }
