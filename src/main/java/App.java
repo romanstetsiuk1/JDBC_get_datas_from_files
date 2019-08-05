@@ -11,7 +11,7 @@ public class App {
 
     public static void main(String[] args) throws ClassNotFoundException, SQLException {
 
-        String endOfDay = "";
+        String analizeStatus = "";
 
 
         final Logger logger = Logger.getLogger(App.class);
@@ -51,11 +51,17 @@ public class App {
 //                        Get Date report and write this information in LogFile
                     while ((currentLine = bufferedReader.readLine()) != null) {
                         if (currentLine.contains("End of day")) {
-                            endOfDay = currentLine;
-                            endOfDay.trim();
+
                             logger.info("\n**********************************************************\n" +
-                                    endOfDay +
+                                    currentLine.trim() +
                                     "\n**********************************************************\n");
+                            String[] splitEndOfDay = currentLine.trim().split(" ");
+
+                            StringBuilder actualDayReport = new StringBuilder();
+                            for (int i = 3; i < splitEndOfDay.length; i++) {
+                                actualDayReport.append(splitEndOfDay[i] + " ");
+                            }
+                            String actualDayValue = actualDayReport.toString().trim();
                         }
 
                     }
