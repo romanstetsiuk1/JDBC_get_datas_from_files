@@ -1,6 +1,5 @@
 import org.apache.log4j.Logger;
 
-import javax.xml.parsers.ParserConfigurationException;
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
@@ -74,6 +73,7 @@ public class App {
                             actualDayValue = actualDayReport.toString().trim();
                         }
 
+//                        Set values in accountBalance table
                         if (currentLine.contains("Account Balance")) {
                             typeAnaliseOperation++;
                         }
@@ -91,6 +91,8 @@ public class App {
 
                             try (Connection connection = DriverManager.getConnection(connectionUrl, userName, password);
                                  Statement statement = connection.createStatement()) {
+
+//                                Insert values in accountBalance table.
                                 PreparedStatement fieldAccountBalance = connection.prepareStatement(
                                         "INSERT INTO accountBalance " +
                                                 "(accountBalance_date, balance, equity, margin, freeMargin) VALUES " +
@@ -102,7 +104,35 @@ public class App {
                                 fieldAccountBalance.setString(5, freeMarginAB);
                                 fieldAccountBalance.execute();
 
-                                logger.info(":) OK :)");
+//                                Check result after add new value in DB
+                                PreparedStatement checkAddResultInAccountBalance = connection.prepareStatement(
+                                        "SELECT count(accountBalance_date) FROM accountBalance " +
+                                                "WHERE accountBalance_date LIKE ?;");
+                                checkAddResultInAccountBalance.setString(1, actualDayValue);
+                                int resultAddAccountBalance = 0;
+                                ResultSet resultAddRowInAccountBalance = checkAddResultInAccountBalance.executeQuery();
+                                while (resultAddRowInAccountBalance.next()) {
+                                    resultAddAccountBalance = resultAddRowInAccountBalance.getInt(
+                                            "count(accountBalance_date)");
+                                }
+
+//                                Add information in log file about addition process in DB
+                                if (resultAddAccountBalance == 1) {
+                                    logger.info("Field accountBalance table:\n" +
+                                            "\n\tDate = " + actualDayValue + "\n\tBalance = " + balanceAB +
+                                            "\n\tEquity = " + equityAB + "\n\tMargin = " + marginAB +
+                                            "\n\tFree margin = " + freeMarginAB);
+                                } else if (resultAddAccountBalance > 1) {
+                                    logger.warn("\n!!! Warning.\nYou have date x" + resultAddAccountBalance +
+                                            " in day: " + actualDayValue);
+                                } else if (resultAddAccountBalance < 1) {
+                                    logger.error("\n!!! Error.\nDate from day " + actualDayValue + " is not save in DataBase");
+                                } else {
+                                    logger.fatal("\n!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!\n" +
+                                            "FATAL ERROR try save date in accountBalance table" +
+                                            "\n!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!\n");
+                                }
+
                             }
                         }
 
