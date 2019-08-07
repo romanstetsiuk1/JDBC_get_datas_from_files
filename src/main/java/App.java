@@ -55,6 +55,11 @@ public class App {
             int closedTransactionsInOneDay = 0;
             String actualDayValue = "";
 
+            String closedTransactionsCommission = "";
+            String closedTransactionsSwap = "";
+            String closedTransactionsProfit = "";
+            String closedTransactionsClosedTrade = "";
+
             if (file.isFile()) {
                 try (BufferedReader bufferedReader = new BufferedReader(new FileReader(file))) {
                     String currentLine;
@@ -83,7 +88,7 @@ public class App {
 
 //                        Insert data into accountBalance table
                         if (typeAnaliseOperation == 1 && containsNumberValue(currentLine)) {
-                            String[] splitAccountBalanceValues = currentLine.split("\t");
+                            String[] splitAccountBalanceValues = currentLine.trim().split("\t");
                             for (String valueAccountBalance : splitAccountBalanceValues) {
                                 if (!containsNumberValue(valueAccountBalance)) {
                                     logger.warn("You have wrong value in AccountBalance");
@@ -146,7 +151,7 @@ public class App {
                             typeAnaliseOperation++;
                         }
                         if (typeAnaliseOperation == 2 && containsNumberValue(currentLine)) {
-                            String[] splitClosetTransactionValues = currentLine.split("\t");
+                            String[] splitClosetTransactionValues = currentLine.trim().split("\t");
 
 //                            Insert values in closedTransaction table
                             try (Connection connection = DriverManager.getConnection(connectionUrl, userName, password);
@@ -174,14 +179,34 @@ public class App {
                                 fillClosedTransactions.execute();
 
                                 closedTransactionsInOneDay++;
-                                logger.info("Added " + closedTransactionsInOneDay + " closed transaction to the table");
+                                logger.info("Added record nr " + closedTransactionsInOneDay +
+                                        " to the closed transaction table");
                             }
 
                         }
 
-                        if (typeAnaliseOperation == 2 && currentLine.contains("Open Transaction")) {
+//                        Get data from Total line in closed Transactions
+                        if (typeAnaliseOperation == 2 && currentLine.contains("Total")) {
+                            String[] splitOpenTransactionTotal = currentLine.trim().split("\t");
+                            closedTransactionsCommission = splitOpenTransactionTotal[11].trim();
+                            closedTransactionsSwap = splitOpenTransactionTotal[12].trim();
+                            closedTransactionsProfit = splitOpenTransactionTotal[13].trim();
+                            System.out.println("commission = " + closedTransactionsCommission + "\nswap = " + closedTransactionsSwap +
+                                    "\nprofit = " + closedTransactionsProfit);
                             typeAnaliseOperation++;
                         }
+
+//                        Get data from Closed Trade line in closed Transactions
+                        if (typeAnaliseOperation == 3 && currentLine.contains("Closed Trade")) {
+                            String[] splitOpenTransactionClosedTrade = currentLine.trim().split("\t");
+                            closedTransactionsClosedTrade = splitOpenTransactionClosedTrade[2].trim();
+                            System.out.println("closed trade = " + closedTransactionsClosedTrade);
+                            typeAnaliseOperation++;
+                        }
+
+//                        if (typeAnaliseOperation == 4 && currentLine.contains("Open Transactions")) {
+//
+//                        }
 
 
                     }
