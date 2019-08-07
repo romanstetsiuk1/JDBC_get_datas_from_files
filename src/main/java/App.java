@@ -50,8 +50,11 @@ public class App {
 
         //            Read lines from files
         for (File file : filesList) {
+
             int typeAnaliseOperation = 0;
+            int closedTransactionsInOneDay = 0;
             String actualDayValue = "";
+
             if (file.isFile()) {
                 try (BufferedReader bufferedReader = new BufferedReader(new FileReader(file))) {
                     String currentLine;
@@ -77,6 +80,8 @@ public class App {
                         if (currentLine.contains("Account Balance")) {
                             typeAnaliseOperation++;
                         }
+
+//                        Insert data into accountBalance table
                         if (typeAnaliseOperation == 1 && containsNumberValue(currentLine)) {
                             String[] splitAccountBalanceValues = currentLine.split("\t");
                             for (String valueAccountBalance : splitAccountBalanceValues) {
@@ -93,16 +98,16 @@ public class App {
                                  Statement statement = connection.createStatement()) {
 
 //                                Insert values in accountBalance table.
-                                PreparedStatement fieldAccountBalance = connection.prepareStatement(
+                                PreparedStatement fillAccountBalance = connection.prepareStatement(
                                         "INSERT INTO accountBalance " +
                                                 "(accountBalance_date, balance, equity, margin, freeMargin) VALUES " +
                                                 "(?,?,?,?,?)");
-                                fieldAccountBalance.setString(1, actualDayValue);
-                                fieldAccountBalance.setString(2, balanceAB);
-                                fieldAccountBalance.setString(3, equityAB);
-                                fieldAccountBalance.setString(4, marginAB);
-                                fieldAccountBalance.setString(5, freeMarginAB);
-                                fieldAccountBalance.execute();
+                                fillAccountBalance.setString(1, actualDayValue);
+                                fillAccountBalance.setString(2, balanceAB);
+                                fillAccountBalance.setString(3, equityAB);
+                                fillAccountBalance.setString(4, marginAB);
+                                fillAccountBalance.setString(5, freeMarginAB);
+                                fillAccountBalance.execute();
 
 //                                Check result after add new value in DB
                                 PreparedStatement checkAddResultInAccountBalance = connection.prepareStatement(
@@ -136,9 +141,64 @@ public class App {
                             }
                         }
 
+//                        Insert data into accountBalance table
                         if (currentLine.contains("Closed Transaction")) {
                             typeAnaliseOperation++;
                         }
+                        if (typeAnaliseOperation == 2 && containsNumberValue(currentLine)) {
+                            String[] splitClosetTransactionValues = currentLine.split("\t");
+
+//                            Declaration & initialization closedTransactions values
+                            String ticketCT = splitClosetTransactionValues[0].trim();
+                            String openTimeTransactionsCT = splitClosetTransactionValues[1].trim();
+                            String typeTransactionsCT = splitClosetTransactionValues[2].trim();
+                            String lotsCT = splitClosetTransactionValues[3].trim();
+                            String symbolCT = splitClosetTransactionValues[4].trim();
+                            String exchangeCodeCT = splitClosetTransactionValues[5].trim();
+                            String assetsClassCT = splitClosetTransactionValues[6].trim();
+                            String openPriceCT = splitClosetTransactionValues[7].trim();
+                            String closeTimeCT = splitClosetTransactionValues[8].trim();
+                            String closePriceCT = splitClosetTransactionValues[9].trim();
+                            String conversionRateCT = splitClosetTransactionValues[10].trim();
+                            String commissionsCT = splitClosetTransactionValues[11].trim();
+                            String swapCT = splitClosetTransactionValues[12].trim();
+                            String profitCT = splitClosetTransactionValues[13].trim();
+
+//                            Insert values in closedTransaction table
+                            try (Connection connection = DriverManager.getConnection(connectionUrl, userName, password);
+                                 Statement statement = connection.createStatement()) {
+                                PreparedStatement fillClosedTransactions = connection.prepareStatement(
+                                        "INSERT INTO closedTransactions (raportDate, ticket, openTimeTransactions, " +
+                                                "typeTransactions, lots, symbol, exchangeCode, assetClass, openPrice, " +
+                                                "closeTime, closePrise, conversionRate, commissions, swap, profit) " +
+                                                "VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)");
+                                fillClosedTransactions.setString(1, actualDayValue);
+                                fillClosedTransactions.setString(2, ticketCT);
+                                fillClosedTransactions.setString(3, openTimeTransactionsCT);
+                                fillClosedTransactions.setString(4, typeTransactionsCT);
+                                fillClosedTransactions.setString(5, lotsCT);
+                                fillClosedTransactions.setString(6, symbolCT);
+                                fillClosedTransactions.setString(7, exchangeCodeCT);
+                                fillClosedTransactions.setString(8, assetsClassCT);
+                                fillClosedTransactions.setString(9, openPriceCT);
+                                fillClosedTransactions.setString(10, closeTimeCT);
+                                fillClosedTransactions.setString(11, closePriceCT);
+                                fillClosedTransactions.setString(12, conversionRateCT);
+                                fillClosedTransactions.setString(13, commissionsCT);
+                                fillClosedTransactions.setString(14, swapCT);
+                                fillClosedTransactions.setString(15, profitCT);
+                                fillClosedTransactions.execute();
+
+                                closedTransactionsInOneDay++;
+                                logger.info("Closed transaction is added");
+                            }
+
+                        }
+
+                        if (typeAnaliseOperation == 2 && currentLine.contains("Open Transaction")) {
+                            typeAnaliseOperation++;
+                        }
+
 
                     }
 
