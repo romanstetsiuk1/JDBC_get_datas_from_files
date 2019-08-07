@@ -1,0 +1,45 @@
+2019-08-07 08:16:11 INFO  [main]: 
+**********************************************************
+End of day 2019 May 30
+**********************************************************
+
+2019-08-07 08:16:11 INFO  [main]: Field accountBalance table:
+
+	Date = 2019 May 30
+	Balance = 5259.84
+	Equity = 2294.32
+	Margin = 2184.91
+	Free margin = 109.41
+2019-08-07 08:16:11 INFO  [main]: Added 1 closed transaction to the table
+2019-08-07 08:16:11 INFO  [main]: Added 2 closed transaction to the table
+2019-08-07 08:16:11 INFO  [main]: Added 3 closed transaction to the table
+2019-08-07 08:16:11 INFO  [main]: Added 4 closed transaction to the table
+2019-08-07 08:16:11 INFO  [main]: Added 5 closed transaction to the table
+2019-08-07 08:16:11 INFO  [main]: Added 6 closed transaction to the table
+2019-08-07 08:16:11 INFO  [main]: Added 7 closed transaction to the table
+2019-08-07 08:16:11 INFO  [main]: Added 8 closed transaction to the table
+2019-08-07 08:16:11 INFO  [main]: Added 9 closed transaction to the table
+2019-08-07 08:16:11 INFO  [main]: Added 10 closed transaction to the table
+2019-08-07 08:16:11 INFO  [main]: Added 11 closed transaction to the table
+2019-08-07 08:16:11 INFO  [main]: 
+**********************************************************
+End of day 2019 May 31
+**********************************************************
+
+2019-08-07 08:16:11 INFO  [main]: Field accountBalance table:
+
+	Date = 2019 May 31
+	Balance = 5722.44
+	Equity = 2160.42
+	Margin = 2425.78
+	Free margin = -265.36
+2019-08-07 08:16:11 INFO  [main]: Added 1 closed transaction to the table
+2019-08-07 08:16:11 INFO  [main]: Added 2 closed transaction to the table
+2019-08-07 08:16:11 INFO  [main]: Added 3 closed transaction to the table
+2019-08-07 08:16:11 INFO  [main]: Added 4 closed transaction to the table
+2019-08-07 08:16:11 INFO  [main]: Added 5 closed transaction to the table
+2019-08-07 08:16:11 INFO  [main]: Added 6 closed transaction to the table
+2019-08-07 08:16:12 INFO  [main]: Added 7 closed transaction to the table
+2019-08-07 08:16:12 INFO  [main]: Added 8 closed transaction to the table
+2019-08-07 08:16:12 INFO  [main]: Added 9 closed transaction to the table
+2019-08-07 08:16:12 INFO  [main]: Added 10 closed transaction to the table

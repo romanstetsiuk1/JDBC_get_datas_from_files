@@ -148,22 +148,6 @@ public class App {
                         if (typeAnaliseOperation == 2 && containsNumberValue(currentLine)) {
                             String[] splitClosetTransactionValues = currentLine.split("\t");
 
-//                            Declaration & initialization closedTransactions values
-                            String ticketCT = splitClosetTransactionValues[0].trim();
-                            String openTimeTransactionsCT = splitClosetTransactionValues[1].trim();
-                            String typeTransactionsCT = splitClosetTransactionValues[2].trim();
-                            String lotsCT = splitClosetTransactionValues[3].trim();
-                            String symbolCT = splitClosetTransactionValues[4].trim();
-                            String exchangeCodeCT = splitClosetTransactionValues[5].trim();
-                            String assetsClassCT = splitClosetTransactionValues[6].trim();
-                            String openPriceCT = splitClosetTransactionValues[7].trim();
-                            String closeTimeCT = splitClosetTransactionValues[8].trim();
-                            String closePriceCT = splitClosetTransactionValues[9].trim();
-                            String conversionRateCT = splitClosetTransactionValues[10].trim();
-                            String commissionsCT = splitClosetTransactionValues[11].trim();
-                            String swapCT = splitClosetTransactionValues[12].trim();
-                            String profitCT = splitClosetTransactionValues[13].trim();
-
 //                            Insert values in closedTransaction table
                             try (Connection connection = DriverManager.getConnection(connectionUrl, userName, password);
                                  Statement statement = connection.createStatement()) {
@@ -173,24 +157,24 @@ public class App {
                                                 "closeTime, closePrise, conversionRate, commissions, swap, profit) " +
                                                 "VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)");
                                 fillClosedTransactions.setString(1, actualDayValue);
-                                fillClosedTransactions.setString(2, ticketCT);
-                                fillClosedTransactions.setString(3, openTimeTransactionsCT);
-                                fillClosedTransactions.setString(4, typeTransactionsCT);
-                                fillClosedTransactions.setString(5, lotsCT);
-                                fillClosedTransactions.setString(6, symbolCT);
-                                fillClosedTransactions.setString(7, exchangeCodeCT);
-                                fillClosedTransactions.setString(8, assetsClassCT);
-                                fillClosedTransactions.setString(9, openPriceCT);
-                                fillClosedTransactions.setString(10, closeTimeCT);
-                                fillClosedTransactions.setString(11, closePriceCT);
-                                fillClosedTransactions.setString(12, conversionRateCT);
-                                fillClosedTransactions.setString(13, commissionsCT);
-                                fillClosedTransactions.setString(14, swapCT);
-                                fillClosedTransactions.setString(15, profitCT);
+                                fillClosedTransactions.setString(2, splitClosetTransactionValues[0].trim());
+                                fillClosedTransactions.setString(3, splitClosetTransactionValues[1].trim());
+                                fillClosedTransactions.setString(4, splitClosetTransactionValues[2].trim());
+                                fillClosedTransactions.setString(5, splitClosetTransactionValues[3].trim());
+                                fillClosedTransactions.setString(6, splitClosetTransactionValues[4].trim());
+                                fillClosedTransactions.setString(7, splitClosetTransactionValues[5].trim());
+                                fillClosedTransactions.setString(8, splitClosetTransactionValues[6].trim());
+                                fillClosedTransactions.setString(9, splitClosetTransactionValues[7].trim());
+                                fillClosedTransactions.setString(10, splitClosetTransactionValues[8].trim());
+                                fillClosedTransactions.setString(11, splitClosetTransactionValues[9].trim());
+                                fillClosedTransactions.setString(12, splitClosetTransactionValues[10].trim());
+                                fillClosedTransactions.setString(13, splitClosetTransactionValues[11].trim());
+                                fillClosedTransactions.setString(14, splitClosetTransactionValues[12].trim());
+                                fillClosedTransactions.setString(15, splitClosetTransactionValues[13].trim());
                                 fillClosedTransactions.execute();
 
                                 closedTransactionsInOneDay++;
-                                logger.info("Closed transaction is added");
+                                logger.info("Added " + closedTransactionsInOneDay + " closed transaction to the table");
                             }
 
                         }
