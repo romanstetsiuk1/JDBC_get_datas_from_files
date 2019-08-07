@@ -53,12 +53,20 @@ public class App {
 
             int typeAnaliseOperation = 0;
             int closedTransactionsInOneDay = 0;
+            int openTransactionsInOneDay = 0;
             String actualDayValue = "";
 
+//            Values to add in totalValues table from closed transactions
             String closedTransactionsCommission = "";
             String closedTransactionsSwap = "";
             String closedTransactionsProfit = "";
             String closedTransactionsClosedTrade = "";
+
+//            Values to add in totalValues table from open transactions
+            String openTransactionsCommission = "";
+            String openTransactionsSwap = "";
+            String openTransactionsProfit = "";
+            String openTransactionsFloating = "";
 
             if (file.isFile()) {
                 try (BufferedReader bufferedReader = new BufferedReader(new FileReader(file))) {
@@ -146,7 +154,7 @@ public class App {
                             }
                         }
 
-//                        Insert data into accountBalance table
+//                        Insert data into closedTransactions table
                         if (currentLine.contains("Closed Transaction")) {
                             typeAnaliseOperation++;
                         }
@@ -187,10 +195,10 @@ public class App {
 
 //                        Get data from Total line in closed Transactions
                         if (typeAnaliseOperation == 2 && currentLine.contains("Total")) {
-                            String[] splitOpenTransactionTotal = currentLine.trim().split("\t");
-                            closedTransactionsCommission = splitOpenTransactionTotal[11].trim();
-                            closedTransactionsSwap = splitOpenTransactionTotal[12].trim();
-                            closedTransactionsProfit = splitOpenTransactionTotal[13].trim();
+                            String[] splitClosedTransactionTotal = currentLine.trim().split("\t");
+                            closedTransactionsCommission = splitClosedTransactionTotal[11].trim();
+                            closedTransactionsSwap = splitClosedTransactionTotal[12].trim();
+                            closedTransactionsProfit = splitClosedTransactionTotal[13].trim();
                             System.out.println("commission = " + closedTransactionsCommission + "\nswap = " + closedTransactionsSwap +
                                     "\nprofit = " + closedTransactionsProfit);
                             typeAnaliseOperation++;
@@ -198,15 +206,73 @@ public class App {
 
 //                        Get data from Closed Trade line in closed Transactions
                         if (typeAnaliseOperation == 3 && currentLine.contains("Closed Trade")) {
-                            String[] splitOpenTransactionClosedTrade = currentLine.trim().split("\t");
-                            closedTransactionsClosedTrade = splitOpenTransactionClosedTrade[2].trim();
+                            String[] splitClosedTransactionClosedTrade = currentLine.trim().split("\t");
+                            closedTransactionsClosedTrade = splitClosedTransactionClosedTrade[2].trim();
                             System.out.println("closed trade = " + closedTransactionsClosedTrade);
                             typeAnaliseOperation++;
                         }
 
-//                        if (typeAnaliseOperation == 4 && currentLine.contains("Open Transactions")) {
-//
-//                        }
+//                        Insert data in OpenTransactions table
+                        if (typeAnaliseOperation == 4 && currentLine.contains("Open Transactions")) {
+                            typeAnaliseOperation++;
+                        }
+
+                        if (typeAnaliseOperation == 5 && containsNumberValue(currentLine)) {
+                            String[] splitOpenTransactionsValues = currentLine.trim().split("\t");
+
+//                            Insert values in OpenTransactions table
+                            try (Connection connection = DriverManager.getConnection(connectionUrl, userName, password);
+                                 Statement statement = connection.createStatement()) {
+                                PreparedStatement fillOpenTransactions = connection.prepareStatement(
+                                        "INSERT INTO openTransactions (raportDate, ticket, openTimeTransactions, " +
+                                                "typeTransactions, lots, symbol, exchangeCode, assetClass, openPrice, " +
+                                                "marketPrise, conversionRate, commissions, swap, profit) " +
+                                                "VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)");
+                                fillOpenTransactions.setString(1, actualDayValue);
+                                fillOpenTransactions.setString(2, splitOpenTransactionsValues[0].trim());
+                                fillOpenTransactions.setString(3, splitOpenTransactionsValues[1].trim());
+                                fillOpenTransactions.setString(4, splitOpenTransactionsValues[2].trim());
+                                fillOpenTransactions.setString(5, splitOpenTransactionsValues[3].trim());
+                                fillOpenTransactions.setString(6, splitOpenTransactionsValues[4].trim());
+                                fillOpenTransactions.setString(7, splitOpenTransactionsValues[5].trim());
+                                fillOpenTransactions.setString(8, splitOpenTransactionsValues[6].trim());
+                                fillOpenTransactions.setString(9, splitOpenTransactionsValues[7].trim());
+                                fillOpenTransactions.setString(10, splitOpenTransactionsValues[8].trim());
+                                fillOpenTransactions.setString(11, splitOpenTransactionsValues[9].trim());
+                                fillOpenTransactions.setString(12, splitOpenTransactionsValues[10].trim());
+                                fillOpenTransactions.setString(13, splitOpenTransactionsValues[11].trim());
+                                fillOpenTransactions.setString(14, splitOpenTransactionsValues[12].trim());
+                                fillOpenTransactions.execute();
+
+                                openTransactionsInOneDay++;
+
+                                logger.info("Add record nr " + openTransactionsInOneDay +
+                                        " to the openTransactions table");
+                            }
+                        }
+
+                        //                        Get data from Total line in closed Transactions
+                        if (typeAnaliseOperation == 5 && currentLine.contains("Total")) {
+                            String[] splitOpenTransactionTotal = currentLine.trim().split("\t");
+                            openTransactionsCommission = splitOpenTransactionTotal[10].trim();
+                            openTransactionsSwap = splitOpenTransactionTotal[11].trim();
+                            openTransactionsProfit = splitOpenTransactionTotal[12].trim();
+                            System.out.println("commission = " + openTransactionsCommission + "\nswap = " + openTransactionsSwap +
+                                    "\nprofit = " + openTransactionsProfit);
+                            typeAnaliseOperation++;
+                        }
+
+//                        Get data from Closed Trade line in closed Transactions
+                        if (typeAnaliseOperation == 6 && currentLine.contains("Floating")) {
+                            String[] splitOpenTransactionClosedTrade = currentLine.trim().split("\t");
+                            openTransactionsFloating = splitOpenTransactionClosedTrade[1].trim();
+                            System.out.println("closed trade = " + openTransactionsFloating);
+                            typeAnaliseOperation++;
+                        }
+
+                        if (typeAnaliseOperation == 7) {
+                            System.out.println(":)");
+                        }
 
 
                     }
