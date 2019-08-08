@@ -306,6 +306,9 @@ public class App {
         String actualDayValue = "";
         String totalClosedTransactions = "";
         String closedTradeClosedTransactions = "";
+        String totalOpenTransactions = "";
+        String floatingOpenTransactions = "";
+        String totalDepositWithdrawal = "";
 
         int typeAnalise = 0;
         int filesWasAnalise = 0;
@@ -365,6 +368,30 @@ public class App {
                         if (currentLine.contains("Open Transactions")) {
                             typeAnalise = 3;
                         }
+                        if (typeAnalise == 3 && containsNumberValue(currentLine)) {
+                            if (currentLine.contains("Total")) {
+                                totalOpenTransactions = currentLine;
+                            } else if (currentLine.contains("Floating")) {
+                                floatingOpenTransactions = currentLine;
+                            } else {
+                                dataForOpenTransactions.add(currentLine);
+                                getOpenTransactionsData++;
+                            }
+                        }
+
+//                        get Deposits/Withdrawals data
+                        if (currentLine.contains("Deposits")) {
+                            typeAnalise = 4;
+                        }
+                        if (typeAnalise == 4) {
+                            if (containsNumberValue(currentLine)) {
+                                String[] splitDepositData = currentLine.split("\t");
+                                for (String el : splitDepositData) {
+                                    System.out.println(el);
+                                }
+                                System.out.println("======" + splitDepositData.length);
+                            }
+                        }
 
                     }
 
@@ -377,12 +404,13 @@ public class App {
             filesWasAnalise++;
         }
 
-        for (String el : dataForClosedTransactions) {
+        for (String el : dataForOpenTransactions) {
             System.out.println(el);
         }
         System.out.println("Files = " + filesWasAnalise);
-        System.out.println("+++++++++++++++++++++++++++" + totalClosedTransactions);
-        System.out.println("+++++++++++++++++++++++++++" + closedTradeClosedTransactions);
+        for (String el : dataForClosedTransactions) {
+            System.out.println(el);
+        }
 
     }
 
