@@ -304,6 +304,8 @@ public class App {
         List<String> dataForTotalValues = new ArrayList<>();
 
         String actualDayValue = "";
+        String totalClosedTransactions = "";
+        String closedTradeClosedTransactions = "";
 
         int typeAnalise = 0;
         int filesWasAnalise = 0;
@@ -348,6 +350,21 @@ public class App {
                         if (currentLine.contains("Closed Transactions")) {
                             typeAnalise = 2;
                         }
+                        if (typeAnalise == 2 && containsNumberValue(currentLine)) {
+                            if (currentLine.contains("Total")) {
+                                totalClosedTransactions = currentLine;
+                            } else if (currentLine.contains("Closed Trade")) {
+                                closedTradeClosedTransactions = currentLine;
+                            } else {
+                                dataForClosedTransactions.add(currentLine);
+                                getClosedTransactionsData++;
+                            }
+                        }
+
+//                        get openTransactions data
+                        if (currentLine.contains("Open Transactions")) {
+                            typeAnalise = 3;
+                        }
 
                     }
 
@@ -357,9 +374,15 @@ public class App {
                     e.printStackTrace();
                 }
             }
-
-
+            filesWasAnalise++;
         }
+
+        for (String el : dataForClosedTransactions) {
+            System.out.println(el);
+        }
+        System.out.println("Files = " + filesWasAnalise);
+        System.out.println("+++++++++++++++++++++++++++" + totalClosedTransactions);
+        System.out.println("+++++++++++++++++++++++++++" + closedTradeClosedTransactions);
 
     }
 
