@@ -1,12 +1,10 @@
 import org.apache.log4j.Logger;
 
-import java.io.BufferedReader;
-import java.io.File;
-import java.io.FileReader;
-import java.io.IOException;
+import java.io.*;
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Map;
 
 public class App {
 
@@ -305,8 +303,61 @@ public class App {
         List<String> dataForOpenTransactions = new ArrayList<>();
         List<String> dataForTotalValues = new ArrayList<>();
 
+        String actualDayValue = "";
+
+        int typeAnalise = 0;
+        int filesWasAnalise = 0;
+        int getAccountBalanceData = 0;
+        int getClosedTransactionsData = 0;
+        int getDepositsWithdrawalsData = 0;
+        int getOpenTransactionsData = 0;
+        int getTotalValuesData = 0;
+
 //        get list of report to analise
-        for (File file : filesList){
+        for (File file : filesList) {
+
+            if (file.isFile()) {
+                try (BufferedReader bufferedReader = new BufferedReader(new FileReader(file))) {
+                    String currentLine;
+
+//                    Get data from files line by line, analyse, sorted and add to appropriate list. Add note to the log file.
+                    while ((currentLine = bufferedReader.readLine()) != null) {
+                        currentLine.trim();
+
+//                        get actualDayValue
+                        if (currentLine.contains("End of day")) {
+                            String[] splitEndOfDay = currentLine.trim().split(" ");
+                            StringBuilder actualDayReport = new StringBuilder();
+                            for (int i = 3; i < splitEndOfDay.length; i++) {
+                                actualDayReport.append(splitEndOfDay[i] + " ");
+                            }
+                            actualDayValue = actualDayReport.toString().trim();
+                        }
+
+//                        get accountBalance data
+                        if (currentLine.contains("Account Balance")) {
+                            typeAnalise = 1;
+                        }
+                        if (typeAnalise == 1 && containsNumberValue(currentLine)) {
+                            String datewithAccountBalance = actualDayValue + "\t" + currentLine;
+                            dataForAccountBalance.add(datewithAccountBalance);
+                            getAccountBalanceData++;
+                        }
+
+//                        get closedTransactions data
+                        if (currentLine.contains("Closed Transactions")) {
+                            typeAnalise = 2;
+                        }
+
+                    }
+
+                } catch (FileNotFoundException e) {
+                    e.printStackTrace();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+
 
         }
 
