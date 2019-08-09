@@ -2,7 +2,9 @@ import org.apache.log4j.Logger;
 
 import java.io.*;
 import java.sql.*;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 
 public class App {
@@ -61,6 +63,9 @@ public class App {
         int getDepositsWithdrawalsData = 0;
         int getOpenTransactionsData = 0;
         int getTotalValuesData = 0;
+
+        SimpleDateFormat formatter = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss");
+        Date date = new Date();
 
 //        get list of report to analise
         for (File file : filesList) {
@@ -181,47 +186,22 @@ public class App {
                 } catch (Exception e) {
                     e.printStackTrace();
                 }
+
+                filesWasAnalise++;
             }
-            filesWasAnalise++;
         }
 
+        logger.info("\n===========================================================================================\n" +
+                "Upload reports " + formatter.format(date) +
+                "\n\nYou open for get data: " + filesWasAnalise + " files\n" +
+                "You move to the DONE Directory " + moveFileInDoneDirectory + " files\n\n" +
+                "You get " + getAccountBalanceData + " lines for fill accountBalance table\n" +
+                "You get " + getClosedTransactionsData + " lines for fill closedTransactions table\n" +
+                "You get " + getDepositsWithdrawalsData + " lines for fill depositsWithdrawals table\n" +
+                "You get " + getOpenTransactionsData + " lines for fill openTransactions table\n" +
+                "You get " + getTotalValuesData + " lines for fill totalValues table\n" +
+                "------------------------------------------------------------------------------------------\n");
 
-        System.out.println("----------------------");
-        for (String el : dataForAccountBalance) {
-            System.out.println(el);
-        }
-        System.out.println("**********************");
-        System.out.println("Total = " + getAccountBalanceData);
-
-        System.out.println("----------------------");
-        for (String el : dataForClosedTransactions) {
-            System.out.println(el);
-        }
-        System.out.println("**********************");
-        System.out.println("Total = " + getClosedTransactionsData);
-
-        System.out.println("----------------------");
-        for (String el : dataForDepositsWithdrawals) {
-            System.out.println(el);
-        }
-        System.out.println("**********************");
-        System.out.println("Total = " + getDepositsWithdrawalsData);
-
-        System.out.println("----------------------");
-        for (String el : dataForOpenTransactions) {
-            System.out.println(el);
-        }
-        System.out.println("**********************");
-        System.out.println("Total = " + getOpenTransactionsData);
-
-        System.out.println("----------------------");
-        for (String el : dataForTotalValues) {
-            System.out.println(el);
-        }
-        System.out.println("**********************");
-        System.out.println("Total = " + getTotalValuesData);
-
-        System.out.println("Move files: " + moveFileInDoneDirectory);
     }
 
 }
