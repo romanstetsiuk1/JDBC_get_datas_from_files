@@ -303,13 +303,6 @@ public class App {
         List<String> dataForOpenTransactions = new ArrayList<>();
         List<String> dataForTotalValues = new ArrayList<>();
 
-        String actualDayValue = "";
-        String totalClosedTransactions = "";
-        String closedTradeClosedTransactions = "";
-        String totalOpenTransactions = "";
-        String floatingOpenTransactions = "";
-        String totalDepositWithdrawal = "";
-
         int typeAnalise = 0;
         int filesWasAnalise = 0;
         int getAccountBalanceData = 0;
@@ -320,6 +313,12 @@ public class App {
 
 //        get list of report to analise
         for (File file : filesList) {
+            String actualDayValue = "";
+            String totalClosedTransactions = "";
+            String closedTradeClosedTransactions = "";
+            String totalOpenTransactions = "";
+            String floatingOpenTransactions = "";
+            String totalDepositWithdrawal = "";
 
             if (file.isFile()) {
                 try (BufferedReader bufferedReader = new BufferedReader(new FileReader(file))) {
@@ -386,13 +385,34 @@ public class App {
                         if (typeAnalise == 4) {
                             if (containsNumberValue(currentLine)) {
                                 String[] splitDepositData = currentLine.split("\t");
-                                for (String el : splitDepositData) {
-                                    System.out.println(el);
+                                if (containsNumberValue(splitDepositData[0].trim()) &&
+                                        !currentLine.contains("End of day")) {
+                                    dataForDepositsWithdrawals.add(currentLine);
+                                    getDepositsWithdrawalsData++;
                                 }
-                                System.out.println("======" + splitDepositData.length);
+                                if (splitDepositData[0].length() < 5) {
+                                    totalDepositWithdrawal = splitDepositData[6];
+                                }
                             }
                         }
+                    }
 
+//                    Collect data for totalValues table
+                    String[] splitTotalCT = totalClosedTransactions.split("\t");
+                    String[] splitTradeClosedCT = closedTradeClosedTransactions.split("\t");
+                    String[] splitTotalOT = totalOpenTransactions.split("\t");
+                    String[] splitFloatingOT = floatingOpenTransactions.split("\t");
+
+                    if (splitTotalCT.length == 14 && splitTradeClosedCT.length == 14 &&
+                            splitTotalOT.length == 13 && splitFloatingOT.length == 13) {
+                        String addToTotalValuesList = actualDayValue + "\t" + splitTotalCT[11].trim() + "\t" +
+                                splitTotalCT[12].trim() + "\t" + splitTotalCT[13].trim() + "\t" +
+                                splitTradeClosedCT[13].trim() + "\t" +
+                                splitTotalOT[10].trim() + "\t" + splitTotalOT[11].trim() + "\t" +
+                                splitTotalOT[12].trim() + "\t" +
+                                splitFloatingOT[12].trim() + "\t" + totalDepositWithdrawal;
+                        dataForTotalValues.add(addToTotalValuesList);
+                        getTotalValuesData++;
                     }
 
                 } catch (FileNotFoundException e) {
@@ -404,13 +424,13 @@ public class App {
             filesWasAnalise++;
         }
 
-        for (String el : dataForOpenTransactions) {
+
+        System.out.println("----------------------");
+        for (String el : dataForTotalValues) {
             System.out.println(el);
         }
-        System.out.println("Files = " + filesWasAnalise);
-        for (String el : dataForClosedTransactions) {
-            System.out.println(el);
-        }
+        System.out.println("**********************");
+        System.out.println("Total = " + getTotalValuesData);
 
     }
 
