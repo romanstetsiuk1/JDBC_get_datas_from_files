@@ -64,6 +64,8 @@ public class App {
         int getOpenTransactionsData = 0;
         int getTotalValuesData = 0;
 
+        int putRecordsToAccountBalance = 0;
+
         SimpleDateFormat formatter = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss");
         Date date = new Date();
 
@@ -201,6 +203,25 @@ public class App {
                 "You get " + getOpenTransactionsData + " lines for fill openTransactions table\n" +
                 "You get " + getTotalValuesData + " lines for fill totalValues table\n" +
                 "------------------------------------------------------------------------------------------\n");
+
+//        Put data from getAccountBalanceData list into accountBalance table in data base
+        for (String accountBalanceData : dataForAccountBalance) {
+            String[] splitAccountBalanceData = accountBalanceData.trim().split("\t");
+
+            try (Connection connection = DriverManager.getConnection(connectionUrl, userName, password);
+                 Statement statement = connection.createStatement()) {
+                PreparedStatement fillAccountBalanceTable = connection.prepareStatement("INSERT INTO " +
+                        "accountBalance (accountBalance_date, balance, equity, margin, freeMargin) " +
+                        "VALUES (?, ?, ?, ?, ?)");
+                fillAccountBalanceTable.setString(1, splitAccountBalanceData[0]);
+                fillAccountBalanceTable.setString(2, splitAccountBalanceData[1]);
+                fillAccountBalanceTable.setString(3, splitAccountBalanceData[2]);
+                fillAccountBalanceTable.setString(4, splitAccountBalanceData[3]);
+                fillAccountBalanceTable.setString(5, splitAccountBalanceData[4]);
+                fillAccountBalanceTable.execute();
+                fillAccountBalanceTable.close();
+            }
+        }
 
     }
 
