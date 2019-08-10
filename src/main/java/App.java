@@ -220,8 +220,17 @@ public class App {
                 fillAccountBalanceTable.setString(5, splitAccountBalanceData[4]);
                 fillAccountBalanceTable.execute();
                 fillAccountBalanceTable.close();
+
+                putRecordsToAccountBalance++;
+            } catch (Exception e) {
+                logger.error("!!! You have Exception when you try add data in accountBalance table. Line nr " +
+                        putRecordsToAccountBalance);
             }
         }
+        if (getAccountBalanceData != putRecordsToAccountBalance) {
+            logger.warn("!!!!! Warning You add not all(or to much) data in MySQL!!!!!");
+        }
+        logger.info("\nYou add " + putRecordsToAccountBalance + " records to the accountBalance table in MySQL;\n");
 
     }
 
