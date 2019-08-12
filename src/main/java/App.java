@@ -1,3 +1,4 @@
+import com.sun.xml.internal.ws.api.ha.StickyFeature;
 import org.apache.log4j.Logger;
 
 import java.io.*;
@@ -187,12 +188,12 @@ public class App {
                 }
 
 //                Move file in the DONE Directory
-//                try {
-//                    file.renameTo(new File(filesDoneDirectory + "DONE_" + file.getName()));
-//                    moveFileInDoneDirectory++;
-//                } catch (Exception e) {
-//                    e.printStackTrace();
-//                }
+                try {
+                    file.renameTo(new File(filesDoneDirectory + "DONE_" + file.getName()));
+                    moveFileInDoneDirectory++;
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
 
                 filesWasAnalise++;
             }
@@ -347,7 +348,43 @@ public class App {
         logger.info("\nYou add " + putRecordsToOpenTransactions +
                 " records to the openTransactions table in MySQL;\n");
 
+//        Put data from dataForTotalValues list into totalValue table in data base
+        for (String totalValuesData : dataForTotalValues) {
+            String[] splitTotalValuesData = totalValuesData.trim().split("\t");
 
+            try (Connection connection = DriverManager.getConnection(connectionUrl, userName, password);
+                 Statement statement = connection.createStatement()) {
+                PreparedStatement fillTotalValuesTable = connection.prepareStatement("INSERT INTO " +
+                        "totalValues (raportDate, closedTransactions_commission, closedTransactions_swap, " +
+                        "closedTransactions_profit, closedTransactions_closedTrade, openTransactions_commission, " +
+                        "openTransactions_swap, openTransactions_profit, openTransactions_floating, depositWithdrawal) " +
+                        "VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)");
+                fillTotalValuesTable.setString(1, splitTotalValuesData[0]);
+                fillTotalValuesTable.setString(2, splitTotalValuesData[1]);
+                fillTotalValuesTable.setString(3, splitTotalValuesData[2]);
+                fillTotalValuesTable.setString(4, splitTotalValuesData[3]);
+                fillTotalValuesTable.setString(5, splitTotalValuesData[4]);
+                fillTotalValuesTable.setString(6, splitTotalValuesData[5]);
+                fillTotalValuesTable.setString(7, splitTotalValuesData[6]);
+                fillTotalValuesTable.setString(8, splitTotalValuesData[7]);
+                fillTotalValuesTable.setString(9, splitTotalValuesData[8]);
+                if (splitTotalValuesData.length == 10) {
+                    fillTotalValuesTable.setString(10, splitTotalValuesData[9]);
+                }
+                if (splitTotalValuesData.length == 9) {
+                    fillTotalValuesTable.setString(10, null);
+                }
+                fillTotalValuesTable.execute();
+                fillTotalValuesTable.close();
+
+                putRecordsToTotalValues++;
+            } catch (Exception e) {
+                logger.error("!!! You have Exception when you try add data in totalValues table. Line nr " +
+                        putRecordsToTotalValues);
+            }
+        }
+        logger.info("\nYou add " + putRecordsToTotalValues +
+                " records to the totalValues table in MySQL;\n");
 
 
     }
