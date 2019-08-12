@@ -65,6 +65,12 @@ public class App {
         int getTotalValuesData = 0;
 
         int putRecordsToAccountBalance = 0;
+        int putRecordsToClosedTransactions = 0;
+        int putRecordsToDepositWithdrawals = 0;
+        int putRecordsToOpenTransactions = 0;
+        int putRecordsToTotalValues = 0;
+
+        String actualDayValue = "";
 
         SimpleDateFormat formatter = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss");
         Date date = new Date();
@@ -73,7 +79,6 @@ public class App {
         for (File file : filesList) {
             int typeAnalise = 0;
 
-            String actualDayValue = "";
             String totalClosedTransactions = "";
             String closedTradeClosedTransactions = "";
             String totalOpenTransactions = "";
@@ -182,12 +187,12 @@ public class App {
                 }
 
 //                Move file in the DONE Directory
-                try {
-                    file.renameTo(new File(filesDoneDirectory + "DONE_" + file.getName()));
-                    moveFileInDoneDirectory++;
-                } catch (Exception e) {
-                    e.printStackTrace();
-                }
+//                try {
+//                    file.renameTo(new File(filesDoneDirectory + "DONE_" + file.getName()));
+//                    moveFileInDoneDirectory++;
+//                } catch (Exception e) {
+//                    e.printStackTrace();
+//                }
 
                 filesWasAnalise++;
             }
@@ -231,6 +236,46 @@ public class App {
             logger.warn("!!!!! Warning You add not all(or to much) data in MySQL!!!!!");
         }
         logger.info("\nYou add " + putRecordsToAccountBalance + " records to the accountBalance table in MySQL;\n");
+
+//        Put data from getAccountBalanceData list into accountBalance table in data base
+        for (String closedTransactionData : dataForClosedTransactions) {
+            String[] splitClosedTransactionTable = closedTransactionData.trim().split("\t");
+
+            try (Connection connection = DriverManager.getConnection(connectionUrl, userName, password);
+                 Statement statement = connection.createStatement()) {
+                PreparedStatement fillClosedTransactionsTable = connection.prepareStatement("INSERT INTO " +
+                        "closedTransactions (raportDate, ticket, openTimeTransactions, typeTransactions, lots, " +
+                        "symbol, exchangeCode, assetClass, openPrice, closeTime, closePrise, conversionRate, " +
+                        "commissions, swap, profit) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)");
+                fillClosedTransactionsTable.setString(1, actualDayValue);
+                fillClosedTransactionsTable.setString(2, splitClosedTransactionTable[0]);
+                fillClosedTransactionsTable.setString(3, splitClosedTransactionTable[1]);
+                fillClosedTransactionsTable.setString(4, splitClosedTransactionTable[2]);
+                fillClosedTransactionsTable.setString(5, splitClosedTransactionTable[3]);
+                fillClosedTransactionsTable.setString(6, splitClosedTransactionTable[4]);
+                fillClosedTransactionsTable.setString(7, splitClosedTransactionTable[5]);
+                fillClosedTransactionsTable.setString(8, splitClosedTransactionTable[6]);
+                fillClosedTransactionsTable.setString(9, splitClosedTransactionTable[7]);
+                fillClosedTransactionsTable.setString(10, splitClosedTransactionTable[8]);
+                fillClosedTransactionsTable.setString(11, splitClosedTransactionTable[9]);
+                fillClosedTransactionsTable.setString(12, splitClosedTransactionTable[10]);
+                fillClosedTransactionsTable.setString(13, splitClosedTransactionTable[11]);
+                fillClosedTransactionsTable.setString(14, splitClosedTransactionTable[12]);
+                fillClosedTransactionsTable.setString(15, splitClosedTransactionTable[13]);
+                fillClosedTransactionsTable.execute();
+                fillClosedTransactionsTable.close();
+
+                putRecordsToClosedTransactions++;
+            } catch (Exception e) {
+                logger.error("!!! You have Exception when you try add data in closedTransactions table. Line nr " +
+                        putRecordsToClosedTransactions);
+            }
+        }
+        if (getClosedTransactionsData != putRecordsToClosedTransactions) {
+            logger.warn("!!!!! Warning You add not all(or to much) data in MySQL!!!!!");
+        }
+        logger.info("\nYou add " + putRecordsToClosedTransactions + " records to the closedTransactions table in MySQL;\n");
+
 
     }
 
