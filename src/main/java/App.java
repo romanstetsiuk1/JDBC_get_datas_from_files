@@ -218,11 +218,11 @@ public class App {
                 PreparedStatement fillAccountBalanceTable = connection.prepareStatement("INSERT INTO " +
                         "accountBalance (accountBalance_date, balance, equity, margin, freeMargin) " +
                         "VALUES (?, ?, ?, ?, ?)");
-                fillAccountBalanceTable.setString(1, splitAccountBalanceData[0]);
-                fillAccountBalanceTable.setString(2, splitAccountBalanceData[1]);
-                fillAccountBalanceTable.setString(3, splitAccountBalanceData[2]);
-                fillAccountBalanceTable.setString(4, splitAccountBalanceData[3]);
-                fillAccountBalanceTable.setString(5, splitAccountBalanceData[4]);
+                fillAccountBalanceTable.setString(1, splitAccountBalanceData[0].trim());
+                fillAccountBalanceTable.setString(2, splitAccountBalanceData[1].trim());
+                fillAccountBalanceTable.setString(3, splitAccountBalanceData[2].trim());
+                fillAccountBalanceTable.setString(4, splitAccountBalanceData[3].trim());
+                fillAccountBalanceTable.setString(5, splitAccountBalanceData[4].trim());
                 fillAccountBalanceTable.execute();
                 fillAccountBalanceTable.close();
 
@@ -237,7 +237,7 @@ public class App {
         }
         logger.info("\nYou add " + putRecordsToAccountBalance + " records to the accountBalance table in MySQL;\n");
 
-//        Put data from getAccountBalanceData list into accountBalance table in data base
+//        Put data from dataForClosedTransactions list into closedTransactions table in data base
         for (String closedTransactionData : dataForClosedTransactions) {
             String[] splitClosedTransactionTable = closedTransactionData.trim().split("\t");
 
@@ -248,20 +248,20 @@ public class App {
                         "symbol, exchangeCode, assetClass, openPrice, closeTime, closePrise, conversionRate, " +
                         "commissions, swap, profit) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)");
                 fillClosedTransactionsTable.setString(1, actualDayValue);
-                fillClosedTransactionsTable.setString(2, splitClosedTransactionTable[0]);
-                fillClosedTransactionsTable.setString(3, splitClosedTransactionTable[1]);
-                fillClosedTransactionsTable.setString(4, splitClosedTransactionTable[2]);
-                fillClosedTransactionsTable.setString(5, splitClosedTransactionTable[3]);
-                fillClosedTransactionsTable.setString(6, splitClosedTransactionTable[4]);
-                fillClosedTransactionsTable.setString(7, splitClosedTransactionTable[5]);
-                fillClosedTransactionsTable.setString(8, splitClosedTransactionTable[6]);
-                fillClosedTransactionsTable.setString(9, splitClosedTransactionTable[7]);
-                fillClosedTransactionsTable.setString(10, splitClosedTransactionTable[8]);
-                fillClosedTransactionsTable.setString(11, splitClosedTransactionTable[9]);
-                fillClosedTransactionsTable.setString(12, splitClosedTransactionTable[10]);
-                fillClosedTransactionsTable.setString(13, splitClosedTransactionTable[11]);
-                fillClosedTransactionsTable.setString(14, splitClosedTransactionTable[12]);
-                fillClosedTransactionsTable.setString(15, splitClosedTransactionTable[13]);
+                fillClosedTransactionsTable.setString(2, splitClosedTransactionTable[0].trim());
+                fillClosedTransactionsTable.setString(3, splitClosedTransactionTable[1].trim());
+                fillClosedTransactionsTable.setString(4, splitClosedTransactionTable[2].trim());
+                fillClosedTransactionsTable.setString(5, splitClosedTransactionTable[3].trim());
+                fillClosedTransactionsTable.setString(6, splitClosedTransactionTable[4].trim());
+                fillClosedTransactionsTable.setString(7, splitClosedTransactionTable[5].trim());
+                fillClosedTransactionsTable.setString(8, splitClosedTransactionTable[6].trim());
+                fillClosedTransactionsTable.setString(9, splitClosedTransactionTable[7].trim());
+                fillClosedTransactionsTable.setString(10, splitClosedTransactionTable[8].trim());
+                fillClosedTransactionsTable.setString(11, splitClosedTransactionTable[9].trim());
+                fillClosedTransactionsTable.setString(12, splitClosedTransactionTable[10].trim());
+                fillClosedTransactionsTable.setString(13, splitClosedTransactionTable[11].trim());
+                fillClosedTransactionsTable.setString(14, splitClosedTransactionTable[12].trim());
+                fillClosedTransactionsTable.setString(15, splitClosedTransactionTable[13].trim());
                 fillClosedTransactionsTable.execute();
                 fillClosedTransactionsTable.close();
 
@@ -275,6 +275,45 @@ public class App {
             logger.warn("!!!!! Warning You add not all(or to much) data in MySQL!!!!!");
         }
         logger.info("\nYou add " + putRecordsToClosedTransactions + " records to the closedTransactions table in MySQL;\n");
+
+//        Put data from dataForOpenTransactions list into openTransactions table in data base
+        for (String openTransactionsData : dataForOpenTransactions) {
+            String[] splitOpenTransactionsData = openTransactionsData.trim().split("\t");
+
+            try (Connection connection = DriverManager.getConnection(connectionUrl, userName, password);
+                 Statement statement = connection.createStatement()) {
+                PreparedStatement fillOpenTransactionsTable = connection.prepareStatement("INSERT INTO " +
+                        "openTransactions (raportDate, ticket, openTimeTransactions, typeTransactions, lots, " +
+                        "symbol, exchangeCode, assetClass, openPrice, marketPrise, conversionRate, commissions, " +
+                        "swap, profit) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)");
+                fillOpenTransactionsTable.setString(1, actualDayValue);
+                fillOpenTransactionsTable.setString(2, splitOpenTransactionsData[0]);
+                fillOpenTransactionsTable.setString(3, splitOpenTransactionsData[1]);
+                fillOpenTransactionsTable.setString(4, splitOpenTransactionsData[2]);
+                fillOpenTransactionsTable.setString(5, splitOpenTransactionsData[3]);
+                fillOpenTransactionsTable.setString(6, splitOpenTransactionsData[4]);
+                fillOpenTransactionsTable.setString(7, splitOpenTransactionsData[5]);
+                fillOpenTransactionsTable.setString(8, splitOpenTransactionsData[6]);
+                fillOpenTransactionsTable.setString(9, splitOpenTransactionsData[7]);
+                fillOpenTransactionsTable.setString(10, splitOpenTransactionsData[8]);
+                fillOpenTransactionsTable.setString(11, splitOpenTransactionsData[9]);
+                fillOpenTransactionsTable.setString(12, splitOpenTransactionsData[10]);
+                fillOpenTransactionsTable.setString(13, splitOpenTransactionsData[11]);
+                fillOpenTransactionsTable.setString(14, splitOpenTransactionsData[12]);
+                fillOpenTransactionsTable.execute();
+                fillOpenTransactionsTable.close();
+
+                putRecordsToOpenTransactions++;
+            } catch (Exception e) {
+                logger.error("!!! You have Exception when you try add data in openTransactions table. Line nr " +
+                        putRecordsToOpenTransactions);
+            }
+        }
+        if (getOpenTransactionsData != putRecordsToOpenTransactions) {
+            logger.warn("!!!!! Warning You add not all(or to much) data in MySQL!!!!!");
+        }
+        logger.info("\nYou add " + putRecordsToOpenTransactions +
+                " records to the openTransactions table in MySQL;\n");
 
 
     }
