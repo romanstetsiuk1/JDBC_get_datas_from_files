@@ -276,6 +276,38 @@ public class App {
         }
         logger.info("\nYou add " + putRecordsToClosedTransactions + " records to the closedTransactions table in MySQL;\n");
 
+//        Put data from dataForDepositsWithdrawals list into depositsWithdrawals table in data base
+        for (String depositsWithdrawalsData : dataForDepositsWithdrawals) {
+            String[] splitDepositsWithdrawalsData = depositsWithdrawalsData.trim().split("\t");
+
+            try (Connection connection = DriverManager.getConnection(connectionUrl, userName, password);
+                 Statement statement = connection.createStatement()) {
+                PreparedStatement fillDepositsWithdrawalsTable = connection.prepareStatement("INSERT INTO " +
+                        "depositsWithdrawals (raportDate, ticket, openTime, typeOperation, comment, deposit, " +
+                        "withdraw, netDeposit) VALUES (?, ?, ?, ?, ?, ?, ?, ?)");
+                fillDepositsWithdrawalsTable.setString(1, actualDayValue);
+                fillDepositsWithdrawalsTable.setString(2, splitDepositsWithdrawalsData[0]);
+                fillDepositsWithdrawalsTable.setString(3, splitDepositsWithdrawalsData[1]);
+                fillDepositsWithdrawalsTable.setString(4, splitDepositsWithdrawalsData[2]);
+                fillDepositsWithdrawalsTable.setString(5, splitDepositsWithdrawalsData[3]);
+                fillDepositsWithdrawalsTable.setString(6, splitDepositsWithdrawalsData[4]);
+                fillDepositsWithdrawalsTable.setString(7, splitDepositsWithdrawalsData[5]);
+                fillDepositsWithdrawalsTable.setString(8, splitDepositsWithdrawalsData[6]);
+                fillDepositsWithdrawalsTable.execute();
+                fillDepositsWithdrawalsTable.close();
+
+                putRecordsToDepositWithdrawals++;
+            } catch (Exception e) {
+                logger.error("!!! You have Exception when you try add data in depositsWithdrawals table. Line nr " +
+                        putRecordsToDepositWithdrawals);
+            }
+        }
+        if (getDepositsWithdrawalsData != putRecordsToDepositWithdrawals) {
+            logger.warn("!!!!! Warning You add not all(or to much) data in MySQL!!!!!");
+        }
+        logger.info("\nYou add " + putRecordsToDepositWithdrawals +
+                " records to the depositsWithdrawals table in MySQL;\n");
+
 //        Put data from dataForOpenTransactions list into openTransactions table in data base
         for (String openTransactionsData : dataForOpenTransactions) {
             String[] splitOpenTransactionsData = openTransactionsData.trim().split("\t");
@@ -287,19 +319,19 @@ public class App {
                         "symbol, exchangeCode, assetClass, openPrice, marketPrise, conversionRate, commissions, " +
                         "swap, profit) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)");
                 fillOpenTransactionsTable.setString(1, actualDayValue);
-                fillOpenTransactionsTable.setString(2, splitOpenTransactionsData[0]);
-                fillOpenTransactionsTable.setString(3, splitOpenTransactionsData[1]);
-                fillOpenTransactionsTable.setString(4, splitOpenTransactionsData[2]);
-                fillOpenTransactionsTable.setString(5, splitOpenTransactionsData[3]);
-                fillOpenTransactionsTable.setString(6, splitOpenTransactionsData[4]);
-                fillOpenTransactionsTable.setString(7, splitOpenTransactionsData[5]);
-                fillOpenTransactionsTable.setString(8, splitOpenTransactionsData[6]);
-                fillOpenTransactionsTable.setString(9, splitOpenTransactionsData[7]);
-                fillOpenTransactionsTable.setString(10, splitOpenTransactionsData[8]);
-                fillOpenTransactionsTable.setString(11, splitOpenTransactionsData[9]);
-                fillOpenTransactionsTable.setString(12, splitOpenTransactionsData[10]);
-                fillOpenTransactionsTable.setString(13, splitOpenTransactionsData[11]);
-                fillOpenTransactionsTable.setString(14, splitOpenTransactionsData[12]);
+                fillOpenTransactionsTable.setString(2, splitOpenTransactionsData[0].trim());
+                fillOpenTransactionsTable.setString(3, splitOpenTransactionsData[1].trim());
+                fillOpenTransactionsTable.setString(4, splitOpenTransactionsData[2].trim());
+                fillOpenTransactionsTable.setString(5, splitOpenTransactionsData[3].trim());
+                fillOpenTransactionsTable.setString(6, splitOpenTransactionsData[4].trim());
+                fillOpenTransactionsTable.setString(7, splitOpenTransactionsData[5].trim());
+                fillOpenTransactionsTable.setString(8, splitOpenTransactionsData[6].trim());
+                fillOpenTransactionsTable.setString(9, splitOpenTransactionsData[7].trim());
+                fillOpenTransactionsTable.setString(10, splitOpenTransactionsData[8].trim());
+                fillOpenTransactionsTable.setString(11, splitOpenTransactionsData[9].trim());
+                fillOpenTransactionsTable.setString(12, splitOpenTransactionsData[10].trim());
+                fillOpenTransactionsTable.setString(13, splitOpenTransactionsData[11].trim());
+                fillOpenTransactionsTable.setString(14, splitOpenTransactionsData[12].trim());
                 fillOpenTransactionsTable.execute();
                 fillOpenTransactionsTable.close();
 
@@ -314,6 +346,8 @@ public class App {
         }
         logger.info("\nYou add " + putRecordsToOpenTransactions +
                 " records to the openTransactions table in MySQL;\n");
+
+
 
 
     }
