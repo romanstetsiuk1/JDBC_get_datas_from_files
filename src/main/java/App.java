@@ -10,16 +10,6 @@ import java.util.List;
 
 public class App {
 
-    private static boolean containsNumberValue(String line) {
-        String[] numbersValue = new String[]{"0", "1", "2", "3", "4", "5", "6", "7", "8", "9"};
-        for (String checkLine : numbersValue) {
-            if (line.contains(checkLine)) {
-                return true;
-            }
-        }
-        return false;
-    }
-
     public static void main(String[] args) throws ClassNotFoundException, SQLException {
 
         final Logger logger = Logger.getLogger(App.class);
@@ -61,17 +51,11 @@ public class App {
 
         int filesWasAnalise = 0;
         int moveFileInDoneDirectory = 0;
-        int getAccountBalanceData = 0;
-        int getClosedTransactionsData = 0;
-        int getDepositsWithdrawalsData = 0;
-        int getOpenTransactionsData = 0;
-        int getTotalValuesData = 0;
+        int getAccountBalanceData = 0, getClosedTransactionsData = 0, getDepositsWithdrawalsData = 0,
+                getOpenTransactionsData = 0, getTotalValuesData = 0;
 
-        int putRecordsToAccountBalance = 0;
-        int putRecordsToClosedTransactions = 0;
-        int putRecordsToDepositWithdrawals = 0;
-        int putRecordsToOpenTransactions = 0;
-        int putRecordsToTotalValues = 0;
+        int putRecordsToAccountBalance = 0, putRecordsToClosedTransactions = 0, putRecordsToDepositWithdrawals = 0,
+                putRecordsToOpenTransactions = 0, putRecordsToTotalValues = 0;
 
         String actualDayValue = "";
 
@@ -125,7 +109,7 @@ public class App {
                         if (currentLine.contains("Account Balance")) {
                             typeAnalise = 1;
                         }
-                        if (typeAnalise == 1 && containsNumberValue(currentLine)) {
+                        if (typeAnalise == 1 && DataAnalise.containsNumberValue(currentLine)) {
                             String datewithAccountBalance = actualDayValue + "\t" + currentLine;
                             dataForAccountBalance.add(datewithAccountBalance);
                             getAccountBalanceData++;
@@ -135,7 +119,7 @@ public class App {
                         if (currentLine.contains("Closed Transactions")) {
                             typeAnalise = 2;
                         }
-                        if (typeAnalise == 2 && containsNumberValue(currentLine)) {
+                        if (typeAnalise == 2 && DataAnalise.containsNumberValue(currentLine)) {
                             if (currentLine.contains("Total")) {
                                 totalClosedTransactions = currentLine;
                             } else if (currentLine.contains("Closed Trade")) {
@@ -150,7 +134,7 @@ public class App {
                         if (currentLine.contains("Open Transactions")) {
                             typeAnalise = 3;
                         }
-                        if (typeAnalise == 3 && containsNumberValue(currentLine)) {
+                        if (typeAnalise == 3 && DataAnalise.containsNumberValue(currentLine)) {
                             if (currentLine.contains("Total")) {
                                 totalOpenTransactions = currentLine;
                             } else if (currentLine.contains("Floating")) {
@@ -166,9 +150,9 @@ public class App {
                             typeAnalise = 4;
                         }
                         if (typeAnalise == 4) {
-                            if (containsNumberValue(currentLine)) {
+                            if (DataAnalise.containsNumberValue(currentLine)) {
                                 String[] splitDepositData = currentLine.split("\t");
-                                if (containsNumberValue(splitDepositData[0].trim()) &&
+                                if (DataAnalise.containsNumberValue(splitDepositData[0].trim()) &&
                                         !currentLine.contains("End of day")) {
                                     dataForDepositsWithdrawals.add(currentLine);
                                     getDepositsWithdrawalsData++;
@@ -209,12 +193,12 @@ public class App {
                 }
 
 //                Move file in the DONE Directory
-//                try {
-//                    file.renameTo(new File(filesDoneDirectory + "DONE_" + file.getName()));
-//                    moveFileInDoneDirectory++;
-//                } catch (Exception e) {
-//                    e.printStackTrace();
-//                }
+                try {
+                    file.renameTo(new File(filesDoneDirectory + "DONE_" + file.getName()));
+                    moveFileInDoneDirectory++;
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
 
                 filesWasAnalise++;
             }
@@ -240,13 +224,9 @@ public class App {
                 PreparedStatement fillAccountBalanceTable = connection.prepareStatement("INSERT INTO " +
                         "accountBalance (accountBalance_date, balance, equity, margin, freeMargin) " +
                         "VALUES (?, ?, ?, ?, ?)");
-                fillAccountBalanceTable.setString(1, splitAccountBalanceData[0].trim());
-                fillAccountBalanceTable.setString(2, splitAccountBalanceData[1].trim());
-                fillAccountBalanceTable.setString(3, splitAccountBalanceData[2].trim());
-                fillAccountBalanceTable.setString(4, splitAccountBalanceData[3].trim());
-                fillAccountBalanceTable.setString(5, splitAccountBalanceData[4].trim());
-                fillAccountBalanceTable.execute();
-                fillAccountBalanceTable.close();
+                DataAnalise.fillAccountBalance(splitAccountBalanceData, fillAccountBalanceTable,
+                        1, 0, 2, splitAccountBalanceData[1], 3, splitAccountBalanceData[2], 4,
+                        splitAccountBalanceData[3], 5, splitAccountBalanceData[4]);
 
                 putRecordsToAccountBalance++;
             } catch (Exception e) {
@@ -269,23 +249,8 @@ public class App {
                         "closedTransactions (raportDate, ticket, openTimeTransactions, typeTransactions, lots, " +
                         "symbol, exchangeCode, assetClass, openPrice, closeTime, closePrise, conversionRate, " +
                         "commissions, swap, profit) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)");
-                fillClosedTransactionsTable.setString(1, actualDayValue);
-                fillClosedTransactionsTable.setString(2, splitClosedTransactionTable[0].trim());
-                fillClosedTransactionsTable.setString(3, splitClosedTransactionTable[1].trim());
-                fillClosedTransactionsTable.setString(4, splitClosedTransactionTable[2].trim());
-                fillClosedTransactionsTable.setString(5, splitClosedTransactionTable[3].trim());
-                fillClosedTransactionsTable.setString(6, splitClosedTransactionTable[4].trim());
-                fillClosedTransactionsTable.setString(7, splitClosedTransactionTable[5].trim());
-                fillClosedTransactionsTable.setString(8, splitClosedTransactionTable[6].trim());
-                fillClosedTransactionsTable.setString(9, splitClosedTransactionTable[7].trim());
-                fillClosedTransactionsTable.setString(10, splitClosedTransactionTable[8].trim());
-                fillClosedTransactionsTable.setString(11, splitClosedTransactionTable[9].trim());
-                fillClosedTransactionsTable.setString(12, splitClosedTransactionTable[10].trim());
-                fillClosedTransactionsTable.setString(13, splitClosedTransactionTable[11].trim());
-                fillClosedTransactionsTable.setString(14, splitClosedTransactionTable[12].trim());
-                fillClosedTransactionsTable.setString(15, splitClosedTransactionTable[13].trim());
-                fillClosedTransactionsTable.execute();
-                fillClosedTransactionsTable.close();
+                DataAnalise.fillClosedTransactions(actualDayValue, splitClosedTransactionTable,
+                        fillClosedTransactionsTable);
 
                 putRecordsToClosedTransactions++;
             } catch (Exception e) {
@@ -307,16 +272,11 @@ public class App {
                 PreparedStatement fillDepositsWithdrawalsTable = connection.prepareStatement("INSERT INTO " +
                         "depositsWithdrawals (raportDate, ticket, openTime, typeOperation, comment, deposit, " +
                         "withdraw, netDeposit) VALUES (?, ?, ?, ?, ?, ?, ?, ?)");
-                fillDepositsWithdrawalsTable.setString(1, actualDayValue);
-                fillDepositsWithdrawalsTable.setString(2, splitDepositsWithdrawalsData[0]);
-                fillDepositsWithdrawalsTable.setString(3, splitDepositsWithdrawalsData[1]);
-                fillDepositsWithdrawalsTable.setString(4, splitDepositsWithdrawalsData[2]);
-                fillDepositsWithdrawalsTable.setString(5, splitDepositsWithdrawalsData[3]);
-                fillDepositsWithdrawalsTable.setString(6, splitDepositsWithdrawalsData[4]);
-                fillDepositsWithdrawalsTable.setString(7, splitDepositsWithdrawalsData[5]);
-                fillDepositsWithdrawalsTable.setString(8, splitDepositsWithdrawalsData[6]);
-                fillDepositsWithdrawalsTable.execute();
-                fillDepositsWithdrawalsTable.close();
+                DataAnalise.fillDepositsWithdrawals(actualDayValue, fillDepositsWithdrawalsTable, 1, 2,
+                        splitDepositsWithdrawalsData[0], 3, splitDepositsWithdrawalsData[1], 4,
+                        splitDepositsWithdrawalsData[2], 5, splitDepositsWithdrawalsData[3], 6,
+                        splitDepositsWithdrawalsData[4], 7, splitDepositsWithdrawalsData[5], 8,
+                        splitDepositsWithdrawalsData[6]);
 
                 putRecordsToDepositWithdrawals++;
             } catch (Exception e) {
@@ -340,22 +300,9 @@ public class App {
                         "openTransactions (raportDate, ticket, openTimeTransactions, typeTransactions, lots, " +
                         "symbol, exchangeCode, assetClass, openPrice, marketPrise, conversionRate, commissions, " +
                         "swap, profit) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)");
-                fillOpenTransactionsTable.setString(1, actualDayValue);
-                fillOpenTransactionsTable.setString(2, splitOpenTransactionsData[0].trim());
-                fillOpenTransactionsTable.setString(3, splitOpenTransactionsData[1].trim());
-                fillOpenTransactionsTable.setString(4, splitOpenTransactionsData[2].trim());
-                fillOpenTransactionsTable.setString(5, splitOpenTransactionsData[3].trim());
-                fillOpenTransactionsTable.setString(6, splitOpenTransactionsData[4].trim());
-                fillOpenTransactionsTable.setString(7, splitOpenTransactionsData[5].trim());
-                fillOpenTransactionsTable.setString(8, splitOpenTransactionsData[6].trim());
-                fillOpenTransactionsTable.setString(9, splitOpenTransactionsData[7].trim());
-                fillOpenTransactionsTable.setString(10, splitOpenTransactionsData[8].trim());
-                fillOpenTransactionsTable.setString(11, splitOpenTransactionsData[9].trim());
-                fillOpenTransactionsTable.setString(12, splitOpenTransactionsData[10].trim());
-                fillOpenTransactionsTable.setString(13, splitOpenTransactionsData[11].trim());
-                fillOpenTransactionsTable.setString(14, splitOpenTransactionsData[12].trim());
-                fillOpenTransactionsTable.execute();
-                fillOpenTransactionsTable.close();
+                DataAnalise.fillOpenTransactions(actualDayValue, splitOpenTransactionsData,
+                        fillOpenTransactionsTable, 1, 2, 0, 3, 4, 5, 6, 7, 8,
+                        9, 10, 11, 12, 13, 14);
 
                 putRecordsToOpenTransactions++;
             } catch (Exception e) {
@@ -380,23 +327,7 @@ public class App {
                         "closedTransactions_profit, closedTransactions_closedTrade, openTransactions_commission, " +
                         "openTransactions_swap, openTransactions_profit, openTransactions_floating, depositWithdrawal) " +
                         "VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)");
-                fillTotalValuesTable.setString(1, splitTotalValuesData[0]);
-                fillTotalValuesTable.setString(2, splitTotalValuesData[1]);
-                fillTotalValuesTable.setString(3, splitTotalValuesData[2]);
-                fillTotalValuesTable.setString(4, splitTotalValuesData[3]);
-                fillTotalValuesTable.setString(5, splitTotalValuesData[4]);
-                fillTotalValuesTable.setString(6, splitTotalValuesData[5]);
-                fillTotalValuesTable.setString(7, splitTotalValuesData[6]);
-                fillTotalValuesTable.setString(8, splitTotalValuesData[7]);
-                fillTotalValuesTable.setString(9, splitTotalValuesData[8]);
-                if (splitTotalValuesData.length == 10) {
-                    fillTotalValuesTable.setString(10, splitTotalValuesData[9]);
-                }
-                if (splitTotalValuesData.length == 9) {
-                    fillTotalValuesTable.setString(10, null);
-                }
-                fillTotalValuesTable.execute();
-                fillTotalValuesTable.close();
+                DataAnalise.fillTotalValues(splitTotalValuesData, fillTotalValuesTable);
 
                 putRecordsToTotalValues++;
             } catch (Exception e) {
