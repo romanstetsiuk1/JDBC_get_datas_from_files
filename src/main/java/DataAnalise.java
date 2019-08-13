@@ -13,7 +13,9 @@ public class DataAnalise {
     }
 
 
-    protected static void fillTotalValues(String[] splitTotalValuesData, PreparedStatement fillTotalValuesTable) throws SQLException {
+    protected static void fillTotalValues(String[] splitTotalValuesData, PreparedStatement fillTotalValuesTable,
+                                          String addToDataBase)
+            throws SQLException {
         fillTotalValuesTable.setString(1, splitTotalValuesData[0]);
         fillTotalValuesTable.setString(2, splitTotalValuesData[1]);
         fillTotalValuesTable.setString(3, splitTotalValuesData[2]);
@@ -29,11 +31,16 @@ public class DataAnalise {
         if (splitTotalValuesData.length == 9) {
             fillTotalValuesTable.setString(10, null);
         }
+        fillTotalValuesTable.setString(11, addToDataBase);
         fillTotalValuesTable.execute();
         fillTotalValuesTable.close();
     }
 
-    protected static void fillOpenTransactions(String actualDayValue, String[] splitOpenTransactionsData, PreparedStatement fillOpenTransactionsTable, int i2, int i3, int i4, int i5, int i6, int i7, int i8, int i9, int i10, int i11, int i12, int i13, int i14, int i15, int i16) throws SQLException {
+    protected static void fillOpenTransactions(String actualDayValue, String[] splitOpenTransactionsData,
+                                               PreparedStatement fillOpenTransactionsTable, int i2, int i3, int i4,
+                                               int i5, int i6, int i7, int i8, int i9, int i10, int i11, int i12,
+                                               int i13, int i14, int i15, int i16, int i17, String addToDataBase)
+            throws SQLException {
         fillOpenTransactionsTable.setString(i2, actualDayValue);
         fillOpenTransactionsTable.setString(i3, splitOpenTransactionsData[i4].trim());
         fillOpenTransactionsTable.setString(i5, splitOpenTransactionsData[i2].trim());
@@ -48,11 +55,20 @@ public class DataAnalise {
         fillOpenTransactionsTable.setString(i14, splitOpenTransactionsData[i12].trim());
         fillOpenTransactionsTable.setString(i15, splitOpenTransactionsData[i13].trim());
         fillOpenTransactionsTable.setString(i16, splitOpenTransactionsData[i14].trim());
+        fillOpenTransactionsTable.setString(i17, addToDataBase.trim());
         fillOpenTransactionsTable.execute();
         fillOpenTransactionsTable.close();
     }
 
-    protected static void fillDepositsWithdrawals(String actualDayValue, PreparedStatement fillDepositsWithdrawalsTable, int i2, int i3, String splitDepositsWithdrawalsDatum, int i4, String splitDepositsWithdrawalsDatum2, int i5, String splitDepositsWithdrawalsDatum3, int i6, String splitDepositsWithdrawalsDatum4, int i7, String splitDepositsWithdrawalsDatum5, int i8, String splitDepositsWithdrawalsDatum6, int i9, String splitDepositsWithdrawalsDatum7) throws SQLException {
+    protected static void fillDepositsWithdrawals(String actualDayValue, PreparedStatement
+            fillDepositsWithdrawalsTable, int i2, int i3, String splitDepositsWithdrawalsDatum,
+                                                  int i4, String splitDepositsWithdrawalsDatum2,
+                                                  int i5, String splitDepositsWithdrawalsDatum3,
+                                                  int i6, String splitDepositsWithdrawalsDatum4,
+                                                  int i7, String splitDepositsWithdrawalsDatum5,
+                                                  int i8, String splitDepositsWithdrawalsDatum6,
+                                                  int i9, String splitDepositsWithdrawalsDatum7,
+                                                  int i10, String addToDataBase) throws SQLException {
         fillDepositsWithdrawalsTable.setString(i2, actualDayValue);
         fillDepositsWithdrawalsTable.setString(i3, splitDepositsWithdrawalsDatum);
         fillDepositsWithdrawalsTable.setString(i4, splitDepositsWithdrawalsDatum2);
@@ -61,11 +77,14 @@ public class DataAnalise {
         fillDepositsWithdrawalsTable.setString(i7, splitDepositsWithdrawalsDatum5);
         fillDepositsWithdrawalsTable.setString(i8, splitDepositsWithdrawalsDatum6);
         fillDepositsWithdrawalsTable.setString(i9, splitDepositsWithdrawalsDatum7);
+        fillDepositsWithdrawalsTable.setString(i10, addToDataBase);
         fillDepositsWithdrawalsTable.execute();
         fillDepositsWithdrawalsTable.close();
     }
 
-    protected static void fillClosedTransactions(String actualDayValue, String[] splitClosedTransactionTable, PreparedStatement fillClosedTransactionsTable) throws SQLException {
+    protected static void fillClosedTransactions(String actualDayValue, String[] splitClosedTransactionTable,
+                                                 PreparedStatement fillClosedTransactionsTable, String addToDataBase)
+            throws SQLException {
         fillClosedTransactionsTable.setString(1, actualDayValue);
         fillClosedTransactionsTable.setString(2, splitClosedTransactionTable[0].trim());
         fillClosedTransactionsTable.setString(3, splitClosedTransactionTable[1].trim());
@@ -81,16 +100,23 @@ public class DataAnalise {
         fillClosedTransactionsTable.setString(13, splitClosedTransactionTable[11].trim());
         fillClosedTransactionsTable.setString(14, splitClosedTransactionTable[12].trim());
         fillClosedTransactionsTable.setString(15, splitClosedTransactionTable[13].trim());
+        fillClosedTransactionsTable.setString(16, addToDataBase.trim());
         fillClosedTransactionsTable.execute();
         fillClosedTransactionsTable.close();
     }
 
-    protected static void fillAccountBalance(String[] splitAccountBalanceData, PreparedStatement fillAccountBalanceTable, int i2, int i3, int i4, String splitAccountBalanceDatum, int i5, String splitAccountBalanceDatum2, int i6, String splitAccountBalanceDatum3, int i7, String splitAccountBalanceDatum4) throws SQLException {
+    protected static void fillAccountBalance(String[] splitAccountBalanceData, PreparedStatement
+            fillAccountBalanceTable, int i2, int i3, int i4, String splitAccountBalanceDatum,
+                                             int i5, String splitAccountBalanceDatum2,
+                                             int i6, String splitAccountBalanceDatum3,
+                                             int i7, String splitAccountBalanceDatum4,
+                                             int i8, String addToDataBase) throws SQLException {
         fillAccountBalanceTable.setString(i2, splitAccountBalanceData[i3].trim());
         fillAccountBalanceTable.setString(i4, splitAccountBalanceDatum.trim());
         fillAccountBalanceTable.setString(i5, splitAccountBalanceDatum2.trim());
         fillAccountBalanceTable.setString(i6, splitAccountBalanceDatum3.trim());
         fillAccountBalanceTable.setString(i7, splitAccountBalanceDatum4.trim());
+        fillAccountBalanceTable.setString(i8, addToDataBase.trim());
         fillAccountBalanceTable.execute();
         fillAccountBalanceTable.close();
     }

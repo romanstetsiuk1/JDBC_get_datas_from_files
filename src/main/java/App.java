@@ -62,6 +62,8 @@ public class App {
         SimpleDateFormat formatter = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss");
         Date date = new Date();
 
+        String addToDataBase = formatter.format(date);
+
 //        get list of report to analise
         for (File file : filesList) {
             int typeAnalise = 0;
@@ -222,11 +224,11 @@ public class App {
             try (Connection connection = DriverManager.getConnection(connectionUrl, userName, password);
                  Statement statement = connection.createStatement()) {
                 PreparedStatement fillAccountBalanceTable = connection.prepareStatement("INSERT INTO " +
-                        "accountBalance (accountBalance_date, balance, equity, margin, freeMargin) " +
-                        "VALUES (?, ?, ?, ?, ?)");
+                        "accountBalance (accountBalance_date, balance, equity, margin, freeMargin, addToDataBase) " +
+                        "VALUES (?, ?, ?, ?, ?, ?)");
                 DataAnalise.fillAccountBalance(splitAccountBalanceData, fillAccountBalanceTable,
                         1, 0, 2, splitAccountBalanceData[1], 3, splitAccountBalanceData[2], 4,
-                        splitAccountBalanceData[3], 5, splitAccountBalanceData[4]);
+                        splitAccountBalanceData[3], 5, splitAccountBalanceData[4], 6, addToDataBase);
 
                 putRecordsToAccountBalance++;
             } catch (Exception e) {
@@ -248,9 +250,10 @@ public class App {
                 PreparedStatement fillClosedTransactionsTable = connection.prepareStatement("INSERT INTO " +
                         "closedTransactions (raportDate, ticket, openTimeTransactions, typeTransactions, lots, " +
                         "symbol, exchangeCode, assetClass, openPrice, closeTime, closePrise, conversionRate, " +
-                        "commissions, swap, profit) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)");
+                        "commissions, swap, profit, addToDataBase) " +
+                        "VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)");
                 DataAnalise.fillClosedTransactions(actualDayValue, splitClosedTransactionTable,
-                        fillClosedTransactionsTable);
+                        fillClosedTransactionsTable, addToDataBase);
 
                 putRecordsToClosedTransactions++;
             } catch (Exception e) {
@@ -261,7 +264,8 @@ public class App {
         if (getClosedTransactionsData != putRecordsToClosedTransactions) {
             logger.warn("!!!!! Warning You add not all(or to much) data in MySQL!!!!!");
         }
-        logger.info("\nYou add " + putRecordsToClosedTransactions + " records to the closedTransactions table in MySQL;\n");
+        logger.info("\nYou add " + putRecordsToClosedTransactions +
+                " records to the closedTransactions table in MySQL;\n");
 
 //        Put data from dataForDepositsWithdrawals list into depositsWithdrawals table in data base
         for (String depositsWithdrawalsData : dataForDepositsWithdrawals) {
@@ -271,12 +275,12 @@ public class App {
                  Statement statement = connection.createStatement()) {
                 PreparedStatement fillDepositsWithdrawalsTable = connection.prepareStatement("INSERT INTO " +
                         "depositsWithdrawals (raportDate, ticket, openTime, typeOperation, comment, deposit, " +
-                        "withdraw, netDeposit) VALUES (?, ?, ?, ?, ?, ?, ?, ?)");
+                        "withdraw, netDeposit, addToDataBase) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)");
                 DataAnalise.fillDepositsWithdrawals(actualDayValue, fillDepositsWithdrawalsTable, 1, 2,
                         splitDepositsWithdrawalsData[0], 3, splitDepositsWithdrawalsData[1], 4,
                         splitDepositsWithdrawalsData[2], 5, splitDepositsWithdrawalsData[3], 6,
                         splitDepositsWithdrawalsData[4], 7, splitDepositsWithdrawalsData[5], 8,
-                        splitDepositsWithdrawalsData[6]);
+                        splitDepositsWithdrawalsData[6], 9, addToDataBase);
 
                 putRecordsToDepositWithdrawals++;
             } catch (Exception e) {
@@ -299,10 +303,10 @@ public class App {
                 PreparedStatement fillOpenTransactionsTable = connection.prepareStatement("INSERT INTO " +
                         "openTransactions (raportDate, ticket, openTimeTransactions, typeTransactions, lots, " +
                         "symbol, exchangeCode, assetClass, openPrice, marketPrise, conversionRate, commissions, " +
-                        "swap, profit) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)");
+                        "swap, profit, addToDataBase) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)");
                 DataAnalise.fillOpenTransactions(actualDayValue, splitOpenTransactionsData,
                         fillOpenTransactionsTable, 1, 2, 0, 3, 4, 5, 6, 7, 8,
-                        9, 10, 11, 12, 13, 14);
+                        9, 10, 11, 12, 13, 14, 15, addToDataBase);
 
                 putRecordsToOpenTransactions++;
             } catch (Exception e) {
@@ -325,9 +329,10 @@ public class App {
                 PreparedStatement fillTotalValuesTable = connection.prepareStatement("INSERT INTO " +
                         "totalValues (raportDate, closedTransactions_commission, closedTransactions_swap, " +
                         "closedTransactions_profit, closedTransactions_closedTrade, openTransactions_commission, " +
-                        "openTransactions_swap, openTransactions_profit, openTransactions_floating, depositWithdrawal) " +
-                        "VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)");
-                DataAnalise.fillTotalValues(splitTotalValuesData, fillTotalValuesTable);
+                        "openTransactions_swap, openTransactions_profit, openTransactions_floating, " +
+                        "depositWithdrawal, addToDataBase) " +
+                        "VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)");
+                DataAnalise.fillTotalValues(splitTotalValuesData, fillTotalValuesTable, addToDataBase);
 
                 putRecordsToTotalValues++;
             } catch (Exception e) {

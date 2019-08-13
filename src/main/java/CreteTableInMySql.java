@@ -18,6 +18,7 @@ public class CreteTableInMySql implements CreateTableInterface {
                 "openTransactions_profit VARCHAR(10)," +
                 "openTransactions_floating VARCHAR(10)," +
                 "depositWithdrawal VARCHAR(10)," +
+                "addToDataBase VARCHAR(25)," +
                 "PRIMARY KEY (totalValues_id))");
 
     }
@@ -33,6 +34,7 @@ public class CreteTableInMySql implements CreateTableInterface {
                 "deposit VARCHAR(10)," +
                 "withdraw VARCHAR(10)," +
                 "netDeposit VARCHAR(10)," +
+                "addToDataBase VARCHAR(25)," +
                 "PRIMARY KEY (depositsWithdrawals_id))");
 
     }
@@ -54,6 +56,7 @@ public class CreteTableInMySql implements CreateTableInterface {
                 "commissions VARCHAR(10)," +
                 "swap VARCHAR(10)," +
                 "profit VARCHAR(10)," +
+                "addToDataBase VARCHAR(25)," +
                 "PRIMARY  KEY (openTransactions_id))");
 
     }
@@ -76,6 +79,7 @@ public class CreteTableInMySql implements CreateTableInterface {
                 "commissions VARCHAR(10)," +
                 "swap VARCHAR(10)," +
                 "profit VARCHAR(10)," +
+                "addToDataBase VARCHAR(25)," +
                 "PRIMARY  KEY (closedTransaction_id))");
 
     }
@@ -89,6 +93,7 @@ public class CreteTableInMySql implements CreateTableInterface {
                 "equity VARCHAR(12)," +
                 "margin VARCHAR(12)," +
                 "freeMargin VARCHAR(12)," +
+                "addToDataBase VARCHAR(25)," +
                 "PRIMARY KEY (accountBalance_id))");
     }
 
