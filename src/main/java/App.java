@@ -57,6 +57,9 @@ public class App {
         int putRecordsToAccountBalance = 0, putRecordsToClosedTransactions = 0, putRecordsToDepositWithdrawals = 0,
                 putRecordsToOpenTransactions = 0, putRecordsToTotalValues = 0;
 
+        int uploadRecordsToAccountBalance = 0, uploadRecordsToClosedTransactions = 0, uploadRecordsToDepositWithdrawals = 0,
+                uploadRecordsToOpenTransactions = 0, uploadRecordsToTotalValues = 0;
+
         String actualDayValue = "";
 
         SimpleDateFormat formatter = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss");
@@ -195,12 +198,12 @@ public class App {
                 }
 
 //                Move file in the DONE Directory
-                try {
-                    file.renameTo(new File(filesDoneDirectory + "DONE_" + file.getName()));
-                    moveFileInDoneDirectory++;
-                } catch (Exception e) {
-                    e.printStackTrace();
-                }
+//                try {
+//                    file.renameTo(new File(filesDoneDirectory + "DONE_" + file.getName()));
+//                    moveFileInDoneDirectory++;
+//                } catch (Exception e) {
+//                    e.printStackTrace();
+//                }
 
                 filesWasAnalise++;
             }
@@ -341,7 +344,8 @@ public class App {
             }
         }
         logger.info("\nYou add " + putRecordsToTotalValues +
-                " records to the totalValues table in MySQL;\n");
+                " records to the totalValues table in MySQL;\n" +
+                "\n===========================================================================================\n\n\n");
 
 
     }
