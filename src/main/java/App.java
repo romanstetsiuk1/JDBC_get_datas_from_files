@@ -57,6 +57,8 @@ public class App {
         List<String> dataForOpenTransactions = new ArrayList<>();
         List<String> dataForTotalValues = new ArrayList<>();
 
+        List<String> checkReportDateExist = new ArrayList<>();
+
         int filesWasAnalise = 0;
         int moveFileInDoneDirectory = 0;
         int getAccountBalanceData = 0;
@@ -102,6 +104,21 @@ public class App {
                                 actualDayReport.append(splitEndOfDay[i] + " ");
                             }
                             actualDayValue = actualDayReport.toString().trim();
+                        }
+
+
+//                        Check if report do not analise before
+                        try (Connection connection = DriverManager.getConnection(connectionUrl, userName, password);
+                             Statement statement = connection.createStatement()) {
+                            PreparedStatement getExistData = connection.prepareStatement("SELECT " +
+                                    "accountBalance_date FROM accountBalance;");
+                            ResultSet resultSet = getExistData.executeQuery();
+                            while (resultSet.next()) {
+                                checkReportDateExist.add(resultSet.getString("accountBalance_date"));
+                            }
+                        }
+                        if (checkReportDateExist.contains(actualDayValue)) {
+                            typeAnalise = 5;
                         }
 
 //                        get accountBalance data
@@ -187,13 +204,17 @@ public class App {
                     e.printStackTrace();
                 }
 
-//                Move file in the DONE Directory
-                try {
-                    file.renameTo(new File(filesDoneDirectory + "DONE_" + file.getName()));
-                    moveFileInDoneDirectory++;
-                } catch (Exception e) {
-                    e.printStackTrace();
+                if (typeAnalise == 5) {
+                    logger.warn("!!! You have data from report in end of day: " + actualDayValue);
                 }
+
+//                Move file in the DONE Directory
+//                try {
+//                    file.renameTo(new File(filesDoneDirectory + "DONE_" + file.getName()));
+//                    moveFileInDoneDirectory++;
+//                } catch (Exception e) {
+//                    e.printStackTrace();
+//                }
 
                 filesWasAnalise++;
             }
