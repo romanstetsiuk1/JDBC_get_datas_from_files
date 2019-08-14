@@ -57,9 +57,6 @@ public class App {
         int putRecordsToAccountBalance = 0, putRecordsToClosedTransactions = 0, putRecordsToDepositWithdrawals = 0,
                 putRecordsToOpenTransactions = 0, putRecordsToTotalValues = 0;
 
-        int uploadRecordsToAccountBalance = 0, uploadRecordsToClosedTransactions = 0, uploadRecordsToDepositWithdrawals = 0,
-                uploadRecordsToOpenTransactions = 0, uploadRecordsToTotalValues = 0;
-
         String actualDayValue = "";
 
         SimpleDateFormat formatter = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss");
@@ -94,7 +91,6 @@ public class App {
                             }
                             actualDayValue = actualDayReport.toString().trim();
                         }
-
 
 //                        Check if report do not analise before
                         try (Connection connection = DriverManager.getConnection(connectionUrl, userName, password);
@@ -134,6 +130,16 @@ public class App {
                                 getClosedTransactionsData++;
                             }
                         }
+//                        get line when closedTransaction no have values
+                        if (typeAnalise == 2 && currentLine.contains("Total") &&
+                                !DataAnalise.containsNumberValue(currentLine)) {
+                            totalClosedTransactions = currentLine;
+
+                        }
+                        if (typeAnalise == 2 && currentLine.contains("Closed Trade") &&
+                                !DataAnalise.containsNumberValue(currentLine)) {
+                            closedTradeClosedTransactions = currentLine;
+                        }
 
 //                        get openTransactions data
                         if (currentLine.contains("Open Transactions")) {
@@ -148,6 +154,16 @@ public class App {
                                 dataForOpenTransactions.add(currentLine);
                                 getOpenTransactionsData++;
                             }
+                        }
+//                        get line when closedTransaction no have values
+                        if (typeAnalise == 3 && currentLine.contains("Total") &&
+                                !DataAnalise.containsNumberValue(currentLine)) {
+                            totalOpenTransactions = currentLine;
+
+                        }
+                        if (typeAnalise == 3 && currentLine.contains("Floating") &&
+                                !DataAnalise.containsNumberValue(currentLine)) {
+                            closedTradeClosedTransactions = currentLine;
                         }
 
 //                        get Deposits/Withdrawals data
@@ -175,11 +191,24 @@ public class App {
                     String[] splitTotalOT = totalOpenTransactions.split("\t");
                     String[] splitFloatingOT = floatingOpenTransactions.split("\t");
 
+//                    Get data for totalValues List if closedTransactions && openTransactions table is not empty
                     if (splitTotalCT.length == 14 && splitTradeClosedCT.length == 14 &&
                             splitTotalOT.length == 13 && splitFloatingOT.length == 13) {
                         String addToTotalValuesList = actualDayValue + "\t" + splitTotalCT[11].trim() + "\t" +
                                 splitTotalCT[12].trim() + "\t" + splitTotalCT[13].trim() + "\t" +
                                 splitTradeClosedCT[13].trim() + "\t" +
+                                splitTotalOT[10].trim() + "\t" + splitTotalOT[11].trim() + "\t" +
+                                splitTotalOT[12].trim() + "\t" +
+                                splitFloatingOT[12].trim() + "\t" + totalDepositWithdrawal;
+                        dataForTotalValues.add(addToTotalValuesList);
+                        getTotalValuesData++;
+                    }
+//                    Get data for totalValues List if closedTransactions is empty
+                    if (splitTotalCT.length == 11 && splitTradeClosedCT.length == 13 &&
+                            splitTotalOT.length == 13 && splitFloatingOT.length == 13) {
+                        String addToTotalValuesList = actualDayValue + "\t" + splitTotalCT[8].trim() + "\t" +
+                                splitTotalCT[9].trim() + "\t" + splitTotalCT[10].trim() + "\t" +
+                                splitTradeClosedCT[12].trim() + "\t" +
                                 splitTotalOT[10].trim() + "\t" + splitTotalOT[11].trim() + "\t" +
                                 splitTotalOT[12].trim() + "\t" +
                                 splitFloatingOT[12].trim() + "\t" + totalDepositWithdrawal;
@@ -198,12 +227,12 @@ public class App {
                 }
 
 //                Move file in the DONE Directory
-//                try {
-//                    file.renameTo(new File(filesDoneDirectory + "DONE_" + file.getName()));
-//                    moveFileInDoneDirectory++;
-//                } catch (Exception e) {
-//                    e.printStackTrace();
-//                }
+                try {
+                    file.renameTo(new File(filesDoneDirectory + "DONE_" + file.getName()));
+                    moveFileInDoneDirectory++;
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
 
                 filesWasAnalise++;
             }
