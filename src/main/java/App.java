@@ -17,7 +17,6 @@ public class App {
 //        connect with DB MySQL
         String userName = "root";
         String password = "pass";
-//        String connectionUrl = "jdbc:mysql://localhost:3306/trading";
         String connectionUrl = "jdbc:mysql://localhost/trading?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC";
         Class.forName("com.mysql.cj.jdbc.Driver");
 
