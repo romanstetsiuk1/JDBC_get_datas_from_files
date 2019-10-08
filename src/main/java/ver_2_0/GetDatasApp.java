@@ -2,6 +2,7 @@ package ver_2_0;
 
 import org.apache.log4j.Logger;
 
+import java.io.*;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
@@ -30,10 +31,17 @@ public class GetDatasApp {
             createMySqlSchemas.createOpenTransactionsTotalSchema(statement);
             createMySqlSchemas.createDepositsWithdrawalsSchema(statement);
 
-            logger.info("You create schemas:\n\t- accountBalance\n\t- closedTransactions\n\t" +
-                    "- totalClosedTransactions\n\t- openTransactions\n\t- totalOpenTransactions\n\t" +
-                    "- depositsWithdrawals ");
+        }
+
+        String filesDirectory = "/home/roman/Roman/tradeDoc/reports";
+        String filesDoneDirectory = "/home/roman/Roman/tradeDoc/reports/DONE/";
+
+
+        File directory = new File(filesDirectory);
+        File[] filesList = directory.listFiles();
+
+        for (File file : filesList) {
+            System.out.println(file.getName());
         }
     }
-
 }

@@ -1,7 +1,0 @@
-2019-10-08 10:51:31 INFO  [main]: You create schemas:
-	- accountBalance
-	- closedTransactions
-	- totalClosedTransactions
-	- openTransactions
-	- totalOpenTransactions
-	- depositsWithdrawals 
