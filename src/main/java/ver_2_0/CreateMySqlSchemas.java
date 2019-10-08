@@ -19,16 +19,16 @@ public class CreateMySqlSchemas {
     void createClosedTransactionsSchema(Statement statement) throws SQLException {
         statement.executeUpdate("CREATE TABLE IF NOT EXISTS closedTransactions(" +
                 "closedTransaction_id INT NOT NULL AUTO_INCREMENT," +
-                "raportDate DATE ," +
+                "raportDate DATE," +
                 "ticket VARCHAR(15)," +
-                "openTimeTransactions TIMESTAMP " +
+                "openTimeTransactions DATETIME, " +
                 "typeTransactions VARCHAR(5)," +
                 "lots VARCHAR(5)," +
                 "symbol VARCHAR(10)," +
                 "exchangeCode VARCHAR(5)," +
                 "assetClass VARCHAR(20)," +
                 "openPrice VARCHAR(10)," +
-                "closeTime TIMESTAMP ," +
+                "closeTime DATETIME," +
                 "closePrise VARCHAR(10)," +
                 "conversionRate VARCHAR(15)," +
                 "commissions VARCHAR(10)," +
@@ -84,7 +84,7 @@ public class CreateMySqlSchemas {
                 "depositsWithdrawals_id INT NOT NULL AUTO_INCREMENT," +
                 "raportDate DATE," +
                 "ticket VARCHAR(12)," +
-                "openTime TIMESTAMP " +
+                "openTime DATETIME, " +
                 "typeOperation VARCHAR(15)," +
                 "comment VARCHAR(150)," +
                 "deposit VARCHAR(10)," +
