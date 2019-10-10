@@ -58,19 +58,8 @@ public class GetDatasApp {
 
 //                        get actualDayValue
                         if (currentLine.contains("End of day")) {
-                            String[] splitEndOfDay = currentLine.trim().split(" ");
-                            StringBuilder actualDayReport = new StringBuilder();
-                            for (int i = 3; i < splitEndOfDay.length; i++) {
-                                if (i == 5 && splitEndOfDay[i].length() == 1) {
-                                    String tmpString = splitEndOfDay[i];
-                                    splitEndOfDay[i] = "0" + tmpString;
-                                }
-                                actualDayReport.append(splitEndOfDay[i] + " ");
-                            }
-                            actualDayValue = actualDayReport.toString().trim()
-                                    .replace(" ", "-");
+                            actualDayValue = AnaliseData.getActualDayValue(actualDayValue, currentLine);
                             actualDayValue = AnaliseData.convertDataToMySqlFormat(actualDayValue);
-
                         }
                         System.out.println(actualDayValue);
                     }
@@ -84,4 +73,6 @@ public class GetDatasApp {
         }
         logger.info("You analise " + filesWasAnalise + " files");
     }
+
+
 }
