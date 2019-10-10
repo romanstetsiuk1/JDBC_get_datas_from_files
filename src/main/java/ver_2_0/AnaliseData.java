@@ -57,4 +57,14 @@ public class AnaliseData {
         return actualDayValue;
     }
 
+    public static boolean containsNumberValue(String line) {
+        String[] numberValue = new String[]{"0", "1", "2", "3", "4", "5", "6", "7", "8", "9"};
+        for (String checkLine : numberValue) {
+            if (line.contains(checkLine)) {
+                return true;
+            }
+        }
+        return false;
+    }
+
 }
