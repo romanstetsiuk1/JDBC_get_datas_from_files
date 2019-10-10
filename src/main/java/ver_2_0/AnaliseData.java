@@ -1,5 +1,8 @@
 package ver_2_0;
 
+import java.sql.PreparedStatement;
+import java.sql.SQLException;
+
 public class AnaliseData {
 
     public static String convertDataToMySqlFormat(String toConvert) {
@@ -65,6 +68,17 @@ public class AnaliseData {
             }
         }
         return false;
+    }
+
+//    Fill DB:
+    public static void fillAccountBalance(String[] splitAccountBalanceData, PreparedStatement fillAccountBalanceSchema) throws SQLException {
+        fillAccountBalanceSchema.setString(1, splitAccountBalanceData[0].trim());
+        fillAccountBalanceSchema.setString(2, splitAccountBalanceData[1].trim());
+        fillAccountBalanceSchema.setString(3, splitAccountBalanceData[2].trim());
+        fillAccountBalanceSchema.setString(4, splitAccountBalanceData[3].trim());
+        fillAccountBalanceSchema.setString(5, splitAccountBalanceData[4].trim());
+        fillAccountBalanceSchema.execute();
+        fillAccountBalanceSchema.close();
     }
 
 }

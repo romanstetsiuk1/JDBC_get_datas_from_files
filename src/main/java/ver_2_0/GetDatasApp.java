@@ -103,17 +103,7 @@ public class GetDatasApp {
                 PreparedStatement fillAccountBalanceSchema = connection.prepareStatement("INSERT INTO " +
                         "accountBalance (accountBalance_date, balance, equity, margin, freeMargin) " +
                         "VALUES (?, ?, ?, ?, ?)");
-//                for (String s : splitAccountBalanceData){
-//                    System.out.println(s);
-//                }
-//                System.out.println("---------------------------");
-                fillAccountBalanceSchema.setString(1, splitAccountBalanceData[0].trim());
-                fillAccountBalanceSchema.setString(2, splitAccountBalanceData[1].trim());
-                fillAccountBalanceSchema.setString(3, splitAccountBalanceData[2].trim());
-                fillAccountBalanceSchema.setString(4, splitAccountBalanceData[3].trim());
-                fillAccountBalanceSchema.setString(5, splitAccountBalanceData[4].trim());
-                fillAccountBalanceSchema.execute();
-                fillAccountBalanceSchema.close();
+                AnaliseData.fillAccountBalance(splitAccountBalanceData, fillAccountBalanceSchema);
                 addAccountBalanceLines++;
             } catch (Exception e) {
                 logger.error("-----UPS. ERROR IN FILL ACCOUNTBALANCE SCHEMA-----");
@@ -130,6 +120,8 @@ public class GetDatasApp {
 //            System.out.println(i + " " + s);
 //        }
     }
+
+
 
 
 }
