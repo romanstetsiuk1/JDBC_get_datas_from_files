@@ -3,10 +3,7 @@ package ver_2_0;
 import org.apache.log4j.Logger;
 
 import java.io.*;
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.SQLException;
-import java.sql.Statement;
+import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -46,7 +43,7 @@ public class GetDatasApp {
 //        Declaration lists with load data from files
         List<String> loadDataForAccountBalance = new ArrayList<>();
 
-        int loadAccountBalanceLines = 0;
+        int loadAccountBalanceLines = 0, addAccountBalanceLines = 0;
 
         File directory = new File(filesDirectory);
         File[] filesList = directory.listFiles();
@@ -97,6 +94,41 @@ public class GetDatasApp {
             loadAccountBalanceLines = 0;
         }
         logger.info("You analise " + filesWasAnalise + " files");
+
+//        put records from list into accountBalance schema
+        for (String accountBalanceDatas : loadDataForAccountBalance) {
+            String[] splitAccountBalanceData = accountBalanceDatas.trim().split("\t");
+            try (Connection connection = DriverManager.getConnection(connectionUrl, userName, password);
+                 Statement statement = connection.createStatement()) {
+                PreparedStatement fillAccountBalanceSchema = connection.prepareStatement("INSERT INTO " +
+                        "accountBalance (accountBalance_date, balance, equity, margin, freeMargin) " +
+                        "VALUES (?, ?, ?, ?, ?)");
+//                for (String s : splitAccountBalanceData){
+//                    System.out.println(s);
+//                }
+//                System.out.println("---------------------------");
+                fillAccountBalanceSchema.setString(1, splitAccountBalanceData[0].trim());
+                fillAccountBalanceSchema.setString(2, splitAccountBalanceData[1].trim());
+                fillAccountBalanceSchema.setString(3, splitAccountBalanceData[2].trim());
+                fillAccountBalanceSchema.setString(4, splitAccountBalanceData[3].trim());
+                fillAccountBalanceSchema.setString(5, splitAccountBalanceData[4].trim());
+                fillAccountBalanceSchema.execute();
+                fillAccountBalanceSchema.close();
+                addAccountBalanceLines++;
+            } catch (Exception e) {
+                logger.error("-----UPS. ERROR IN FILL ACCOUNTBALANCE SCHEMA-----");
+            }
+        }
+
+        logger.info("You have " + loadDataForAccountBalance.size() + " lines for accountBalance schema.");
+
+        logger.info("You add " + addAccountBalanceLines + " lines to accountBalance schema");
+
+//        int i = 0;
+//        for (String s : loadDataForAccountBalance) {
+//            i++;
+//            System.out.println(i + " " + s);
+//        }
     }
 
 
