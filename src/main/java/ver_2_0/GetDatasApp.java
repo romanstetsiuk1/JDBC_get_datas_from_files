@@ -43,9 +43,11 @@ public class GetDatasApp {
 //        Declaration lists with load data from files
         List<String> loadDataForAccountBalance = new ArrayList<>();
         List<String> loadDataForClosedTransactions = new ArrayList<>();
+        List<String> loadDataForTotalClosedTransactions = new ArrayList<>();
 
         int loadAccountBalanceLines = 0, addAccountBalanceLines = 0,
-                loadClosedTransactionsLines = 0, addClosedTransactionsLines = 0;
+                loadClosedTransactionsLines = 0, addClosedTransactionsLines = 0,
+                loadTotalClosedTransactionsLines = 0, addTotalClosedTransactionsLines = 0;
 
         File directory = new File(filesDirectory);
         File[] filesList = directory.listFiles();
@@ -53,6 +55,7 @@ public class GetDatasApp {
 //        get list of report to analise
         for (File file : filesList) {
             int typeAnalise = 0;
+            String addToTotalCT = "";
 
             if (file.isFile()) {
                 try (BufferedReader bufferedReader = new BufferedReader(new FileReader(file))) {
@@ -93,6 +96,22 @@ public class GetDatasApp {
                         if (typeAnalise == 2 && currentLine.contains("Total")) {
                             typeAnalise++;
                         }
+                        if (typeAnalise == 3) {
+                            addToTotalCT += actualDayValue;
+                            if (currentLine.contains("Total") && AnaliseData.containsNumberValue(currentLine)) {
+                                addToTotalCT += currentLine;
+                            }
+                            if (currentLine.contains("Closed Trade") && AnaliseData.containsNumberValue(currentLine)) {
+                                addToTotalCT += currentLine;
+                                loadDataForTotalClosedTransactions.add(addToTotalCT);
+                                loadTotalClosedTransactionsLines++;
+                            }
+                        }
+
+//                        typeAnalise = 4 -- in this state I get data for openTransactions schema
+                        if (typeAnalise == 3 && currentLine.contains("Open Transactions")) {
+                            typeAnalise++;
+                        }
                     }
                 } catch (FileNotFoundException e) {
                     e.printStackTrace();
@@ -102,8 +121,9 @@ public class GetDatasApp {
                 filesWasAnalise++;
             }
             logger.info("End of day " + actualDayValue + ": You get\n\t"
-                    + loadAccountBalanceLines + " lines for accountBalance schema\n"
-                    + loadClosedTransactionsLines + " lines for closedTransactions schema\n");
+                    + loadAccountBalanceLines + " lines for accountBalance schema\n\t"
+                    + loadClosedTransactionsLines + " lines for closedTransactions schema\n\t"
+                    + loadTotalClosedTransactionsLines + " lines for totalClosedTransactions schema\n");
 
             loadAccountBalanceLines = 0;
             loadClosedTransactionsLines = 0;
