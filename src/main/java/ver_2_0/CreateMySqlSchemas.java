@@ -21,14 +21,14 @@ public class CreateMySqlSchemas {
                 "closedTransaction_id INT NOT NULL AUTO_INCREMENT," +
                 "raportDate DATE," +
                 "ticket VARCHAR(15)," +
-                "openTimeTransactions DATETIME, " +
+                "openTimeTransactions VARCHAR(25), " +
                 "typeTransactions VARCHAR(5)," +
                 "lots VARCHAR(5)," +
                 "symbol VARCHAR(10)," +
                 "exchangeCode VARCHAR(5)," +
                 "assetClass VARCHAR(20)," +
                 "openPrice VARCHAR(10)," +
-                "closeTime DATETIME," +
+                "closeTime VARCHAR(25)," +
                 "closePrise VARCHAR(10)," +
                 "conversionRate VARCHAR(15)," +
                 "commissions VARCHAR(10)," +

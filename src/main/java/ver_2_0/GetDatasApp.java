@@ -84,7 +84,8 @@ public class GetDatasApp {
                         }
                         if (typeAnalise == 2 && AnaliseData.containsNumberValue(currentLine)
                                 && !currentLine.contains("Total")) {
-                            loadDataForClosedTransactions.add(currentLine);
+                            String addDataToClosedTransaction = actualDayValue + "\t" + currentLine;
+                            loadDataForClosedTransactions.add(addDataToClosedTransaction);
                             loadClosedTransactionsLines++;
                         }
 
@@ -124,15 +125,29 @@ public class GetDatasApp {
             }
         }
 
-        logger.info("You have " + loadDataForAccountBalance.size() + " lines for accountBalance schema.");
+//        put records from list into closedTransactions schema
+        for (String closedTransactionsDatas : loadDataForClosedTransactions) {
+            String[] splitClosedTransactionsData = closedTransactionsDatas.trim().split("\t");
+            try (Connection connection = DriverManager.getConnection(connectionUrl, userName, password);
+                 Statement statement = connection.createStatement()) {
+                PreparedStatement fillClosedTransactionSchema = connection.prepareStatement("INSERT INTO " +
+                        "closedTransactions (raportDate, ticket, openTimeTransactions, typeTransactions, lots, " +
+                        "symbol, exchangeCode, assetClass, openPrice, closeTime, closePrise, conversionRate, " +
+                        "commissions, swap, profit) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)");
+                AnaliseData.fillClosedTransactions(splitClosedTransactionsData, fillClosedTransactionSchema);
+                addClosedTransactionsLines++;
+            } catch (Exception e) {
+                logger.error("-----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----");
+            }
+        }
 
-        logger.info("You add " + addAccountBalanceLines + " lines to accountBalance schema");
+        logger.info("\nYou have " + loadDataForAccountBalance.size() + " lines for accountBalance schema.\n" +
+                "You have " + loadDataForClosedTransactions.size() + " lines for closedTransactions schema.\n");
 
-//        int i = 0;
-//        for (String s : loadDataForAccountBalance) {
-//            i++;
-//            System.out.println(i + " " + s);
-//        }
+        logger.info("\nYou add " + addAccountBalanceLines + " lines to accountBalance schema\n" +
+                "You add " + addClosedTransactionsLines + " lines to closedTransactions schema");
+
+
     }
 
 

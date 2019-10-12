@@ -71,7 +71,8 @@ public class AnaliseData {
     }
 
 //    Fill DB:
-    public static void fillAccountBalance(String[] splitAccountBalanceData, PreparedStatement fillAccountBalanceSchema) throws SQLException {
+    public static void fillAccountBalance(String[] splitAccountBalanceData,
+                                          PreparedStatement fillAccountBalanceSchema) throws SQLException {
         fillAccountBalanceSchema.setString(1, splitAccountBalanceData[0].trim());
         fillAccountBalanceSchema.setString(2, splitAccountBalanceData[1].trim());
         fillAccountBalanceSchema.setString(3, splitAccountBalanceData[2].trim());
@@ -79,6 +80,28 @@ public class AnaliseData {
         fillAccountBalanceSchema.setString(5, splitAccountBalanceData[4].trim());
         fillAccountBalanceSchema.execute();
         fillAccountBalanceSchema.close();
+    }
+
+    public static void fillClosedTransactions
+            (String[] splitClosedTransactionsData, PreparedStatement fillClosedTransactionSchema)
+            throws SQLException {
+        fillClosedTransactionSchema.setString(1, splitClosedTransactionsData[0]);
+        fillClosedTransactionSchema.setString(2, splitClosedTransactionsData[1]);
+        fillClosedTransactionSchema.setString(3, splitClosedTransactionsData[2]);
+        fillClosedTransactionSchema.setString(4, splitClosedTransactionsData[3]);
+        fillClosedTransactionSchema.setString(5, splitClosedTransactionsData[4]);
+        fillClosedTransactionSchema.setString(6, splitClosedTransactionsData[5]);
+        fillClosedTransactionSchema.setString(7, splitClosedTransactionsData[6]);
+        fillClosedTransactionSchema.setString(8, splitClosedTransactionsData[7]);
+        fillClosedTransactionSchema.setString(9, splitClosedTransactionsData[8]);
+        fillClosedTransactionSchema.setString(10, splitClosedTransactionsData[9]);
+        fillClosedTransactionSchema.setString(11, splitClosedTransactionsData[10]);
+        fillClosedTransactionSchema.setString(12, splitClosedTransactionsData[11]);
+        fillClosedTransactionSchema.setString(13, splitClosedTransactionsData[12]);
+        fillClosedTransactionSchema.setString(14, splitClosedTransactionsData[13]);
+        fillClosedTransactionSchema.setString(15, splitClosedTransactionsData[14]);
+        fillClosedTransactionSchema.execute();
+        fillClosedTransactionSchema.close();
     }
 
 }
