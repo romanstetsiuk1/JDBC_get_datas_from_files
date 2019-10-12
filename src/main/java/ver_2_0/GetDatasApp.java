@@ -42,8 +42,10 @@ public class GetDatasApp {
 
 //        Declaration lists with load data from files
         List<String> loadDataForAccountBalance = new ArrayList<>();
+        List<String> loadDataForClosedTransactions = new ArrayList<>();
 
-        int loadAccountBalanceLines = 0, addAccountBalanceLines = 0;
+        int loadAccountBalanceLines = 0, addAccountBalanceLines = 0,
+                loadClosedTransactionsLines = 0, addClosedTransactionsLines = 0;
 
         File directory = new File(filesDirectory);
         File[] filesList = directory.listFiles();
@@ -76,8 +78,18 @@ public class GetDatasApp {
                             loadAccountBalanceLines++;
                         }
 
-//                        typeAnalise = 2 -- in thi state I get data for closedTransactions schema
+//                        typeAnalise = 2 -- in this state I get data for closedTransactions schema
                         if (currentLine.contains("Closed Transaction")) {
+                            typeAnalise++;
+                        }
+                        if (typeAnalise == 2 && AnaliseData.containsNumberValue(currentLine)
+                                && !currentLine.contains("Total")) {
+                            loadDataForClosedTransactions.add(currentLine);
+                            loadClosedTransactionsLines++;
+                        }
+
+//                        typeAnalise = 3 -- in this state I get data for totalClosedTransactions schema
+                        if (typeAnalise == 2 && currentLine.contains("Total")) {
                             typeAnalise++;
                         }
                     }
@@ -88,10 +100,12 @@ public class GetDatasApp {
                 }
                 filesWasAnalise++;
             }
-            logger.info("End of day " + actualDayValue + ": You get " + loadAccountBalanceLines +
-                    " lines for accountBalance schema");
+            logger.info("End of day " + actualDayValue + ": You get\n\t"
+                    + loadAccountBalanceLines + " lines for accountBalance schema\n"
+                    + loadClosedTransactionsLines + " lines for closedTransactions schema\n");
 
             loadAccountBalanceLines = 0;
+            loadClosedTransactionsLines = 0;
         }
         logger.info("You analise " + filesWasAnalise + " files");
 
@@ -120,8 +134,6 @@ public class GetDatasApp {
 //            System.out.println(i + " " + s);
 //        }
     }
-
-
 
 
 }
