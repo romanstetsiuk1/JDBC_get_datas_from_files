@@ -3145,3 +3145,3335 @@ You add 21 lines to accountBalance schema
 You add 82 lines to closedTransactions schema
 You add 16 lines to totalClosedTransactions schema
 
+2019-10-13 11:22:34 INFO  [main]: End of day 2019-06-21: You get
+	1 lines for accountBalance schema
+	0 lines for closedTransactions schema
+	0 lines for totalClosedTransactions schema
+
+2019-10-13 11:22:34 INFO  [main]: End of day 2019-06-10: You get
+	1 lines for accountBalance schema
+	1 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 11:22:34 INFO  [main]: End of day 2019-06-19: You get
+	1 lines for accountBalance schema
+	3 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 11:22:34 INFO  [main]: End of day 2019-06-06: You get
+	1 lines for accountBalance schema
+	0 lines for closedTransactions schema
+	0 lines for totalClosedTransactions schema
+
+2019-10-13 11:22:34 INFO  [main]: End of day 2019-06-17: You get
+	1 lines for accountBalance schema
+	2 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 11:22:34 INFO  [main]: End of day 2019-06-12: You get
+	1 lines for accountBalance schema
+	4 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 11:22:34 INFO  [main]: End of day 2019-06-07: You get
+	1 lines for accountBalance schema
+	5 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 11:22:34 INFO  [main]: End of day 2019-06-02: You get
+	1 lines for accountBalance schema
+	0 lines for closedTransactions schema
+	0 lines for totalClosedTransactions schema
+
+2019-10-13 11:22:34 INFO  [main]: End of day 2019-06-04: You get
+	1 lines for accountBalance schema
+	7 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 11:22:34 INFO  [main]: End of day 2019-05-31: You get
+	1 lines for accountBalance schema
+	10 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 11:22:34 INFO  [main]: End of day 2019-06-28: You get
+	1 lines for accountBalance schema
+	0 lines for closedTransactions schema
+	0 lines for totalClosedTransactions schema
+
+2019-10-13 11:22:34 INFO  [main]: End of day 2019-06-13: You get
+	1 lines for accountBalance schema
+	3 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 11:22:34 INFO  [main]: End of day 2019-06-24: You get
+	1 lines for accountBalance schema
+	0 lines for closedTransactions schema
+	0 lines for totalClosedTransactions schema
+
+2019-10-13 11:22:34 INFO  [main]: End of day 2019-06-11: You get
+	1 lines for accountBalance schema
+	3 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 11:22:34 INFO  [main]: End of day 2019-06-05: You get
+	1 lines for accountBalance schema
+	6 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 11:22:34 INFO  [main]: End of day 2019-06-25: You get
+	1 lines for accountBalance schema
+	1 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 11:22:34 INFO  [main]: End of day 2019-06-20: You get
+	1 lines for accountBalance schema
+	3 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 11:22:34 INFO  [main]: End of day 2019-06-20: You get
+	0 lines for accountBalance schema
+	0 lines for closedTransactions schema
+	0 lines for totalClosedTransactions schema
+
+2019-10-13 11:22:34 INFO  [main]: End of day 2019-06-27: You get
+	1 lines for accountBalance schema
+	3 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 11:22:34 INFO  [main]: End of day 2019-05-30: You get
+	1 lines for accountBalance schema
+	11 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 11:22:34 INFO  [main]: End of day 2019-06-18: You get
+	1 lines for accountBalance schema
+	8 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 11:22:34 INFO  [main]: End of day 2019-06-03: You get
+	1 lines for accountBalance schema
+	12 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 11:22:34 INFO  [main]: You analise 21 files
+2019-10-13 12:16:19 INFO  [main]: End of day 2019-06-21: You get
+	1 lines for accountBalance schema
+	0 lines for closedTransactions schema
+	0 lines for totalClosedTransactions schema
+
+2019-10-13 12:16:19 INFO  [main]: End of day 2019-06-10: You get
+	1 lines for accountBalance schema
+	1 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 12:16:19 INFO  [main]: End of day 2019-06-19: You get
+	1 lines for accountBalance schema
+	3 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 12:16:19 INFO  [main]: End of day 2019-06-06: You get
+	1 lines for accountBalance schema
+	0 lines for closedTransactions schema
+	0 lines for totalClosedTransactions schema
+
+2019-10-13 12:16:19 INFO  [main]: End of day 2019-06-17: You get
+	1 lines for accountBalance schema
+	2 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 12:16:19 INFO  [main]: End of day 2019-06-12: You get
+	1 lines for accountBalance schema
+	4 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 12:16:19 INFO  [main]: End of day 2019-06-07: You get
+	1 lines for accountBalance schema
+	5 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 12:16:19 INFO  [main]: End of day 2019-06-02: You get
+	1 lines for accountBalance schema
+	0 lines for closedTransactions schema
+	0 lines for totalClosedTransactions schema
+
+2019-10-13 12:16:19 INFO  [main]: End of day 2019-06-04: You get
+	1 lines for accountBalance schema
+	7 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 12:16:19 INFO  [main]: End of day 2019-05-31: You get
+	1 lines for accountBalance schema
+	10 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 12:16:19 INFO  [main]: End of day 2019-06-28: You get
+	1 lines for accountBalance schema
+	0 lines for closedTransactions schema
+	0 lines for totalClosedTransactions schema
+
+2019-10-13 12:16:19 INFO  [main]: End of day 2019-06-13: You get
+	1 lines for accountBalance schema
+	3 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 12:16:19 INFO  [main]: End of day 2019-06-24: You get
+	1 lines for accountBalance schema
+	0 lines for closedTransactions schema
+	0 lines for totalClosedTransactions schema
+
+2019-10-13 12:16:19 INFO  [main]: End of day 2019-06-11: You get
+	1 lines for accountBalance schema
+	3 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 12:16:19 INFO  [main]: End of day 2019-06-05: You get
+	1 lines for accountBalance schema
+	6 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 12:16:19 INFO  [main]: End of day 2019-06-25: You get
+	1 lines for accountBalance schema
+	1 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 12:16:19 INFO  [main]: End of day 2019-06-20: You get
+	1 lines for accountBalance schema
+	3 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 12:16:19 INFO  [main]: End of day 2019-06-20: You get
+	0 lines for accountBalance schema
+	0 lines for closedTransactions schema
+	0 lines for totalClosedTransactions schema
+
+2019-10-13 12:16:19 INFO  [main]: End of day 2019-06-27: You get
+	1 lines for accountBalance schema
+	3 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 12:16:19 INFO  [main]: End of day 2019-05-30: You get
+	1 lines for accountBalance schema
+	11 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 12:16:19 INFO  [main]: End of day 2019-06-18: You get
+	1 lines for accountBalance schema
+	8 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 12:16:19 INFO  [main]: End of day 2019-06-03: You get
+	1 lines for accountBalance schema
+	12 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 12:16:19 INFO  [main]: You analise 21 files
+2019-10-13 12:17:45 INFO  [main]: End of day 2019-06-21: You get
+	1 lines for accountBalance schema
+	0 lines for closedTransactions schema
+	0 lines for totalClosedTransactions schema
+
+2019-10-13 12:17:45 INFO  [main]: End of day 2019-06-10: You get
+	1 lines for accountBalance schema
+	1 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 12:17:45 INFO  [main]: End of day 2019-06-19: You get
+	1 lines for accountBalance schema
+	3 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 12:17:45 INFO  [main]: End of day 2019-06-06: You get
+	1 lines for accountBalance schema
+	0 lines for closedTransactions schema
+	0 lines for totalClosedTransactions schema
+
+2019-10-13 12:17:45 INFO  [main]: End of day 2019-06-17: You get
+	1 lines for accountBalance schema
+	2 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 12:17:45 INFO  [main]: End of day 2019-06-12: You get
+	1 lines for accountBalance schema
+	4 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 12:17:45 INFO  [main]: End of day 2019-06-07: You get
+	1 lines for accountBalance schema
+	5 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 12:17:45 INFO  [main]: End of day 2019-06-02: You get
+	1 lines for accountBalance schema
+	0 lines for closedTransactions schema
+	0 lines for totalClosedTransactions schema
+
+2019-10-13 12:17:45 INFO  [main]: End of day 2019-06-04: You get
+	1 lines for accountBalance schema
+	7 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 12:17:45 INFO  [main]: End of day 2019-05-31: You get
+	1 lines for accountBalance schema
+	10 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 12:17:45 INFO  [main]: End of day 2019-06-28: You get
+	1 lines for accountBalance schema
+	0 lines for closedTransactions schema
+	0 lines for totalClosedTransactions schema
+
+2019-10-13 12:17:45 INFO  [main]: End of day 2019-06-13: You get
+	1 lines for accountBalance schema
+	3 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 12:17:45 INFO  [main]: End of day 2019-06-24: You get
+	1 lines for accountBalance schema
+	0 lines for closedTransactions schema
+	0 lines for totalClosedTransactions schema
+
+2019-10-13 12:17:45 INFO  [main]: End of day 2019-06-11: You get
+	1 lines for accountBalance schema
+	3 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 12:17:45 INFO  [main]: End of day 2019-06-05: You get
+	1 lines for accountBalance schema
+	6 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 12:17:45 INFO  [main]: End of day 2019-06-25: You get
+	1 lines for accountBalance schema
+	1 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 12:17:45 INFO  [main]: End of day 2019-06-20: You get
+	1 lines for accountBalance schema
+	3 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 12:17:45 INFO  [main]: End of day 2019-06-20: You get
+	0 lines for accountBalance schema
+	0 lines for closedTransactions schema
+	0 lines for totalClosedTransactions schema
+
+2019-10-13 12:17:45 INFO  [main]: End of day 2019-06-27: You get
+	1 lines for accountBalance schema
+	3 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 12:17:45 INFO  [main]: End of day 2019-05-30: You get
+	1 lines for accountBalance schema
+	11 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 12:17:45 INFO  [main]: End of day 2019-06-18: You get
+	1 lines for accountBalance schema
+	8 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 12:17:45 INFO  [main]: End of day 2019-06-03: You get
+	1 lines for accountBalance schema
+	12 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 12:17:45 INFO  [main]: You analise 21 files
+2019-10-13 12:43:27 INFO  [main]: End of day 2019-06-21: You get
+	1 lines for accountBalance schema
+	0 lines for closedTransactions schema
+	0 lines for totalClosedTransactions schema
+
+2019-10-13 12:43:27 INFO  [main]: End of day 2019-06-10: You get
+	1 lines for accountBalance schema
+	1 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 12:43:27 INFO  [main]: End of day 2019-06-19: You get
+	1 lines for accountBalance schema
+	3 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 12:43:27 INFO  [main]: End of day 2019-06-06: You get
+	1 lines for accountBalance schema
+	0 lines for closedTransactions schema
+	0 lines for totalClosedTransactions schema
+
+2019-10-13 12:43:27 INFO  [main]: End of day 2019-06-17: You get
+	1 lines for accountBalance schema
+	2 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 12:43:27 INFO  [main]: End of day 2019-06-12: You get
+	1 lines for accountBalance schema
+	4 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 12:43:27 INFO  [main]: End of day 2019-06-07: You get
+	1 lines for accountBalance schema
+	5 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 12:43:27 INFO  [main]: End of day 2019-06-02: You get
+	1 lines for accountBalance schema
+	0 lines for closedTransactions schema
+	0 lines for totalClosedTransactions schema
+
+2019-10-13 12:43:27 INFO  [main]: End of day 2019-06-04: You get
+	1 lines for accountBalance schema
+	7 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 12:43:27 INFO  [main]: End of day 2019-05-31: You get
+	1 lines for accountBalance schema
+	10 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 12:43:27 INFO  [main]: End of day 2019-06-28: You get
+	1 lines for accountBalance schema
+	0 lines for closedTransactions schema
+	0 lines for totalClosedTransactions schema
+
+2019-10-13 12:43:27 INFO  [main]: End of day 2019-06-13: You get
+	1 lines for accountBalance schema
+	3 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 12:43:27 INFO  [main]: End of day 2019-06-24: You get
+	1 lines for accountBalance schema
+	0 lines for closedTransactions schema
+	0 lines for totalClosedTransactions schema
+
+2019-10-13 12:43:27 INFO  [main]: End of day 2019-06-11: You get
+	1 lines for accountBalance schema
+	3 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 12:43:27 INFO  [main]: End of day 2019-06-05: You get
+	1 lines for accountBalance schema
+	6 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 12:43:27 INFO  [main]: End of day 2019-06-25: You get
+	1 lines for accountBalance schema
+	1 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 12:43:27 INFO  [main]: End of day 2019-06-20: You get
+	1 lines for accountBalance schema
+	3 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 12:43:27 INFO  [main]: End of day 2019-06-20: You get
+	0 lines for accountBalance schema
+	0 lines for closedTransactions schema
+	0 lines for totalClosedTransactions schema
+
+2019-10-13 12:43:27 INFO  [main]: End of day 2019-06-27: You get
+	1 lines for accountBalance schema
+	3 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 12:43:27 INFO  [main]: End of day 2019-05-30: You get
+	1 lines for accountBalance schema
+	11 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 12:43:27 INFO  [main]: End of day 2019-06-18: You get
+	1 lines for accountBalance schema
+	8 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 12:43:27 INFO  [main]: End of day 2019-06-03: You get
+	1 lines for accountBalance schema
+	12 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 12:43:27 INFO  [main]: You analise 21 files
+2019-10-13 12:43:28 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 12:43:28 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 12:43:28 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 12:43:28 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 12:43:28 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 12:43:28 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 12:43:28 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 12:43:28 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 12:43:28 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 12:43:28 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 12:43:28 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 12:43:28 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 12:43:28 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 12:43:28 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 12:43:28 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 12:43:28 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 12:43:28 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 12:43:28 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 12:43:28 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 12:43:28 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 12:43:28 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 12:43:28 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 12:43:28 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 12:43:28 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 12:43:28 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 12:43:28 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 12:43:28 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 12:43:28 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 12:43:28 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 12:43:28 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 12:43:28 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 12:43:28 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 12:43:28 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 12:43:28 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 12:43:28 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 12:43:28 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 12:43:28 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 12:43:28 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 12:43:28 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 12:43:28 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 12:43:28 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 12:43:28 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 12:43:28 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 12:43:28 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 12:43:28 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 12:43:28 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 12:43:28 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 12:43:28 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 12:43:28 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 12:43:28 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 12:43:28 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 12:43:28 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 12:43:28 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 12:43:28 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 12:43:28 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 12:43:28 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 12:43:28 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 12:43:28 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 12:43:28 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 12:43:28 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 12:43:28 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 12:43:28 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 12:43:28 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 12:43:28 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 12:43:28 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 12:43:28 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 12:43:28 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 12:43:28 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 12:43:28 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 12:43:28 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 12:43:28 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 12:43:28 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 12:43:28 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 12:43:28 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 12:43:28 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 12:43:28 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 12:43:28 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 12:43:28 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 12:43:28 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 12:43:28 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 12:43:28 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 12:43:28 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 12:43:29 INFO  [main]: 
+You have 21 lines for accountBalance schema.
+You have 82 lines for closedTransactions schema.
+You have 16 lines for totalClosedTransactions schema.
+
+2019-10-13 12:43:29 INFO  [main]: 
+You add 21 lines to accountBalance schema
+You add 0 lines to closedTransactions schema
+You add 16 lines to totalClosedTransactions schema
+
+2019-10-13 12:53:29 INFO  [main]: End of day 2019-06-21: You get
+	1 lines for accountBalance schema
+	0 lines for closedTransactions schema
+	0 lines for totalClosedTransactions schema
+
+2019-10-13 12:53:29 INFO  [main]: End of day 2019-06-10: You get
+	1 lines for accountBalance schema
+	1 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 12:53:29 INFO  [main]: End of day 2019-06-19: You get
+	1 lines for accountBalance schema
+	3 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 12:53:29 INFO  [main]: End of day 2019-06-06: You get
+	1 lines for accountBalance schema
+	0 lines for closedTransactions schema
+	0 lines for totalClosedTransactions schema
+
+2019-10-13 12:53:29 INFO  [main]: End of day 2019-06-17: You get
+	1 lines for accountBalance schema
+	2 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 12:53:29 INFO  [main]: End of day 2019-06-12: You get
+	1 lines for accountBalance schema
+	4 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 12:53:29 INFO  [main]: End of day 2019-06-07: You get
+	1 lines for accountBalance schema
+	5 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 12:53:29 INFO  [main]: End of day 2019-06-02: You get
+	1 lines for accountBalance schema
+	0 lines for closedTransactions schema
+	0 lines for totalClosedTransactions schema
+
+2019-10-13 12:53:29 INFO  [main]: End of day 2019-06-04: You get
+	1 lines for accountBalance schema
+	7 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 12:53:29 INFO  [main]: End of day 2019-05-31: You get
+	1 lines for accountBalance schema
+	10 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 12:53:29 INFO  [main]: End of day 2019-06-28: You get
+	1 lines for accountBalance schema
+	0 lines for closedTransactions schema
+	0 lines for totalClosedTransactions schema
+
+2019-10-13 12:53:29 INFO  [main]: End of day 2019-06-13: You get
+	1 lines for accountBalance schema
+	3 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 12:53:29 INFO  [main]: End of day 2019-06-24: You get
+	1 lines for accountBalance schema
+	0 lines for closedTransactions schema
+	0 lines for totalClosedTransactions schema
+
+2019-10-13 12:53:29 INFO  [main]: End of day 2019-06-11: You get
+	1 lines for accountBalance schema
+	3 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 12:53:29 INFO  [main]: End of day 2019-06-05: You get
+	1 lines for accountBalance schema
+	6 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 12:53:29 INFO  [main]: End of day 2019-06-25: You get
+	1 lines for accountBalance schema
+	1 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 12:53:29 INFO  [main]: End of day 2019-06-20: You get
+	1 lines for accountBalance schema
+	3 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 12:53:29 INFO  [main]: End of day 2019-06-20: You get
+	0 lines for accountBalance schema
+	0 lines for closedTransactions schema
+	0 lines for totalClosedTransactions schema
+
+2019-10-13 12:53:29 INFO  [main]: End of day 2019-06-27: You get
+	1 lines for accountBalance schema
+	3 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 12:53:29 INFO  [main]: End of day 2019-05-30: You get
+	1 lines for accountBalance schema
+	11 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 12:53:29 INFO  [main]: End of day 2019-06-18: You get
+	1 lines for accountBalance schema
+	8 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 12:53:29 INFO  [main]: End of day 2019-06-03: You get
+	1 lines for accountBalance schema
+	12 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 12:53:29 INFO  [main]: You analise 21 files
+2019-10-13 12:53:31 INFO  [main]: 
+You have 21 lines for accountBalance schema.
+You have 82 lines for closedTransactions schema.
+You have 16 lines for totalClosedTransactions schema.
+
+2019-10-13 12:53:31 INFO  [main]: 
+You add 21 lines to accountBalance schema
+You add 0 lines to closedTransactions schema
+You add 16 lines to totalClosedTransactions schema
+
+2019-10-13 13:13:25 INFO  [main]: End of day 2019-06-21: You get
+	1 lines for accountBalance schema
+	0 lines for closedTransactions schema
+	0 lines for totalClosedTransactions schema
+
+2019-10-13 13:13:25 INFO  [main]: End of day 2019-06-10: You get
+	1 lines for accountBalance schema
+	1 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 13:13:25 INFO  [main]: End of day 2019-06-19: You get
+	1 lines for accountBalance schema
+	3 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 13:13:25 INFO  [main]: End of day 2019-06-06: You get
+	1 lines for accountBalance schema
+	0 lines for closedTransactions schema
+	0 lines for totalClosedTransactions schema
+
+2019-10-13 13:13:25 INFO  [main]: End of day 2019-06-17: You get
+	1 lines for accountBalance schema
+	2 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 13:13:25 INFO  [main]: End of day 2019-06-12: You get
+	1 lines for accountBalance schema
+	4 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 13:13:25 INFO  [main]: End of day 2019-06-07: You get
+	1 lines for accountBalance schema
+	5 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 13:13:25 INFO  [main]: End of day 2019-06-02: You get
+	1 lines for accountBalance schema
+	0 lines for closedTransactions schema
+	0 lines for totalClosedTransactions schema
+
+2019-10-13 13:13:25 INFO  [main]: End of day 2019-06-04: You get
+	1 lines for accountBalance schema
+	7 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 13:13:25 INFO  [main]: End of day 2019-05-31: You get
+	1 lines for accountBalance schema
+	10 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 13:13:25 INFO  [main]: End of day 2019-06-28: You get
+	1 lines for accountBalance schema
+	0 lines for closedTransactions schema
+	0 lines for totalClosedTransactions schema
+
+2019-10-13 13:13:25 INFO  [main]: End of day 2019-06-13: You get
+	1 lines for accountBalance schema
+	3 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 13:13:25 INFO  [main]: End of day 2019-06-24: You get
+	1 lines for accountBalance schema
+	0 lines for closedTransactions schema
+	0 lines for totalClosedTransactions schema
+
+2019-10-13 13:13:25 INFO  [main]: End of day 2019-06-11: You get
+	1 lines for accountBalance schema
+	3 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 13:13:25 INFO  [main]: End of day 2019-06-05: You get
+	1 lines for accountBalance schema
+	6 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 13:13:25 INFO  [main]: End of day 2019-06-25: You get
+	1 lines for accountBalance schema
+	1 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 13:13:25 INFO  [main]: End of day 2019-06-20: You get
+	1 lines for accountBalance schema
+	3 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 13:13:25 INFO  [main]: End of day 2019-06-20: You get
+	0 lines for accountBalance schema
+	0 lines for closedTransactions schema
+	0 lines for totalClosedTransactions schema
+
+2019-10-13 13:13:25 INFO  [main]: End of day 2019-06-27: You get
+	1 lines for accountBalance schema
+	3 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 13:13:25 INFO  [main]: End of day 2019-05-30: You get
+	1 lines for accountBalance schema
+	11 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 13:13:25 INFO  [main]: End of day 2019-06-18: You get
+	1 lines for accountBalance schema
+	8 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 13:13:25 INFO  [main]: End of day 2019-06-03: You get
+	1 lines for accountBalance schema
+	12 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 13:13:25 INFO  [main]: You analise 21 files
+2019-10-13 13:13:26 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:13:26 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:13:26 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:13:26 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:13:26 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:13:26 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:13:26 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:13:26 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:13:26 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:13:26 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:13:26 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:13:26 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:13:26 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:13:26 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:13:26 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:13:26 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:13:26 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:13:26 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:13:26 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:13:26 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:13:26 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:13:26 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:13:26 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:13:26 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:13:26 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:13:26 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:13:26 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:13:26 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:13:26 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:13:26 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:13:26 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:13:26 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:13:26 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:13:26 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:13:26 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:13:26 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:13:26 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:13:26 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:13:26 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:13:26 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:13:26 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:13:26 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:13:26 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:13:26 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:13:26 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:13:26 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:13:26 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:13:26 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:13:26 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:13:26 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:13:26 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:13:26 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:13:26 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:13:26 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:13:26 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:13:26 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:13:26 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:13:26 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:13:26 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:13:26 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:13:26 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:13:26 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:13:26 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:13:26 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:13:26 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:13:26 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:13:26 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:13:26 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:13:26 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:13:26 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:13:26 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:13:26 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:13:26 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:13:26 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:13:26 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:13:26 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:13:26 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:13:26 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:13:27 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:13:27 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:13:27 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:13:27 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:13:27 INFO  [main]: 
+You have 21 lines for accountBalance schema.
+You have 82 lines for closedTransactions schema.
+You have 16 lines for totalClosedTransactions schema.
+
+2019-10-13 13:13:27 INFO  [main]: 
+You add 21 lines to accountBalance schema
+You add 0 lines to closedTransactions schema
+You add 16 lines to totalClosedTransactions schema
+
+2019-10-13 13:15:36 INFO  [main]: End of day 2019-06-21: You get
+	1 lines for accountBalance schema
+	0 lines for closedTransactions schema
+	0 lines for totalClosedTransactions schema
+
+2019-10-13 13:15:36 INFO  [main]: End of day 2019-06-10: You get
+	1 lines for accountBalance schema
+	1 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 13:15:36 INFO  [main]: End of day 2019-06-19: You get
+	1 lines for accountBalance schema
+	3 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 13:15:36 INFO  [main]: End of day 2019-06-06: You get
+	1 lines for accountBalance schema
+	0 lines for closedTransactions schema
+	0 lines for totalClosedTransactions schema
+
+2019-10-13 13:15:36 INFO  [main]: End of day 2019-06-17: You get
+	1 lines for accountBalance schema
+	2 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 13:15:36 INFO  [main]: End of day 2019-06-12: You get
+	1 lines for accountBalance schema
+	4 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 13:15:36 INFO  [main]: End of day 2019-06-07: You get
+	1 lines for accountBalance schema
+	5 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 13:15:36 INFO  [main]: End of day 2019-06-02: You get
+	1 lines for accountBalance schema
+	0 lines for closedTransactions schema
+	0 lines for totalClosedTransactions schema
+
+2019-10-13 13:15:36 INFO  [main]: End of day 2019-06-04: You get
+	1 lines for accountBalance schema
+	7 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 13:15:36 INFO  [main]: End of day 2019-05-31: You get
+	1 lines for accountBalance schema
+	10 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 13:15:36 INFO  [main]: End of day 2019-06-28: You get
+	1 lines for accountBalance schema
+	0 lines for closedTransactions schema
+	0 lines for totalClosedTransactions schema
+
+2019-10-13 13:15:36 INFO  [main]: End of day 2019-06-13: You get
+	1 lines for accountBalance schema
+	3 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 13:15:36 INFO  [main]: End of day 2019-06-24: You get
+	1 lines for accountBalance schema
+	0 lines for closedTransactions schema
+	0 lines for totalClosedTransactions schema
+
+2019-10-13 13:15:36 INFO  [main]: End of day 2019-06-11: You get
+	1 lines for accountBalance schema
+	3 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 13:15:36 INFO  [main]: End of day 2019-06-05: You get
+	1 lines for accountBalance schema
+	6 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 13:15:36 INFO  [main]: End of day 2019-06-25: You get
+	1 lines for accountBalance schema
+	1 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 13:15:36 INFO  [main]: End of day 2019-06-20: You get
+	1 lines for accountBalance schema
+	3 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 13:15:36 INFO  [main]: End of day 2019-06-20: You get
+	0 lines for accountBalance schema
+	0 lines for closedTransactions schema
+	0 lines for totalClosedTransactions schema
+
+2019-10-13 13:15:36 INFO  [main]: End of day 2019-06-27: You get
+	1 lines for accountBalance schema
+	3 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 13:15:36 INFO  [main]: End of day 2019-05-30: You get
+	1 lines for accountBalance schema
+	11 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 13:15:36 INFO  [main]: End of day 2019-06-18: You get
+	1 lines for accountBalance schema
+	8 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 13:15:36 INFO  [main]: End of day 2019-06-03: You get
+	1 lines for accountBalance schema
+	12 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 13:15:36 INFO  [main]: You analise 21 files
+2019-10-13 13:15:37 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:15:37 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:15:37 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:15:37 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:15:37 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:15:37 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:15:37 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:15:37 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:15:37 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:15:37 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:15:37 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:15:37 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:15:37 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:15:37 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:15:37 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:15:37 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:15:37 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:15:37 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:15:37 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:15:37 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:15:37 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:15:37 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:15:37 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:15:37 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:15:37 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:15:37 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:15:37 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:15:37 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:15:37 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:15:37 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:15:37 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:15:37 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:15:37 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:15:37 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:15:37 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:15:37 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:15:37 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:15:37 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:15:37 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:15:37 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:15:37 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:15:37 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:15:37 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:15:37 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:15:37 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:15:37 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:15:37 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:15:37 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:15:37 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:15:37 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:15:37 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:15:37 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:15:37 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:15:37 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:15:37 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:15:37 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:15:37 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:15:37 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:15:37 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:15:37 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:15:37 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:15:37 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:15:37 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:15:37 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:15:37 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:15:37 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:15:37 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:15:37 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:15:37 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:15:37 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:15:37 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:15:37 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:15:37 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:15:37 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:15:37 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:15:37 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:15:37 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:15:37 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:15:37 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:15:37 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:15:37 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:15:37 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:15:38 INFO  [main]: 
+You have 21 lines for accountBalance schema.
+You have 82 lines for closedTransactions schema.
+You have 16 lines for totalClosedTransactions schema.
+
+2019-10-13 13:15:38 INFO  [main]: 
+You add 21 lines to accountBalance schema
+You add 0 lines to closedTransactions schema
+You add 16 lines to totalClosedTransactions schema
+
+2019-10-13 13:16:02 INFO  [main]: End of day 2019-06-21: You get
+	1 lines for accountBalance schema
+	0 lines for closedTransactions schema
+	0 lines for totalClosedTransactions schema
+
+2019-10-13 13:16:02 INFO  [main]: End of day 2019-06-10: You get
+	1 lines for accountBalance schema
+	1 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 13:16:02 INFO  [main]: End of day 2019-06-19: You get
+	1 lines for accountBalance schema
+	3 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 13:16:02 INFO  [main]: End of day 2019-06-06: You get
+	1 lines for accountBalance schema
+	0 lines for closedTransactions schema
+	0 lines for totalClosedTransactions schema
+
+2019-10-13 13:16:02 INFO  [main]: End of day 2019-06-17: You get
+	1 lines for accountBalance schema
+	2 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 13:16:02 INFO  [main]: End of day 2019-06-12: You get
+	1 lines for accountBalance schema
+	4 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 13:16:02 INFO  [main]: End of day 2019-06-07: You get
+	1 lines for accountBalance schema
+	5 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 13:16:02 INFO  [main]: End of day 2019-06-02: You get
+	1 lines for accountBalance schema
+	0 lines for closedTransactions schema
+	0 lines for totalClosedTransactions schema
+
+2019-10-13 13:16:02 INFO  [main]: End of day 2019-06-04: You get
+	1 lines for accountBalance schema
+	7 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 13:16:02 INFO  [main]: End of day 2019-05-31: You get
+	1 lines for accountBalance schema
+	10 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 13:16:02 INFO  [main]: End of day 2019-06-28: You get
+	1 lines for accountBalance schema
+	0 lines for closedTransactions schema
+	0 lines for totalClosedTransactions schema
+
+2019-10-13 13:16:02 INFO  [main]: End of day 2019-06-13: You get
+	1 lines for accountBalance schema
+	3 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 13:16:02 INFO  [main]: End of day 2019-06-24: You get
+	1 lines for accountBalance schema
+	0 lines for closedTransactions schema
+	0 lines for totalClosedTransactions schema
+
+2019-10-13 13:16:02 INFO  [main]: End of day 2019-06-11: You get
+	1 lines for accountBalance schema
+	3 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 13:16:02 INFO  [main]: End of day 2019-06-05: You get
+	1 lines for accountBalance schema
+	6 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 13:16:02 INFO  [main]: End of day 2019-06-25: You get
+	1 lines for accountBalance schema
+	1 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 13:16:02 INFO  [main]: End of day 2019-06-20: You get
+	1 lines for accountBalance schema
+	3 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 13:16:02 INFO  [main]: End of day 2019-06-20: You get
+	0 lines for accountBalance schema
+	0 lines for closedTransactions schema
+	0 lines for totalClosedTransactions schema
+
+2019-10-13 13:16:02 INFO  [main]: End of day 2019-06-27: You get
+	1 lines for accountBalance schema
+	3 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 13:16:02 INFO  [main]: End of day 2019-05-30: You get
+	1 lines for accountBalance schema
+	11 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 13:16:02 INFO  [main]: End of day 2019-06-18: You get
+	1 lines for accountBalance schema
+	8 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 13:16:02 INFO  [main]: End of day 2019-06-03: You get
+	1 lines for accountBalance schema
+	12 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 13:16:02 INFO  [main]: You analise 21 files
+2019-10-13 13:16:03 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:16:03 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:16:03 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:16:03 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:16:03 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:16:03 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:16:03 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:16:03 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:16:03 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:16:03 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:16:03 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:16:03 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:16:03 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:16:03 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:16:03 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:16:03 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:16:03 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:16:03 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:16:03 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:16:03 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:16:03 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:16:03 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:16:03 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:16:03 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:16:03 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:16:03 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:16:03 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:16:03 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:16:03 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:16:03 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:16:03 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:16:03 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:16:03 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:16:03 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:16:03 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:16:03 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:16:03 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:16:03 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:16:03 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:16:03 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:16:03 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:16:03 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:16:03 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:16:03 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:16:03 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:16:03 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:16:03 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:16:03 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:16:03 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:16:03 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:16:03 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:16:03 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:16:03 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:16:03 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:16:03 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:16:03 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:16:03 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:16:03 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:16:03 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:16:03 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:16:03 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:16:03 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:16:03 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:16:03 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:16:03 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:16:03 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:16:03 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:16:03 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:16:03 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:16:03 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:16:03 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:16:03 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:16:03 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:16:03 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:16:03 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:16:03 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:16:03 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:16:03 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:16:03 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:16:03 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:16:03 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:16:03 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:16:04 INFO  [main]: 
+You have 21 lines for accountBalance schema.
+You have 82 lines for closedTransactions schema.
+You have 16 lines for totalClosedTransactions schema.
+
+2019-10-13 13:16:04 INFO  [main]: 
+You add 21 lines to accountBalance schema
+You add 0 lines to closedTransactions schema
+You add 16 lines to totalClosedTransactions schema
+
+2019-10-13 13:22:45 INFO  [main]: End of day 2019-06-21: You get
+	1 lines for accountBalance schema
+	0 lines for closedTransactions schema
+	0 lines for totalClosedTransactions schema
+
+2019-10-13 13:22:45 INFO  [main]: End of day 2019-06-10: You get
+	1 lines for accountBalance schema
+	1 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 13:22:45 INFO  [main]: End of day 2019-06-19: You get
+	1 lines for accountBalance schema
+	3 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 13:22:45 INFO  [main]: End of day 2019-06-06: You get
+	1 lines for accountBalance schema
+	0 lines for closedTransactions schema
+	0 lines for totalClosedTransactions schema
+
+2019-10-13 13:22:45 INFO  [main]: End of day 2019-06-17: You get
+	1 lines for accountBalance schema
+	2 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 13:22:45 INFO  [main]: End of day 2019-06-12: You get
+	1 lines for accountBalance schema
+	4 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 13:22:45 INFO  [main]: End of day 2019-06-07: You get
+	1 lines for accountBalance schema
+	5 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 13:22:45 INFO  [main]: End of day 2019-06-02: You get
+	1 lines for accountBalance schema
+	0 lines for closedTransactions schema
+	0 lines for totalClosedTransactions schema
+
+2019-10-13 13:22:45 INFO  [main]: End of day 2019-06-04: You get
+	1 lines for accountBalance schema
+	7 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 13:22:45 INFO  [main]: End of day 2019-05-31: You get
+	1 lines for accountBalance schema
+	10 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 13:22:45 INFO  [main]: End of day 2019-06-28: You get
+	1 lines for accountBalance schema
+	0 lines for closedTransactions schema
+	0 lines for totalClosedTransactions schema
+
+2019-10-13 13:22:45 INFO  [main]: End of day 2019-06-13: You get
+	1 lines for accountBalance schema
+	3 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 13:22:45 INFO  [main]: End of day 2019-06-24: You get
+	1 lines for accountBalance schema
+	0 lines for closedTransactions schema
+	0 lines for totalClosedTransactions schema
+
+2019-10-13 13:22:45 INFO  [main]: End of day 2019-06-11: You get
+	1 lines for accountBalance schema
+	3 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 13:22:45 INFO  [main]: End of day 2019-06-05: You get
+	1 lines for accountBalance schema
+	6 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 13:22:45 INFO  [main]: End of day 2019-06-25: You get
+	1 lines for accountBalance schema
+	1 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 13:22:45 INFO  [main]: End of day 2019-06-20: You get
+	1 lines for accountBalance schema
+	3 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 13:22:45 INFO  [main]: End of day 2019-06-20: You get
+	0 lines for accountBalance schema
+	0 lines for closedTransactions schema
+	0 lines for totalClosedTransactions schema
+
+2019-10-13 13:22:45 INFO  [main]: End of day 2019-06-27: You get
+	1 lines for accountBalance schema
+	3 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 13:22:45 INFO  [main]: End of day 2019-05-30: You get
+	1 lines for accountBalance schema
+	11 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 13:22:45 INFO  [main]: End of day 2019-06-18: You get
+	1 lines for accountBalance schema
+	8 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 13:22:45 INFO  [main]: End of day 2019-06-03: You get
+	1 lines for accountBalance schema
+	12 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 13:22:45 INFO  [main]: You analise 21 files
+2019-10-13 13:22:46 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:22:46 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:22:46 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:22:46 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:22:46 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:22:46 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:22:46 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:22:46 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:22:46 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:22:46 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:22:46 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:22:46 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:22:46 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:22:46 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:22:46 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:22:46 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:22:46 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:22:46 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:22:47 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:22:47 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:22:47 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:22:47 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:22:47 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:22:47 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:22:47 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:22:47 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:22:47 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:22:47 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:22:47 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:22:47 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:22:47 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:22:47 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:22:47 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:22:47 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:22:47 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:22:47 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:22:47 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:22:47 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:22:47 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:22:47 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:22:47 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:22:47 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:22:47 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:22:47 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:22:47 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:22:47 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:22:47 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:22:47 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:22:47 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:22:47 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:22:47 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:22:47 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:22:47 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:22:47 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:22:47 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:22:47 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:22:47 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:22:47 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:22:47 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:22:47 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:22:47 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:22:47 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:22:47 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:22:47 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:22:47 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:22:47 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:22:47 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:22:47 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:22:47 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:22:47 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:22:47 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:22:47 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:22:47 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:22:47 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:22:47 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:22:47 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:22:47 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:22:47 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:22:47 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:22:47 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:22:47 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:22:47 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:22:47 INFO  [main]: 
+You have 21 lines for accountBalance schema.
+You have 82 lines for closedTransactions schema.
+You have 16 lines for totalClosedTransactions schema.
+
+2019-10-13 13:22:47 INFO  [main]: 
+You add 21 lines to accountBalance schema
+You add 0 lines to closedTransactions schema
+You add 16 lines to totalClosedTransactions schema
+
+2019-10-13 13:27:00 INFO  [main]: End of day 2019-06-21: You get
+	1 lines for accountBalance schema
+	0 lines for closedTransactions schema
+	0 lines for totalClosedTransactions schema
+
+2019-10-13 13:27:00 INFO  [main]: End of day 2019-06-10: You get
+	1 lines for accountBalance schema
+	1 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 13:27:00 INFO  [main]: End of day 2019-06-19: You get
+	1 lines for accountBalance schema
+	3 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 13:27:00 INFO  [main]: End of day 2019-06-06: You get
+	1 lines for accountBalance schema
+	0 lines for closedTransactions schema
+	0 lines for totalClosedTransactions schema
+
+2019-10-13 13:27:00 INFO  [main]: End of day 2019-06-17: You get
+	1 lines for accountBalance schema
+	2 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 13:27:00 INFO  [main]: End of day 2019-06-12: You get
+	1 lines for accountBalance schema
+	4 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 13:27:00 INFO  [main]: End of day 2019-06-07: You get
+	1 lines for accountBalance schema
+	5 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 13:27:00 INFO  [main]: End of day 2019-06-02: You get
+	1 lines for accountBalance schema
+	0 lines for closedTransactions schema
+	0 lines for totalClosedTransactions schema
+
+2019-10-13 13:27:00 INFO  [main]: End of day 2019-06-04: You get
+	1 lines for accountBalance schema
+	7 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 13:27:00 INFO  [main]: End of day 2019-05-31: You get
+	1 lines for accountBalance schema
+	10 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 13:27:00 INFO  [main]: End of day 2019-06-28: You get
+	1 lines for accountBalance schema
+	0 lines for closedTransactions schema
+	0 lines for totalClosedTransactions schema
+
+2019-10-13 13:27:00 INFO  [main]: End of day 2019-06-13: You get
+	1 lines for accountBalance schema
+	3 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 13:27:00 INFO  [main]: End of day 2019-06-24: You get
+	1 lines for accountBalance schema
+	0 lines for closedTransactions schema
+	0 lines for totalClosedTransactions schema
+
+2019-10-13 13:27:00 INFO  [main]: End of day 2019-06-11: You get
+	1 lines for accountBalance schema
+	3 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 13:27:00 INFO  [main]: End of day 2019-06-05: You get
+	1 lines for accountBalance schema
+	6 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 13:27:00 INFO  [main]: End of day 2019-06-25: You get
+	1 lines for accountBalance schema
+	1 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 13:27:00 INFO  [main]: End of day 2019-06-20: You get
+	1 lines for accountBalance schema
+	3 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 13:27:00 INFO  [main]: End of day 2019-06-20: You get
+	0 lines for accountBalance schema
+	0 lines for closedTransactions schema
+	0 lines for totalClosedTransactions schema
+
+2019-10-13 13:27:00 INFO  [main]: End of day 2019-06-27: You get
+	1 lines for accountBalance schema
+	3 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 13:27:00 INFO  [main]: End of day 2019-05-30: You get
+	1 lines for accountBalance schema
+	11 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 13:27:00 INFO  [main]: End of day 2019-06-18: You get
+	1 lines for accountBalance schema
+	8 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 13:27:00 INFO  [main]: End of day 2019-06-03: You get
+	1 lines for accountBalance schema
+	12 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 13:27:00 INFO  [main]: You analise 21 files
+2019-10-13 13:27:01 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:27:01 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:27:01 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:27:01 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:27:01 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:27:01 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:27:01 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:27:01 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:27:01 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:27:01 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:27:01 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:27:01 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:27:01 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:27:01 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:27:01 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:27:01 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:27:01 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:27:01 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:27:01 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:27:01 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:27:01 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:27:01 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:27:01 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:27:01 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:27:01 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:27:01 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:27:01 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:27:01 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:27:01 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:27:01 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:27:01 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:27:01 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:27:01 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:27:01 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:27:01 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:27:01 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:27:01 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:27:01 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:27:01 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:27:01 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:27:01 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:27:01 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:27:01 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:27:01 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:27:01 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:27:01 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:27:01 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:27:01 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:27:01 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:27:01 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:27:01 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:27:01 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:27:01 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:27:01 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:27:01 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:27:01 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:27:01 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:27:01 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:27:01 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:27:01 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:27:01 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:27:01 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:27:01 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:27:01 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:27:01 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:27:01 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:27:01 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:27:01 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:27:01 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:27:01 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:27:01 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:27:01 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:27:01 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:27:01 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:27:01 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:27:01 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:27:01 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:27:01 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:27:01 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:27:01 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:27:01 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:27:01 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 13:27:02 INFO  [main]: 
+You have 21 lines for accountBalance schema.
+You have 82 lines for closedTransactions schema.
+You have 16 lines for totalClosedTransactions schema.
+
+2019-10-13 13:27:02 INFO  [main]: 
+You add 21 lines to accountBalance schema
+You add 0 lines to closedTransactions schema
+You add 16 lines to totalClosedTransactions schema
+
+2019-10-13 13:29:07 INFO  [main]: End of day 2019-06-21: You get
+	1 lines for accountBalance schema
+	0 lines for closedTransactions schema
+	0 lines for totalClosedTransactions schema
+
+2019-10-13 13:29:07 INFO  [main]: End of day 2019-06-10: You get
+	1 lines for accountBalance schema
+	1 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 13:29:07 INFO  [main]: End of day 2019-06-19: You get
+	1 lines for accountBalance schema
+	3 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 13:29:07 INFO  [main]: End of day 2019-06-06: You get
+	1 lines for accountBalance schema
+	0 lines for closedTransactions schema
+	0 lines for totalClosedTransactions schema
+
+2019-10-13 13:29:07 INFO  [main]: End of day 2019-06-17: You get
+	1 lines for accountBalance schema
+	2 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 13:29:07 INFO  [main]: End of day 2019-06-12: You get
+	1 lines for accountBalance schema
+	4 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 13:29:07 INFO  [main]: End of day 2019-06-07: You get
+	1 lines for accountBalance schema
+	5 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 13:29:07 INFO  [main]: End of day 2019-06-02: You get
+	1 lines for accountBalance schema
+	0 lines for closedTransactions schema
+	0 lines for totalClosedTransactions schema
+
+2019-10-13 13:29:07 INFO  [main]: End of day 2019-06-04: You get
+	1 lines for accountBalance schema
+	7 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 13:29:07 INFO  [main]: End of day 2019-05-31: You get
+	1 lines for accountBalance schema
+	10 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 13:29:07 INFO  [main]: End of day 2019-06-28: You get
+	1 lines for accountBalance schema
+	0 lines for closedTransactions schema
+	0 lines for totalClosedTransactions schema
+
+2019-10-13 13:29:07 INFO  [main]: End of day 2019-06-13: You get
+	1 lines for accountBalance schema
+	3 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 13:29:07 INFO  [main]: End of day 2019-06-24: You get
+	1 lines for accountBalance schema
+	0 lines for closedTransactions schema
+	0 lines for totalClosedTransactions schema
+
+2019-10-13 13:29:07 INFO  [main]: End of day 2019-06-11: You get
+	1 lines for accountBalance schema
+	3 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 13:29:07 INFO  [main]: End of day 2019-06-05: You get
+	1 lines for accountBalance schema
+	6 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 13:29:07 INFO  [main]: End of day 2019-06-25: You get
+	1 lines for accountBalance schema
+	1 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 13:29:07 INFO  [main]: End of day 2019-06-20: You get
+	1 lines for accountBalance schema
+	3 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 13:29:07 INFO  [main]: End of day 2019-06-20: You get
+	0 lines for accountBalance schema
+	0 lines for closedTransactions schema
+	0 lines for totalClosedTransactions schema
+
+2019-10-13 13:29:07 INFO  [main]: End of day 2019-06-27: You get
+	1 lines for accountBalance schema
+	3 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 13:29:07 INFO  [main]: End of day 2019-05-30: You get
+	1 lines for accountBalance schema
+	11 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 13:29:07 INFO  [main]: End of day 2019-06-18: You get
+	1 lines for accountBalance schema
+	8 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 13:29:07 INFO  [main]: End of day 2019-06-03: You get
+	1 lines for accountBalance schema
+	12 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 13:29:07 INFO  [main]: You analise 21 files
+2019-10-13 13:29:12 INFO  [main]: 
+You have 21 lines for accountBalance schema.
+You have 82 lines for closedTransactions schema.
+You have 16 lines for totalClosedTransactions schema.
+
+2019-10-13 13:29:12 INFO  [main]: 
+You add 21 lines to accountBalance schema
+You add 82 lines to closedTransactions schema
+You add 16 lines to totalClosedTransactions schema
+
+2019-10-13 16:11:08 INFO  [main]: End of day 2019-06-21: You get
+	1 lines for accountBalance schema
+	0 lines for closedTransactions schema
+	0 lines for totalClosedTransactions schema
+
+2019-10-13 16:11:08 INFO  [main]: End of day 2019-06-10: You get
+	1 lines for accountBalance schema
+	1 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 16:11:08 INFO  [main]: End of day 2019-06-19: You get
+	1 lines for accountBalance schema
+	3 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 16:11:08 INFO  [main]: End of day 2019-06-06: You get
+	1 lines for accountBalance schema
+	0 lines for closedTransactions schema
+	0 lines for totalClosedTransactions schema
+
+2019-10-13 16:11:08 INFO  [main]: End of day 2019-06-17: You get
+	1 lines for accountBalance schema
+	2 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 16:11:08 INFO  [main]: End of day 2019-06-12: You get
+	1 lines for accountBalance schema
+	4 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 16:11:08 INFO  [main]: End of day 2019-06-07: You get
+	1 lines for accountBalance schema
+	5 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 16:11:08 INFO  [main]: End of day 2019-06-02: You get
+	1 lines for accountBalance schema
+	0 lines for closedTransactions schema
+	0 lines for totalClosedTransactions schema
+
+2019-10-13 16:11:08 INFO  [main]: End of day 2019-06-04: You get
+	1 lines for accountBalance schema
+	7 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 16:11:08 INFO  [main]: End of day 2019-05-31: You get
+	1 lines for accountBalance schema
+	10 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 16:11:08 INFO  [main]: End of day 2019-06-28: You get
+	1 lines for accountBalance schema
+	0 lines for closedTransactions schema
+	0 lines for totalClosedTransactions schema
+
+2019-10-13 16:11:08 INFO  [main]: End of day 2019-06-13: You get
+	1 lines for accountBalance schema
+	3 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 16:11:08 INFO  [main]: End of day 2019-06-24: You get
+	1 lines for accountBalance schema
+	0 lines for closedTransactions schema
+	0 lines for totalClosedTransactions schema
+
+2019-10-13 16:11:08 INFO  [main]: End of day 2019-06-11: You get
+	1 lines for accountBalance schema
+	3 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 16:11:08 INFO  [main]: End of day 2019-06-05: You get
+	1 lines for accountBalance schema
+	6 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 16:11:08 INFO  [main]: End of day 2019-06-25: You get
+	1 lines for accountBalance schema
+	1 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 16:11:08 INFO  [main]: End of day 2019-06-20: You get
+	1 lines for accountBalance schema
+	3 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 16:11:08 INFO  [main]: End of day 2019-06-20: You get
+	0 lines for accountBalance schema
+	0 lines for closedTransactions schema
+	0 lines for totalClosedTransactions schema
+
+2019-10-13 16:11:08 INFO  [main]: End of day 2019-06-27: You get
+	1 lines for accountBalance schema
+	3 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 16:11:08 INFO  [main]: End of day 2019-05-30: You get
+	1 lines for accountBalance schema
+	11 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 16:11:08 INFO  [main]: End of day 2019-06-18: You get
+	1 lines for accountBalance schema
+	8 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 16:11:08 INFO  [main]: End of day 2019-06-03: You get
+	1 lines for accountBalance schema
+	12 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 16:11:08 INFO  [main]: You analise 21 files
+2019-10-13 16:11:13 INFO  [main]: 
+You have 21 lines for accountBalance schema.
+You have 82 lines for closedTransactions schema.
+You have 16 lines for totalClosedTransactions schema.
+
+2019-10-13 16:11:13 INFO  [main]: 
+You add 21 lines to accountBalance schema
+You add 82 lines to closedTransactions schema
+You add 16 lines to totalClosedTransactions schema
+
+2019-10-13 16:14:01 INFO  [main]: End of day 2019-06-21: You get
+	1 lines for accountBalance schema
+	0 lines for closedTransactions schema
+	0 lines for totalClosedTransactions schema
+
+2019-10-13 16:14:01 INFO  [main]: End of day 2019-06-10: You get
+	1 lines for accountBalance schema
+	1 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 16:14:01 INFO  [main]: End of day 2019-06-19: You get
+	1 lines for accountBalance schema
+	3 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 16:14:01 INFO  [main]: End of day 2019-06-06: You get
+	1 lines for accountBalance schema
+	0 lines for closedTransactions schema
+	0 lines for totalClosedTransactions schema
+
+2019-10-13 16:14:01 INFO  [main]: End of day 2019-06-17: You get
+	1 lines for accountBalance schema
+	2 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 16:14:01 INFO  [main]: End of day 2019-06-12: You get
+	1 lines for accountBalance schema
+	4 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 16:14:01 INFO  [main]: End of day 2019-06-07: You get
+	1 lines for accountBalance schema
+	5 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 16:14:01 INFO  [main]: End of day 2019-06-02: You get
+	1 lines for accountBalance schema
+	0 lines for closedTransactions schema
+	0 lines for totalClosedTransactions schema
+
+2019-10-13 16:14:01 INFO  [main]: End of day 2019-06-04: You get
+	1 lines for accountBalance schema
+	7 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 16:14:01 INFO  [main]: End of day 2019-05-31: You get
+	1 lines for accountBalance schema
+	10 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 16:14:01 INFO  [main]: End of day 2019-06-28: You get
+	1 lines for accountBalance schema
+	0 lines for closedTransactions schema
+	0 lines for totalClosedTransactions schema
+
+2019-10-13 16:14:01 INFO  [main]: End of day 2019-06-13: You get
+	1 lines for accountBalance schema
+	3 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 16:14:01 INFO  [main]: End of day 2019-06-24: You get
+	1 lines for accountBalance schema
+	0 lines for closedTransactions schema
+	0 lines for totalClosedTransactions schema
+
+2019-10-13 16:14:01 INFO  [main]: End of day 2019-06-11: You get
+	1 lines for accountBalance schema
+	3 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 16:14:01 INFO  [main]: End of day 2019-06-05: You get
+	1 lines for accountBalance schema
+	6 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 16:14:01 INFO  [main]: End of day 2019-06-25: You get
+	1 lines for accountBalance schema
+	1 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 16:14:01 INFO  [main]: End of day 2019-06-20: You get
+	1 lines for accountBalance schema
+	3 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 16:14:01 INFO  [main]: End of day 2019-06-20: You get
+	0 lines for accountBalance schema
+	0 lines for closedTransactions schema
+	0 lines for totalClosedTransactions schema
+
+2019-10-13 16:14:01 INFO  [main]: End of day 2019-06-27: You get
+	1 lines for accountBalance schema
+	3 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 16:14:01 INFO  [main]: End of day 2019-05-30: You get
+	1 lines for accountBalance schema
+	11 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 16:14:01 INFO  [main]: End of day 2019-06-18: You get
+	1 lines for accountBalance schema
+	8 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 16:14:01 INFO  [main]: End of day 2019-06-03: You get
+	1 lines for accountBalance schema
+	12 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 16:14:01 INFO  [main]: You analise 21 files
+2019-10-13 16:14:03 INFO  [main]: 
+You have 21 lines for accountBalance schema.
+You have 82 lines for closedTransactions schema.
+You have 16 lines for totalClosedTransactions schema.
+
+2019-10-13 16:14:03 INFO  [main]: 
+You add 21 lines to accountBalance schema
+You add 0 lines to closedTransactions schema
+You add 16 lines to totalClosedTransactions schema
+
+2019-10-13 16:23:34 INFO  [main]: End of day 2019-06-21: You get
+	1 lines for accountBalance schema
+	0 lines for closedTransactions schema
+	0 lines for totalClosedTransactions schema
+
+2019-10-13 16:23:34 INFO  [main]: End of day 2019-06-10: You get
+	1 lines for accountBalance schema
+	1 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 16:23:34 INFO  [main]: End of day 2019-06-19: You get
+	1 lines for accountBalance schema
+	3 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 16:23:34 INFO  [main]: End of day 2019-06-06: You get
+	1 lines for accountBalance schema
+	0 lines for closedTransactions schema
+	0 lines for totalClosedTransactions schema
+
+2019-10-13 16:23:34 INFO  [main]: End of day 2019-06-17: You get
+	1 lines for accountBalance schema
+	2 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 16:23:34 INFO  [main]: End of day 2019-06-12: You get
+	1 lines for accountBalance schema
+	4 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 16:23:34 INFO  [main]: End of day 2019-06-07: You get
+	1 lines for accountBalance schema
+	5 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 16:23:34 INFO  [main]: End of day 2019-06-02: You get
+	1 lines for accountBalance schema
+	0 lines for closedTransactions schema
+	0 lines for totalClosedTransactions schema
+
+2019-10-13 16:23:34 INFO  [main]: End of day 2019-06-04: You get
+	1 lines for accountBalance schema
+	7 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 16:23:34 INFO  [main]: End of day 2019-05-31: You get
+	1 lines for accountBalance schema
+	10 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 16:23:34 INFO  [main]: End of day 2019-06-28: You get
+	1 lines for accountBalance schema
+	0 lines for closedTransactions schema
+	0 lines for totalClosedTransactions schema
+
+2019-10-13 16:23:34 INFO  [main]: End of day 2019-06-13: You get
+	1 lines for accountBalance schema
+	3 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 16:23:34 INFO  [main]: End of day 2019-06-24: You get
+	1 lines for accountBalance schema
+	0 lines for closedTransactions schema
+	0 lines for totalClosedTransactions schema
+
+2019-10-13 16:23:34 INFO  [main]: End of day 2019-06-11: You get
+	1 lines for accountBalance schema
+	3 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 16:23:34 INFO  [main]: End of day 2019-06-05: You get
+	1 lines for accountBalance schema
+	6 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 16:23:34 INFO  [main]: End of day 2019-06-25: You get
+	1 lines for accountBalance schema
+	1 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 16:23:34 INFO  [main]: End of day 2019-06-20: You get
+	1 lines for accountBalance schema
+	3 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 16:23:34 INFO  [main]: End of day 2019-06-20: You get
+	0 lines for accountBalance schema
+	0 lines for closedTransactions schema
+	0 lines for totalClosedTransactions schema
+
+2019-10-13 16:23:34 INFO  [main]: End of day 2019-06-27: You get
+	1 lines for accountBalance schema
+	3 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 16:23:34 INFO  [main]: End of day 2019-05-30: You get
+	1 lines for accountBalance schema
+	11 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 16:23:34 INFO  [main]: End of day 2019-06-18: You get
+	1 lines for accountBalance schema
+	8 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 16:23:34 INFO  [main]: End of day 2019-06-03: You get
+	1 lines for accountBalance schema
+	12 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 16:23:34 INFO  [main]: You analise 21 files
+2019-10-13 16:23:35 INFO  [main]: 
+You have 21 lines for accountBalance schema.
+You have 82 lines for closedTransactions schema.
+You have 16 lines for totalClosedTransactions schema.
+
+2019-10-13 16:23:35 INFO  [main]: 
+You add 21 lines to accountBalance schema
+You add 0 lines to closedTransactions schema
+You add 16 lines to totalClosedTransactions schema
+
+2019-10-13 16:24:12 INFO  [main]: End of day 2019-06-21: You get
+	1 lines for accountBalance schema
+	0 lines for closedTransactions schema
+	0 lines for totalClosedTransactions schema
+
+2019-10-13 16:24:12 INFO  [main]: End of day 2019-06-10: You get
+	1 lines for accountBalance schema
+	1 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 16:24:12 INFO  [main]: End of day 2019-06-19: You get
+	1 lines for accountBalance schema
+	3 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 16:24:12 INFO  [main]: End of day 2019-06-06: You get
+	1 lines for accountBalance schema
+	0 lines for closedTransactions schema
+	0 lines for totalClosedTransactions schema
+
+2019-10-13 16:24:12 INFO  [main]: End of day 2019-06-17: You get
+	1 lines for accountBalance schema
+	2 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 16:24:12 INFO  [main]: End of day 2019-06-12: You get
+	1 lines for accountBalance schema
+	4 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 16:24:12 INFO  [main]: End of day 2019-06-07: You get
+	1 lines for accountBalance schema
+	5 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 16:24:12 INFO  [main]: End of day 2019-06-02: You get
+	1 lines for accountBalance schema
+	0 lines for closedTransactions schema
+	0 lines for totalClosedTransactions schema
+
+2019-10-13 16:24:12 INFO  [main]: End of day 2019-06-04: You get
+	1 lines for accountBalance schema
+	7 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 16:24:12 INFO  [main]: End of day 2019-05-31: You get
+	1 lines for accountBalance schema
+	10 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 16:24:12 INFO  [main]: End of day 2019-06-28: You get
+	1 lines for accountBalance schema
+	0 lines for closedTransactions schema
+	0 lines for totalClosedTransactions schema
+
+2019-10-13 16:24:12 INFO  [main]: End of day 2019-06-13: You get
+	1 lines for accountBalance schema
+	3 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 16:24:12 INFO  [main]: End of day 2019-06-24: You get
+	1 lines for accountBalance schema
+	0 lines for closedTransactions schema
+	0 lines for totalClosedTransactions schema
+
+2019-10-13 16:24:12 INFO  [main]: End of day 2019-06-11: You get
+	1 lines for accountBalance schema
+	3 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 16:24:12 INFO  [main]: End of day 2019-06-05: You get
+	1 lines for accountBalance schema
+	6 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 16:24:12 INFO  [main]: End of day 2019-06-25: You get
+	1 lines for accountBalance schema
+	1 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 16:24:12 INFO  [main]: End of day 2019-06-20: You get
+	1 lines for accountBalance schema
+	3 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 16:24:12 INFO  [main]: End of day 2019-06-20: You get
+	0 lines for accountBalance schema
+	0 lines for closedTransactions schema
+	0 lines for totalClosedTransactions schema
+
+2019-10-13 16:24:12 INFO  [main]: End of day 2019-06-27: You get
+	1 lines for accountBalance schema
+	3 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 16:24:12 INFO  [main]: End of day 2019-05-30: You get
+	1 lines for accountBalance schema
+	11 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 16:24:12 INFO  [main]: End of day 2019-06-18: You get
+	1 lines for accountBalance schema
+	8 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 16:24:12 INFO  [main]: End of day 2019-06-03: You get
+	1 lines for accountBalance schema
+	12 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 16:24:12 INFO  [main]: You analise 21 files
+2019-10-13 16:24:14 INFO  [main]: 
+You have 21 lines for accountBalance schema.
+You have 82 lines for closedTransactions schema.
+You have 16 lines for totalClosedTransactions schema.
+
+2019-10-13 16:24:14 INFO  [main]: 
+You add 21 lines to accountBalance schema
+You add 0 lines to closedTransactions schema
+You add 16 lines to totalClosedTransactions schema
+
+2019-10-13 16:25:48 INFO  [main]: End of day 2019-06-21: You get
+	1 lines for accountBalance schema
+	0 lines for closedTransactions schema
+	0 lines for totalClosedTransactions schema
+
+2019-10-13 16:25:48 INFO  [main]: End of day 2019-06-10: You get
+	1 lines for accountBalance schema
+	1 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 16:25:48 INFO  [main]: End of day 2019-06-19: You get
+	1 lines for accountBalance schema
+	3 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 16:25:48 INFO  [main]: End of day 2019-06-06: You get
+	1 lines for accountBalance schema
+	0 lines for closedTransactions schema
+	0 lines for totalClosedTransactions schema
+
+2019-10-13 16:25:48 INFO  [main]: End of day 2019-06-17: You get
+	1 lines for accountBalance schema
+	2 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 16:25:48 INFO  [main]: End of day 2019-06-12: You get
+	1 lines for accountBalance schema
+	4 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 16:25:48 INFO  [main]: End of day 2019-06-07: You get
+	1 lines for accountBalance schema
+	5 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 16:25:48 INFO  [main]: End of day 2019-06-02: You get
+	1 lines for accountBalance schema
+	0 lines for closedTransactions schema
+	0 lines for totalClosedTransactions schema
+
+2019-10-13 16:25:48 INFO  [main]: End of day 2019-06-04: You get
+	1 lines for accountBalance schema
+	7 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 16:25:48 INFO  [main]: End of day 2019-05-31: You get
+	1 lines for accountBalance schema
+	10 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 16:25:48 INFO  [main]: End of day 2019-06-28: You get
+	1 lines for accountBalance schema
+	0 lines for closedTransactions schema
+	0 lines for totalClosedTransactions schema
+
+2019-10-13 16:25:48 INFO  [main]: End of day 2019-06-13: You get
+	1 lines for accountBalance schema
+	3 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 16:25:48 INFO  [main]: End of day 2019-06-24: You get
+	1 lines for accountBalance schema
+	0 lines for closedTransactions schema
+	0 lines for totalClosedTransactions schema
+
+2019-10-13 16:25:48 INFO  [main]: End of day 2019-06-11: You get
+	1 lines for accountBalance schema
+	3 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 16:25:48 INFO  [main]: End of day 2019-06-05: You get
+	1 lines for accountBalance schema
+	6 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 16:25:48 INFO  [main]: End of day 2019-06-25: You get
+	1 lines for accountBalance schema
+	1 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 16:25:48 INFO  [main]: End of day 2019-06-20: You get
+	1 lines for accountBalance schema
+	3 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 16:25:48 INFO  [main]: End of day 2019-06-20: You get
+	0 lines for accountBalance schema
+	0 lines for closedTransactions schema
+	0 lines for totalClosedTransactions schema
+
+2019-10-13 16:25:48 INFO  [main]: End of day 2019-06-27: You get
+	1 lines for accountBalance schema
+	3 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 16:25:48 INFO  [main]: End of day 2019-05-30: You get
+	1 lines for accountBalance schema
+	11 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 16:25:48 INFO  [main]: End of day 2019-06-18: You get
+	1 lines for accountBalance schema
+	8 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 16:25:48 INFO  [main]: End of day 2019-06-03: You get
+	1 lines for accountBalance schema
+	12 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 16:25:48 INFO  [main]: You analise 21 files
+2019-10-13 16:25:49 INFO  [main]: 
+You have 21 lines for accountBalance schema.
+You have 82 lines for closedTransactions schema.
+You have 16 lines for totalClosedTransactions schema.
+
+2019-10-13 16:25:49 INFO  [main]: 
+You add 21 lines to accountBalance schema
+You add 0 lines to closedTransactions schema
+You add 16 lines to totalClosedTransactions schema
+
+2019-10-13 16:28:03 INFO  [main]: End of day 2019-06-21: You get
+	1 lines for accountBalance schema
+	0 lines for closedTransactions schema
+	0 lines for totalClosedTransactions schema
+
+2019-10-13 16:28:03 INFO  [main]: End of day 2019-06-10: You get
+	1 lines for accountBalance schema
+	1 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 16:28:03 INFO  [main]: End of day 2019-06-19: You get
+	1 lines for accountBalance schema
+	3 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 16:28:03 INFO  [main]: End of day 2019-06-06: You get
+	1 lines for accountBalance schema
+	0 lines for closedTransactions schema
+	0 lines for totalClosedTransactions schema
+
+2019-10-13 16:28:03 INFO  [main]: End of day 2019-06-17: You get
+	1 lines for accountBalance schema
+	2 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 16:28:03 INFO  [main]: End of day 2019-06-12: You get
+	1 lines for accountBalance schema
+	4 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 16:28:03 INFO  [main]: End of day 2019-06-07: You get
+	1 lines for accountBalance schema
+	5 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 16:28:03 INFO  [main]: End of day 2019-06-02: You get
+	1 lines for accountBalance schema
+	0 lines for closedTransactions schema
+	0 lines for totalClosedTransactions schema
+
+2019-10-13 16:28:03 INFO  [main]: End of day 2019-06-04: You get
+	1 lines for accountBalance schema
+	7 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 16:28:03 INFO  [main]: End of day 2019-05-31: You get
+	1 lines for accountBalance schema
+	10 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 16:28:03 INFO  [main]: End of day 2019-06-28: You get
+	1 lines for accountBalance schema
+	0 lines for closedTransactions schema
+	0 lines for totalClosedTransactions schema
+
+2019-10-13 16:28:03 INFO  [main]: End of day 2019-06-13: You get
+	1 lines for accountBalance schema
+	3 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 16:28:03 INFO  [main]: End of day 2019-06-24: You get
+	1 lines for accountBalance schema
+	0 lines for closedTransactions schema
+	0 lines for totalClosedTransactions schema
+
+2019-10-13 16:28:03 INFO  [main]: End of day 2019-06-11: You get
+	1 lines for accountBalance schema
+	3 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 16:28:03 INFO  [main]: End of day 2019-06-05: You get
+	1 lines for accountBalance schema
+	6 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 16:28:03 INFO  [main]: End of day 2019-06-25: You get
+	1 lines for accountBalance schema
+	1 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 16:28:03 INFO  [main]: End of day 2019-06-20: You get
+	1 lines for accountBalance schema
+	3 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 16:28:03 INFO  [main]: End of day 2019-06-20: You get
+	0 lines for accountBalance schema
+	0 lines for closedTransactions schema
+	0 lines for totalClosedTransactions schema
+
+2019-10-13 16:28:03 INFO  [main]: End of day 2019-06-27: You get
+	1 lines for accountBalance schema
+	3 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 16:28:03 INFO  [main]: End of day 2019-05-30: You get
+	1 lines for accountBalance schema
+	11 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 16:28:03 INFO  [main]: End of day 2019-06-18: You get
+	1 lines for accountBalance schema
+	8 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 16:28:03 INFO  [main]: End of day 2019-06-03: You get
+	1 lines for accountBalance schema
+	12 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 16:28:03 INFO  [main]: You analise 21 files
+2019-10-13 16:28:05 INFO  [main]: 
+You have 21 lines for accountBalance schema.
+You have 82 lines for closedTransactions schema.
+You have 16 lines for totalClosedTransactions schema.
+
+2019-10-13 16:28:05 INFO  [main]: 
+You add 21 lines to accountBalance schema
+You add 0 lines to closedTransactions schema
+You add 16 lines to totalClosedTransactions schema
+
+2019-10-13 17:02:14 INFO  [main]: End of day 2019-06-21: You get
+	1 lines for accountBalance schema
+	0 lines for closedTransactions schema
+	0 lines for totalClosedTransactions schema
+
+2019-10-13 17:02:14 INFO  [main]: End of day 2019-06-10: You get
+	1 lines for accountBalance schema
+	1 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 17:02:14 INFO  [main]: End of day 2019-06-19: You get
+	1 lines for accountBalance schema
+	3 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 17:02:14 INFO  [main]: End of day 2019-06-06: You get
+	1 lines for accountBalance schema
+	0 lines for closedTransactions schema
+	0 lines for totalClosedTransactions schema
+
+2019-10-13 17:02:14 INFO  [main]: End of day 2019-06-17: You get
+	1 lines for accountBalance schema
+	2 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 17:02:14 INFO  [main]: End of day 2019-06-12: You get
+	1 lines for accountBalance schema
+	4 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 17:02:14 INFO  [main]: End of day 2019-06-07: You get
+	1 lines for accountBalance schema
+	5 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 17:02:14 INFO  [main]: End of day 2019-06-02: You get
+	1 lines for accountBalance schema
+	0 lines for closedTransactions schema
+	0 lines for totalClosedTransactions schema
+
+2019-10-13 17:02:14 INFO  [main]: End of day 2019-06-04: You get
+	1 lines for accountBalance schema
+	7 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 17:02:14 INFO  [main]: End of day 2019-05-31: You get
+	1 lines for accountBalance schema
+	10 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 17:02:14 INFO  [main]: End of day 2019-06-28: You get
+	1 lines for accountBalance schema
+	0 lines for closedTransactions schema
+	0 lines for totalClosedTransactions schema
+
+2019-10-13 17:02:14 INFO  [main]: End of day 2019-06-13: You get
+	1 lines for accountBalance schema
+	3 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 17:02:14 INFO  [main]: End of day 2019-06-24: You get
+	1 lines for accountBalance schema
+	0 lines for closedTransactions schema
+	0 lines for totalClosedTransactions schema
+
+2019-10-13 17:02:14 INFO  [main]: End of day 2019-06-11: You get
+	1 lines for accountBalance schema
+	3 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 17:02:14 INFO  [main]: End of day 2019-06-05: You get
+	1 lines for accountBalance schema
+	6 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 17:02:14 INFO  [main]: End of day 2019-06-25: You get
+	1 lines for accountBalance schema
+	1 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 17:02:14 INFO  [main]: End of day 2019-06-20: You get
+	1 lines for accountBalance schema
+	3 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 17:02:14 INFO  [main]: End of day 2019-06-20: You get
+	0 lines for accountBalance schema
+	0 lines for closedTransactions schema
+	0 lines for totalClosedTransactions schema
+
+2019-10-13 17:02:14 INFO  [main]: End of day 2019-06-27: You get
+	1 lines for accountBalance schema
+	3 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 17:02:14 INFO  [main]: End of day 2019-05-30: You get
+	1 lines for accountBalance schema
+	11 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 17:02:14 INFO  [main]: End of day 2019-06-18: You get
+	1 lines for accountBalance schema
+	8 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 17:02:14 INFO  [main]: End of day 2019-06-03: You get
+	1 lines for accountBalance schema
+	12 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 17:02:14 INFO  [main]: You analise 21 files
+2019-10-13 17:02:16 INFO  [main]: 
+You have 21 lines for accountBalance schema.
+You have 82 lines for closedTransactions schema.
+You have 16 lines for totalClosedTransactions schema.
+
+2019-10-13 17:02:16 INFO  [main]: 
+You add 21 lines to accountBalance schema
+You add 0 lines to closedTransactions schema
+You add 16 lines to totalClosedTransactions schema
+
+2019-10-13 17:18:40 INFO  [main]: End of day 2019-06-21: You get
+	1 lines for accountBalance schema
+	0 lines for closedTransactions schema
+	0 lines for totalClosedTransactions schema
+
+2019-10-13 17:18:40 INFO  [main]: End of day 2019-06-10: You get
+	1 lines for accountBalance schema
+	1 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 17:18:40 INFO  [main]: End of day 2019-06-19: You get
+	1 lines for accountBalance schema
+	3 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 17:18:40 INFO  [main]: End of day 2019-06-06: You get
+	1 lines for accountBalance schema
+	0 lines for closedTransactions schema
+	0 lines for totalClosedTransactions schema
+
+2019-10-13 17:18:40 INFO  [main]: End of day 2019-06-17: You get
+	1 lines for accountBalance schema
+	2 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 17:18:40 INFO  [main]: End of day 2019-06-12: You get
+	1 lines for accountBalance schema
+	4 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 17:18:40 INFO  [main]: End of day 2019-06-07: You get
+	1 lines for accountBalance schema
+	5 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 17:18:40 INFO  [main]: End of day 2019-06-02: You get
+	1 lines for accountBalance schema
+	0 lines for closedTransactions schema
+	0 lines for totalClosedTransactions schema
+
+2019-10-13 17:18:40 INFO  [main]: End of day 2019-06-04: You get
+	1 lines for accountBalance schema
+	7 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 17:18:40 INFO  [main]: End of day 2019-05-31: You get
+	1 lines for accountBalance schema
+	10 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 17:18:40 INFO  [main]: End of day 2019-06-28: You get
+	1 lines for accountBalance schema
+	0 lines for closedTransactions schema
+	0 lines for totalClosedTransactions schema
+
+2019-10-13 17:18:40 INFO  [main]: End of day 2019-06-13: You get
+	1 lines for accountBalance schema
+	3 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 17:18:40 INFO  [main]: End of day 2019-06-24: You get
+	1 lines for accountBalance schema
+	0 lines for closedTransactions schema
+	0 lines for totalClosedTransactions schema
+
+2019-10-13 17:18:40 INFO  [main]: End of day 2019-06-11: You get
+	1 lines for accountBalance schema
+	3 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 17:18:40 INFO  [main]: End of day 2019-06-05: You get
+	1 lines for accountBalance schema
+	6 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 17:18:40 INFO  [main]: End of day 2019-06-25: You get
+	1 lines for accountBalance schema
+	1 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 17:18:40 INFO  [main]: End of day 2019-06-20: You get
+	1 lines for accountBalance schema
+	3 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 17:18:40 INFO  [main]: End of day 2019-06-20: You get
+	0 lines for accountBalance schema
+	0 lines for closedTransactions schema
+	0 lines for totalClosedTransactions schema
+
+2019-10-13 17:18:40 INFO  [main]: End of day 2019-06-27: You get
+	1 lines for accountBalance schema
+	3 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 17:18:40 INFO  [main]: End of day 2019-05-30: You get
+	1 lines for accountBalance schema
+	11 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 17:18:40 INFO  [main]: End of day 2019-06-18: You get
+	1 lines for accountBalance schema
+	8 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 17:18:40 INFO  [main]: End of day 2019-06-03: You get
+	1 lines for accountBalance schema
+	12 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 17:18:40 INFO  [main]: You analise 21 files
+2019-10-13 17:18:42 INFO  [main]: 
+You have 21 lines for accountBalance schema.
+You have 82 lines for closedTransactions schema.
+You have 16 lines for totalClosedTransactions schema.
+
+2019-10-13 17:18:42 INFO  [main]: 
+You add 21 lines to accountBalance schema
+You add 0 lines to closedTransactions schema
+You add 16 lines to totalClosedTransactions schema
+
+2019-10-13 21:06:57 INFO  [main]: End of day 2019-06-21: You get
+	1 lines for accountBalance schema
+	0 lines for closedTransactions schema
+	0 lines for totalClosedTransactions schema
+
+2019-10-13 21:06:57 INFO  [main]: End of day 2019-06-10: You get
+	1 lines for accountBalance schema
+	1 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 21:06:57 INFO  [main]: End of day 2019-06-19: You get
+	1 lines for accountBalance schema
+	3 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 21:06:57 INFO  [main]: End of day 2019-06-06: You get
+	1 lines for accountBalance schema
+	0 lines for closedTransactions schema
+	0 lines for totalClosedTransactions schema
+
+2019-10-13 21:06:57 INFO  [main]: End of day 2019-06-17: You get
+	1 lines for accountBalance schema
+	2 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 21:06:57 INFO  [main]: End of day 2019-06-12: You get
+	1 lines for accountBalance schema
+	4 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 21:06:57 INFO  [main]: End of day 2019-06-07: You get
+	1 lines for accountBalance schema
+	5 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 21:06:57 INFO  [main]: End of day 2019-06-02: You get
+	1 lines for accountBalance schema
+	0 lines for closedTransactions schema
+	0 lines for totalClosedTransactions schema
+
+2019-10-13 21:06:57 INFO  [main]: End of day 2019-06-04: You get
+	1 lines for accountBalance schema
+	7 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 21:06:57 INFO  [main]: End of day 2019-05-31: You get
+	1 lines for accountBalance schema
+	10 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 21:06:57 INFO  [main]: End of day 2019-06-28: You get
+	1 lines for accountBalance schema
+	0 lines for closedTransactions schema
+	0 lines for totalClosedTransactions schema
+
+2019-10-13 21:06:57 INFO  [main]: End of day 2019-06-13: You get
+	1 lines for accountBalance schema
+	3 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 21:06:57 INFO  [main]: End of day 2019-06-24: You get
+	1 lines for accountBalance schema
+	0 lines for closedTransactions schema
+	0 lines for totalClosedTransactions schema
+
+2019-10-13 21:06:57 INFO  [main]: End of day 2019-06-11: You get
+	1 lines for accountBalance schema
+	3 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 21:06:57 INFO  [main]: End of day 2019-06-05: You get
+	1 lines for accountBalance schema
+	6 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 21:06:57 INFO  [main]: End of day 2019-06-25: You get
+	1 lines for accountBalance schema
+	1 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 21:06:57 INFO  [main]: End of day 2019-06-20: You get
+	1 lines for accountBalance schema
+	3 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 21:06:57 INFO  [main]: End of day 2019-06-20: You get
+	0 lines for accountBalance schema
+	0 lines for closedTransactions schema
+	0 lines for totalClosedTransactions schema
+
+2019-10-13 21:06:57 INFO  [main]: End of day 2019-06-27: You get
+	1 lines for accountBalance schema
+	3 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 21:06:57 INFO  [main]: End of day 2019-05-30: You get
+	1 lines for accountBalance schema
+	11 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 21:06:57 INFO  [main]: End of day 2019-06-18: You get
+	1 lines for accountBalance schema
+	8 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 21:06:57 INFO  [main]: End of day 2019-06-03: You get
+	1 lines for accountBalance schema
+	12 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 21:06:57 INFO  [main]: You analise 21 files
+2019-10-13 21:06:58 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 21:06:58 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 21:06:58 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 21:06:58 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 21:06:58 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 21:06:58 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 21:06:58 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 21:06:58 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 21:06:58 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 21:06:58 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 21:06:58 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 21:06:58 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 21:06:58 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 21:06:58 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 21:06:58 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 21:06:58 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 21:06:58 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 21:06:58 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 21:06:58 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 21:06:58 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 21:06:58 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 21:06:58 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 21:06:58 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 21:06:58 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 21:06:58 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 21:06:58 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 21:06:58 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 21:06:58 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 21:06:58 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 21:06:58 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 21:06:58 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 21:06:58 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 21:06:58 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 21:06:58 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 21:06:58 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 21:06:58 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 21:06:58 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 21:06:58 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 21:06:58 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 21:06:58 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 21:06:58 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 21:06:58 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 21:06:58 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 21:06:58 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 21:06:58 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 21:06:58 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 21:06:58 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 21:06:58 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 21:06:58 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 21:06:58 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 21:06:58 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 21:06:58 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 21:06:58 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 21:06:58 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 21:06:58 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 21:06:58 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 21:06:58 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 21:06:58 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 21:06:58 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 21:06:58 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 21:06:58 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 21:06:58 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 21:06:58 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 21:06:58 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 21:06:58 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 21:06:58 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 21:06:58 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 21:06:58 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 21:06:58 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 21:06:58 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 21:06:58 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 21:06:58 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 21:06:58 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 21:06:58 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 21:06:58 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 21:06:58 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 21:06:58 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 21:06:58 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 21:06:58 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 21:06:58 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 21:06:58 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 21:06:58 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 21:06:59 INFO  [main]: 
+You have 21 lines for accountBalance schema.
+You have 82 lines for closedTransactions schema.
+You have 16 lines for totalClosedTransactions schema.
+
+2019-10-13 21:06:59 INFO  [main]: 
+You add 21 lines to accountBalance schema
+You add 0 lines to closedTransactions schema
+You add 16 lines to totalClosedTransactions schema
+
+2019-10-13 21:08:08 INFO  [main]: End of day 2019-06-21: You get
+	1 lines for accountBalance schema
+	0 lines for closedTransactions schema
+	0 lines for totalClosedTransactions schema
+
+2019-10-13 21:08:08 INFO  [main]: End of day 2019-06-10: You get
+	1 lines for accountBalance schema
+	1 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 21:08:08 INFO  [main]: End of day 2019-06-19: You get
+	1 lines for accountBalance schema
+	3 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 21:08:08 INFO  [main]: End of day 2019-06-06: You get
+	1 lines for accountBalance schema
+	0 lines for closedTransactions schema
+	0 lines for totalClosedTransactions schema
+
+2019-10-13 21:08:08 INFO  [main]: End of day 2019-06-17: You get
+	1 lines for accountBalance schema
+	2 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 21:08:08 INFO  [main]: End of day 2019-06-12: You get
+	1 lines for accountBalance schema
+	4 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 21:08:08 INFO  [main]: End of day 2019-06-07: You get
+	1 lines for accountBalance schema
+	5 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 21:08:08 INFO  [main]: End of day 2019-06-02: You get
+	1 lines for accountBalance schema
+	0 lines for closedTransactions schema
+	0 lines for totalClosedTransactions schema
+
+2019-10-13 21:08:08 INFO  [main]: End of day 2019-06-04: You get
+	1 lines for accountBalance schema
+	7 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 21:08:08 INFO  [main]: End of day 2019-05-31: You get
+	1 lines for accountBalance schema
+	10 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 21:08:08 INFO  [main]: End of day 2019-06-28: You get
+	1 lines for accountBalance schema
+	0 lines for closedTransactions schema
+	0 lines for totalClosedTransactions schema
+
+2019-10-13 21:08:08 INFO  [main]: End of day 2019-06-13: You get
+	1 lines for accountBalance schema
+	3 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 21:08:08 INFO  [main]: End of day 2019-06-24: You get
+	1 lines for accountBalance schema
+	0 lines for closedTransactions schema
+	0 lines for totalClosedTransactions schema
+
+2019-10-13 21:08:08 INFO  [main]: End of day 2019-06-11: You get
+	1 lines for accountBalance schema
+	3 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 21:08:08 INFO  [main]: End of day 2019-06-05: You get
+	1 lines for accountBalance schema
+	6 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 21:08:08 INFO  [main]: End of day 2019-06-25: You get
+	1 lines for accountBalance schema
+	1 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 21:08:08 INFO  [main]: End of day 2019-06-20: You get
+	1 lines for accountBalance schema
+	3 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 21:08:08 INFO  [main]: End of day 2019-06-20: You get
+	0 lines for accountBalance schema
+	0 lines for closedTransactions schema
+	0 lines for totalClosedTransactions schema
+
+2019-10-13 21:08:08 INFO  [main]: End of day 2019-06-27: You get
+	1 lines for accountBalance schema
+	3 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 21:08:08 INFO  [main]: End of day 2019-05-30: You get
+	1 lines for accountBalance schema
+	11 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 21:08:08 INFO  [main]: End of day 2019-06-18: You get
+	1 lines for accountBalance schema
+	8 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 21:08:08 INFO  [main]: End of day 2019-06-03: You get
+	1 lines for accountBalance schema
+	12 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 21:08:08 INFO  [main]: You analise 21 files
+2019-10-13 21:09:48 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 21:10:11 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 21:10:11 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 21:10:11 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 21:10:11 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 21:10:11 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 21:10:11 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 21:10:11 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 21:10:11 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 21:10:11 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 21:10:11 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 21:10:11 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 21:10:11 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 21:10:11 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 21:10:11 ERROR [main]: -----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----
+2019-10-13 21:20:36 INFO  [main]: End of day 2019-06-21: You get
+	1 lines for accountBalance schema
+	0 lines for closedTransactions schema
+	0 lines for totalClosedTransactions schema
+
+2019-10-13 21:20:36 INFO  [main]: End of day 2019-06-10: You get
+	1 lines for accountBalance schema
+	1 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 21:20:36 INFO  [main]: End of day 2019-06-19: You get
+	1 lines for accountBalance schema
+	3 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 21:20:36 INFO  [main]: End of day 2019-06-06: You get
+	1 lines for accountBalance schema
+	0 lines for closedTransactions schema
+	0 lines for totalClosedTransactions schema
+
+2019-10-13 21:20:36 INFO  [main]: End of day 2019-06-17: You get
+	1 lines for accountBalance schema
+	2 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 21:20:36 INFO  [main]: End of day 2019-06-12: You get
+	1 lines for accountBalance schema
+	4 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 21:20:36 INFO  [main]: End of day 2019-06-07: You get
+	1 lines for accountBalance schema
+	5 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 21:20:36 INFO  [main]: End of day 2019-06-02: You get
+	1 lines for accountBalance schema
+	0 lines for closedTransactions schema
+	0 lines for totalClosedTransactions schema
+
+2019-10-13 21:20:36 INFO  [main]: End of day 2019-06-04: You get
+	1 lines for accountBalance schema
+	7 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 21:20:36 INFO  [main]: End of day 2019-05-31: You get
+	1 lines for accountBalance schema
+	10 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 21:20:36 INFO  [main]: End of day 2019-06-28: You get
+	1 lines for accountBalance schema
+	0 lines for closedTransactions schema
+	0 lines for totalClosedTransactions schema
+
+2019-10-13 21:20:36 INFO  [main]: End of day 2019-06-13: You get
+	1 lines for accountBalance schema
+	3 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 21:20:36 INFO  [main]: End of day 2019-06-24: You get
+	1 lines for accountBalance schema
+	0 lines for closedTransactions schema
+	0 lines for totalClosedTransactions schema
+
+2019-10-13 21:20:36 INFO  [main]: End of day 2019-06-11: You get
+	1 lines for accountBalance schema
+	3 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 21:20:36 INFO  [main]: End of day 2019-06-05: You get
+	1 lines for accountBalance schema
+	6 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 21:20:36 INFO  [main]: End of day 2019-06-25: You get
+	1 lines for accountBalance schema
+	1 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 21:20:36 INFO  [main]: End of day 2019-06-20: You get
+	1 lines for accountBalance schema
+	3 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 21:20:36 INFO  [main]: End of day 2019-06-20: You get
+	0 lines for accountBalance schema
+	0 lines for closedTransactions schema
+	0 lines for totalClosedTransactions schema
+
+2019-10-13 21:20:36 INFO  [main]: End of day 2019-06-27: You get
+	1 lines for accountBalance schema
+	3 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 21:20:36 INFO  [main]: End of day 2019-05-30: You get
+	1 lines for accountBalance schema
+	11 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 21:20:36 INFO  [main]: End of day 2019-06-18: You get
+	1 lines for accountBalance schema
+	8 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 21:20:36 INFO  [main]: End of day 2019-06-03: You get
+	1 lines for accountBalance schema
+	12 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 21:20:36 INFO  [main]: You analise 21 files
+2019-10-13 21:20:41 INFO  [main]: 
+You have 21 lines for accountBalance schema.
+You have 82 lines for closedTransactions schema.
+You have 16 lines for totalClosedTransactions schema.
+
+2019-10-13 21:20:41 INFO  [main]: 
+You add 21 lines to accountBalance schema
+You add 82 lines to closedTransactions schema
+You add 16 lines to totalClosedTransactions schema
+
+2019-10-13 21:25:51 INFO  [main]: End of day 2019-06-21: You get
+	1 lines for accountBalance schema
+	0 lines for closedTransactions schema
+	0 lines for totalClosedTransactions schema
+
+2019-10-13 21:25:51 INFO  [main]: End of day 2019-06-10: You get
+	1 lines for accountBalance schema
+	1 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 21:25:51 INFO  [main]: End of day 2019-06-19: You get
+	1 lines for accountBalance schema
+	3 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 21:25:51 INFO  [main]: End of day 2019-06-06: You get
+	1 lines for accountBalance schema
+	0 lines for closedTransactions schema
+	0 lines for totalClosedTransactions schema
+
+2019-10-13 21:25:51 INFO  [main]: End of day 2019-06-17: You get
+	1 lines for accountBalance schema
+	2 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 21:25:51 INFO  [main]: End of day 2019-06-12: You get
+	1 lines for accountBalance schema
+	4 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 21:25:51 INFO  [main]: End of day 2019-06-07: You get
+	1 lines for accountBalance schema
+	5 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 21:25:51 INFO  [main]: End of day 2019-06-02: You get
+	1 lines for accountBalance schema
+	0 lines for closedTransactions schema
+	0 lines for totalClosedTransactions schema
+
+2019-10-13 21:25:51 INFO  [main]: End of day 2019-06-04: You get
+	1 lines for accountBalance schema
+	7 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 21:25:51 INFO  [main]: End of day 2019-05-31: You get
+	1 lines for accountBalance schema
+	10 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 21:25:51 INFO  [main]: End of day 2019-06-28: You get
+	1 lines for accountBalance schema
+	0 lines for closedTransactions schema
+	0 lines for totalClosedTransactions schema
+
+2019-10-13 21:25:51 INFO  [main]: End of day 2019-06-13: You get
+	1 lines for accountBalance schema
+	3 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 21:25:51 INFO  [main]: End of day 2019-06-24: You get
+	1 lines for accountBalance schema
+	0 lines for closedTransactions schema
+	0 lines for totalClosedTransactions schema
+
+2019-10-13 21:25:51 INFO  [main]: End of day 2019-06-11: You get
+	1 lines for accountBalance schema
+	3 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 21:25:51 INFO  [main]: End of day 2019-06-05: You get
+	1 lines for accountBalance schema
+	6 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 21:25:51 INFO  [main]: End of day 2019-06-25: You get
+	1 lines for accountBalance schema
+	1 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 21:25:51 INFO  [main]: End of day 2019-06-20: You get
+	1 lines for accountBalance schema
+	3 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 21:25:51 INFO  [main]: End of day 2019-06-20: You get
+	0 lines for accountBalance schema
+	0 lines for closedTransactions schema
+	0 lines for totalClosedTransactions schema
+
+2019-10-13 21:25:51 INFO  [main]: End of day 2019-06-27: You get
+	1 lines for accountBalance schema
+	3 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 21:25:51 INFO  [main]: End of day 2019-05-30: You get
+	1 lines for accountBalance schema
+	11 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 21:25:51 INFO  [main]: End of day 2019-06-18: You get
+	1 lines for accountBalance schema
+	8 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 21:25:51 INFO  [main]: End of day 2019-06-03: You get
+	1 lines for accountBalance schema
+	12 lines for closedTransactions schema
+	1 lines for totalClosedTransactions schema
+
+2019-10-13 21:25:51 INFO  [main]: You analise 21 files
+2019-10-13 21:25:56 INFO  [main]: 
+You have 21 lines for accountBalance schema.
+You have 82 lines for closedTransactions schema.
+You have 16 lines for totalClosedTransactions schema.
+
+2019-10-13 21:25:56 INFO  [main]: 
+You add 21 lines to accountBalance schema
+You add 82 lines to closedTransactions schema
+You add 16 lines to totalClosedTransactions schema
+

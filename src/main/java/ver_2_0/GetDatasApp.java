@@ -148,13 +148,20 @@ public class GetDatasApp {
 //        put records from list into closedTransactions schema
         for (String closedTransactionsData : loadDataForClosedTransactions) {
             String[] splitClosedTransactionsData = closedTransactionsData.trim().split("\t");
+
+            String openDate = AnaliseData.convertDate(splitClosedTransactionsData[2]);
+            String openTime = AnaliseData.convertTime(splitClosedTransactionsData[2]);
+            String closeDate = AnaliseData.convertDate(splitClosedTransactionsData[9]);
+            String closeTransactionTime = AnaliseData.convertTime(splitClosedTransactionsData[9]);
+
             try (Connection connection = DriverManager.getConnection(connectionUrl, userName, password);
                  Statement statement = connection.createStatement()) {
                 PreparedStatement fillClosedTransactionSchema = connection.prepareStatement("INSERT INTO " +
                         "closedTransactions (raportDate, ticket, openTimeTransactions, typeTransactions, lots, " +
                         "symbol, exchangeCode, assetClass, openPrice, closeTime, closePrise, conversionRate, " +
-                        "commissions, swap, profit) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)");
-                AnaliseData.fillClosedTransactions(splitClosedTransactionsData, fillClosedTransactionSchema);
+                        "commissions, swap, profit, openDate, openTime, closeDate, closeTransactionTime) " +
+                        "VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)");
+                AnaliseData.fillClosedTransactions(splitClosedTransactionsData, openDate, openTime, closeDate, closeTransactionTime, fillClosedTransactionSchema);
                 addClosedTransactionsLines++;
             } catch (Exception e) {
                 logger.error("-----UPS. ERROR IN FILL CLOSEDTRANSACTION SCHEMA-----");
@@ -193,6 +200,7 @@ public class GetDatasApp {
 
 
     }
+
 
 
 }

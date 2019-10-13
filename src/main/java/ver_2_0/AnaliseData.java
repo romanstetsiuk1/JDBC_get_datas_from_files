@@ -70,7 +70,19 @@ public class AnaliseData {
         return false;
     }
 
-//    Fill DB:
+    public static String convertDate(String inputDate) {
+        String[] splitDateTime = inputDate.split(" ");
+        String[] convertDate = splitDateTime[0].split("/");
+        String result = convertDate[2] + "-" + convertDate[1] + "-" + convertDate[0];
+        return result;
+    }
+
+    public static String convertTime(String inputDate) {
+        String[] splitDateTime = inputDate.split(" ");
+        return splitDateTime[1];
+    }
+
+    //    Fill DB:
     public static void fillAccountBalance(String[] splitAccountBalanceData,
                                           PreparedStatement fillAccountBalanceSchema) throws SQLException {
         fillAccountBalanceSchema.setString(1, splitAccountBalanceData[0].trim());
@@ -82,9 +94,8 @@ public class AnaliseData {
         fillAccountBalanceSchema.close();
     }
 
-    public static void fillClosedTransactions
-            (String[] splitClosedTransactionsData, PreparedStatement fillClosedTransactionSchema)
-            throws SQLException {
+
+    public static void fillClosedTransactions(String[] splitClosedTransactionsData, String openDate, String openTime, String closeDate, String closeTransactionTime, PreparedStatement fillClosedTransactionSchema) throws SQLException {
         fillClosedTransactionSchema.setString(1, splitClosedTransactionsData[0]);
         fillClosedTransactionSchema.setString(2, splitClosedTransactionsData[1]);
         fillClosedTransactionSchema.setString(3, splitClosedTransactionsData[2]);
@@ -100,6 +111,10 @@ public class AnaliseData {
         fillClosedTransactionSchema.setString(13, splitClosedTransactionsData[12]);
         fillClosedTransactionSchema.setString(14, splitClosedTransactionsData[13]);
         fillClosedTransactionSchema.setString(15, splitClosedTransactionsData[14]);
+        fillClosedTransactionSchema.setString(16, openDate);
+        fillClosedTransactionSchema.setString(17, openTime);
+        fillClosedTransactionSchema.setString(18, closeDate);
+        fillClosedTransactionSchema.setString(19, closeTransactionTime);
         fillClosedTransactionSchema.execute();
         fillClosedTransactionSchema.close();
     }

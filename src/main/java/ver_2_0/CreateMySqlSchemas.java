@@ -34,6 +34,10 @@ public class CreateMySqlSchemas {
                 "commissions VARCHAR(10)," +
                 "swap VARCHAR(10)," +
                 "profit VARCHAR(10)," +
+                "openDate DATE, " +
+                "openTime TIME, " +
+                "closeDate DATE ," +
+                "closeTransactionTime TIME ," +
                 "PRIMARY  KEY (closedTransaction_id))");
     }
 
