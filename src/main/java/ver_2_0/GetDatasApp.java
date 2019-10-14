@@ -44,10 +44,12 @@ public class GetDatasApp {
         List<String> loadDataForAccountBalance = new ArrayList<>();
         List<String> loadDataForClosedTransactions = new ArrayList<>();
         List<String> loadDataForTotalClosedTransactions = new ArrayList<>();
+        List<String> loadDataForOpenTransactions = new ArrayList<>();
 
         int loadAccountBalanceLines = 0, addAccountBalanceLines = 0,
                 loadClosedTransactionsLines = 0, addClosedTransactionsLines = 0,
-                loadTotalClosedTransactionsLines = 0, addTotalClosedTransactionsLines = 0;
+                loadTotalClosedTransactionsLines = 0, addTotalClosedTransactionsLines = 0,
+                loadOpenTranactionsLines = 0, addOpenTransactionsLines = 0;
 
         File directory = new File(filesDirectory);
         File[] filesList = directory.listFiles();
@@ -111,6 +113,17 @@ public class GetDatasApp {
                         if (typeAnalise == 3 && currentLine.contains("Open Transactions")) {
                             typeAnalise++;
                         }
+                        if (typeAnalise == 4 && AnaliseData.containsNumberValue(currentLine)
+                                && !currentLine.contains("Total")) {
+                            String addDataToOpenTransaction = actualDayValue + "\t" + currentLine;
+                            loadDataForOpenTransactions.add(addDataToOpenTransaction);
+                            loadOpenTranactionsLines++;
+                        }
+
+//                        typeAnalise = 5 -- in this state I get data for totalOpenTransactions
+                        if (typeAnalise == 4 && currentLine.contains("Total")) {
+                            typeAnalise++;
+                        }
                     }
                 } catch (FileNotFoundException e) {
                     e.printStackTrace();
@@ -122,11 +135,13 @@ public class GetDatasApp {
             logger.info("End of day " + actualDayValue + ": You get\n\t"
                     + loadAccountBalanceLines + " lines for accountBalance schema\n\t"
                     + loadClosedTransactionsLines + " lines for closedTransactions schema\n\t"
-                    + loadTotalClosedTransactionsLines + " lines for totalClosedTransactions schema\n");
+                    + loadTotalClosedTransactionsLines + " lines for totalClosedTransactions schema\n\t"
+                    + loadOpenTranactionsLines + " lines for openTransactions schema\n");
 
             loadAccountBalanceLines = 0;
             loadClosedTransactionsLines = 0;
             loadTotalClosedTransactionsLines = 0;
+            loadOpenTranactionsLines = 0;
         }
         logger.info("You analise " + filesWasAnalise + " files");
 
@@ -200,7 +215,6 @@ public class GetDatasApp {
 
 
     }
-
 
 
 }

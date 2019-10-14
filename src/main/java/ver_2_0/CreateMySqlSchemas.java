@@ -57,7 +57,9 @@ public class CreateMySqlSchemas {
                 "openTransactions_id INT NOT NULL AUTO_INCREMENT," +
                 "raportDate DATE," +
                 "ticket VARCHAR(15)," +
-                "openTimeTransactions DATETIME," +
+                "openTimeTransactions VARCHAR(25)," +
+                "openDate DATE ," +
+                "openTime TIME ," +
                 "typeTransactions VARCHAR(5)," +
                 "lots VARCHAR(5)," +
                 "symbol VARCHAR(10)," +
