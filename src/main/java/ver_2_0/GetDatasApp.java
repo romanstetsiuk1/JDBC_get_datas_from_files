@@ -202,16 +202,55 @@ public class GetDatasApp {
             } catch (Exception e) {
                 logger.error("-----UPS. ERROR IN FILL TOTALCLOSEDTRANSACTION SCHEMA-----");
             }
+        }
 
+//        put records from list into OpenTransactions schema
+        for (String openTransactionsData : loadDataForOpenTransactions) {
+            String[] splitOpenTransactionData = openTransactionsData.trim().split("\t");
+
+            String openDate = AnaliseData.convertDate(splitOpenTransactionData[2]);
+            String openTime = AnaliseData.convertTime(splitOpenTransactionData[2]);
+
+            try (Connection connection = DriverManager.getConnection(connectionUrl, userName, password);
+                 Statement statement = connection.createStatement()) {
+                PreparedStatement fillOpenTransactionsSchema = connection.prepareStatement("INSERT INTO " +
+                        "openTransactions (raportDate, ticket, openTimeTransactions, openDate, openTime, " +
+                        "typeTransactions, lots, symbol, exchangeCode, assetClass, openPrice, marketPrise, " +
+                        "conversionRate, commissions, swap, profit) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, " +
+                        "?, ?, ?, ?, ?) ");
+                fillOpenTransactionsSchema.setString(1, splitOpenTransactionData[0]);
+                fillOpenTransactionsSchema.setString(2, splitOpenTransactionData[1]);
+                fillOpenTransactionsSchema.setString(3, splitOpenTransactionData[2]);
+                fillOpenTransactionsSchema.setString(4, openDate);
+                fillOpenTransactionsSchema.setString(5, openTime);
+                fillOpenTransactionsSchema.setString(6, splitOpenTransactionData[3]);
+                fillOpenTransactionsSchema.setString(7, splitOpenTransactionData[4]);
+                fillOpenTransactionsSchema.setString(8, splitOpenTransactionData[5]);
+                fillOpenTransactionsSchema.setString(9, splitOpenTransactionData[6]);
+                fillOpenTransactionsSchema.setString(10, splitOpenTransactionData[7]);
+                fillOpenTransactionsSchema.setString(11, splitOpenTransactionData[8]);
+                fillOpenTransactionsSchema.setString(12, splitOpenTransactionData[9]);
+                fillOpenTransactionsSchema.setString(13, splitOpenTransactionData[10]);
+                fillOpenTransactionsSchema.setString(14, splitOpenTransactionData[11]);
+                fillOpenTransactionsSchema.setString(15, splitOpenTransactionData[12]);
+                fillOpenTransactionsSchema.setString(16, splitOpenTransactionData[13]);
+                fillOpenTransactionsSchema.execute();
+                fillOpenTransactionsSchema.close();
+                addOpenTransactionsLines++;
+            } catch (Exception e) {
+                logger.error("-----UPS. ERROR IN FILL OPENTRANSACTION SCHEMA-----");
+            }
         }
 
         logger.info("\nYou have " + loadDataForAccountBalance.size() + " lines for accountBalance schema.\n" +
                 "You have " + loadDataForClosedTransactions.size() + " lines for closedTransactions schema.\n" +
-                "You have " + loadDataForTotalClosedTransactions.size() + " lines for totalClosedTransactions schema.\n");
+                "You have " + loadDataForTotalClosedTransactions.size() + " lines for totalClosedTransactions schema.\n" +
+                "You have " + loadDataForOpenTransactions.size() + " lines for openTransactions schema.\n");
 
         logger.info("\nYou add " + addAccountBalanceLines + " lines to accountBalance schema\n" +
                 "You add " + addClosedTransactionsLines + " lines to closedTransactions schema\n" +
-                "You add " + addTotalClosedTransactionsLines + " lines to totalClosedTransactions schema\n");
+                "You add " + addTotalClosedTransactionsLines + " lines to totalClosedTransactions schema\n" +
+                "You add " + addOpenTransactionsLines + " lines to openTransactions schema\n");
 
 
     }
