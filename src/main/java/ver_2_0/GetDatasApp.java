@@ -45,11 +45,13 @@ public class GetDatasApp {
         List<String> loadDataForClosedTransactions = new ArrayList<>();
         List<String> loadDataForTotalClosedTransactions = new ArrayList<>();
         List<String> loadDataForOpenTransactions = new ArrayList<>();
+        List<String> loadDataForTotalOpenTransactions = new ArrayList<>();
 
         int loadAccountBalanceLines = 0, addAccountBalanceLines = 0,
                 loadClosedTransactionsLines = 0, addClosedTransactionsLines = 0,
                 loadTotalClosedTransactionsLines = 0, addTotalClosedTransactionsLines = 0,
-                loadOpenTranactionsLines = 0, addOpenTransactionsLines = 0;
+                loadOpenTranactionsLines = 0, addOpenTransactionsLines = 0,
+                loadTotalOpenTransactionsLines = 0, addTotalOpenTransactionsLines = 0;
 
         File directory = new File(filesDirectory);
         File[] filesList = directory.listFiles();
@@ -58,6 +60,7 @@ public class GetDatasApp {
         for (File file : filesList) {
             int typeAnalise = 0;
             String addToTotalCT = "";
+            String addToTotalOpTr = "";
 
             if (file.isFile()) {
                 try (BufferedReader bufferedReader = new BufferedReader(new FileReader(file))) {
@@ -122,6 +125,21 @@ public class GetDatasApp {
 
 //                        typeAnalise = 5 -- in this state I get data for totalOpenTransactions
                         if (typeAnalise == 4 && currentLine.contains("Total")) {
+                            typeAnalise++;
+                        }
+                        if (typeAnalise == 5) {
+                            if (currentLine.contains("Total") && AnaliseData.containsNumberValue(currentLine)) {
+                                addToTotalOpTr += actualDayValue + "\t" + currentLine;
+                            }
+                            if (currentLine.contains("Floating") && AnaliseData.containsNumberValue(currentLine)) {
+                                addToTotalOpTr += currentLine;
+                                loadDataForTotalOpenTransactions.add(addToTotalOpTr);
+                                loadTotalOpenTransactionsLines++;
+                            }
+                        }
+
+//                        typeAnalise = 6 -- in this state I get data for depositsWithdrawals schema
+                        if (typeAnalise == 5 && currentLine.contains("Deposits/Withdrawals")) {
                             typeAnalise++;
                         }
                     }
