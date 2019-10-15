@@ -160,4 +160,19 @@ public class AnaliseData {
         fillTotalOpenTransactionsSchema.close();
     }
 
+    public static void fillDepositsWithrawals(String[] splitDepositsWithdrawalsData, String openData, String openTime, PreparedStatement fillDepositsWithdrawalsSchema) throws SQLException {
+        fillDepositsWithdrawalsSchema.setString(1, splitDepositsWithdrawalsData[0]);
+        fillDepositsWithdrawalsSchema.setString(2, splitDepositsWithdrawalsData[1]);
+        fillDepositsWithdrawalsSchema.setString(3, splitDepositsWithdrawalsData[2]);
+        fillDepositsWithdrawalsSchema.setString(4, openData);
+        fillDepositsWithdrawalsSchema.setString(5, openTime);
+        fillDepositsWithdrawalsSchema.setString(6, splitDepositsWithdrawalsData[3]);
+        fillDepositsWithdrawalsSchema.setString(7, splitDepositsWithdrawalsData[4]);
+        fillDepositsWithdrawalsSchema.setString(8, splitDepositsWithdrawalsData[5]);
+        fillDepositsWithdrawalsSchema.setString(9, splitDepositsWithdrawalsData[6]);
+        fillDepositsWithdrawalsSchema.setString(10, splitDepositsWithdrawalsData[7]);
+        fillDepositsWithdrawalsSchema.execute();
+        fillDepositsWithdrawalsSchema.close();
+    }
+
 }

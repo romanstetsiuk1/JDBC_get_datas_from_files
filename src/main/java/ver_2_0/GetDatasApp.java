@@ -145,14 +145,21 @@ public class GetDatasApp {
                         if (typeAnalise == 5 && currentLine.contains("Deposits/Withdrawals")) {
                             typeAnalise++;
                         }
-                        if (typeAnalise == 6 && AnaliseData.containsNumberValue(currentLine)) {
-                            System.out.println(currentLine);
+                        if (typeAnalise == 6 && AnaliseData.containsNumberValue(currentLine) &&
+                                !currentLine.contains("Deposit/Withdrawal")) {
+
                             addToDepositsWithdrawals += actualDayValue + "\t" + currentLine;
                             loadDataForDepositsWithdrawals.add(addToDepositsWithdrawals);
+                            addToDepositsWithdrawals = "";
                             loadDepositsWithdrawalsLines++;
-                            if (currentLine.contains("Deposit/Withdrawal")) {
-                                typeAnalise++;
-                            }
+                        }
+                        if (typeAnalise == 6 && currentLine.contains("Deposit/Withdrawal")) {
+                            typeAnalise++;
+                        }
+
+//                        typeAnalise = 7 -- end of analise in this report
+                        if (typeAnalise == 7) {
+
                         }
                     }
                 } catch (FileNotFoundException e) {
@@ -270,21 +277,43 @@ public class GetDatasApp {
 
         }
 
+//        put records from list into depositsWithdrawals schema
+        for (String depositsWithdrawalsData : loadDataForDepositsWithdrawals) {
+            String[] splitDepositsWithdrawalsData = depositsWithdrawalsData.trim().split("\t");
+
+            String openData = AnaliseData.convertDate(splitDepositsWithdrawalsData[2]);
+            String openTime = AnaliseData.convertTime(splitDepositsWithdrawalsData[2]);
+
+            try (Connection connection = DriverManager.getConnection(connectionUrl, userName, password);
+                 Statement statement = connection.createStatement()) {
+                PreparedStatement fillDepositsWithdrawalsSchema = connection.prepareStatement("INSERT INTO " +
+                        "depositsWithdrawals (raportDate, ticket, openDateTime, openDate, openTime, typeOperation, " +
+                        "comment, deposit, withdraw, netDeposit) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)");
+                AnaliseData.fillDepositsWithrawals(splitDepositsWithdrawalsData, openData, openTime, fillDepositsWithdrawalsSchema);
+                addDepositsWithdrawalsLines++;
+            } catch (Exception e) {
+                logger.error("-----UPS. ERROR IN FILL DEPOSITSWITHDRAWALS SCHEMA-----");
+            }
+        }
 
         logger.info("\nYou have " + loadDataForAccountBalance.size() + " lines for accountBalance schema.\n" +
                 "You have " + loadDataForClosedTransactions.size() + " lines for closedTransactions schema.\n" +
                 "You have " + loadDataForTotalClosedTransactions.size() + " lines for totalClosedTransactions schema.\n" +
                 "You have " + loadDataForOpenTransactions.size() + " lines for openTransactions schema.\n" +
-                "You have " + loadDataForTotalOpenTransactions.size() + " lines for totalOpenTransactions schema.\n");
+                "You have " + loadDataForTotalOpenTransactions.size() + " lines for totalOpenTransactions schema.\n" +
+                "You have " + loadDataForDepositsWithdrawals.size() + " lines for depositsWithdrawals schema.\n");
 
         logger.info("\nYou add " + addAccountBalanceLines + " lines to accountBalance schema\n" +
                 "You add " + addClosedTransactionsLines + " lines to closedTransactions schema\n" +
                 "You add " + addTotalClosedTransactionsLines + " lines to totalClosedTransactions schema\n" +
                 "You add " + addOpenTransactionsLines + " lines to openTransactions schema\n" +
-                "You add " + addTotalOpenTransactionsLines + " lines to totalOpenTransactions schema\n");
+                "You add " + addTotalOpenTransactionsLines + " lines to totalOpenTransactions schema\n" +
+                "You add " + addDepositsWithdrawalsLines + " lines to depositsWithdrawals schema\n");
 
 
     }
+
+
 
 
 }
