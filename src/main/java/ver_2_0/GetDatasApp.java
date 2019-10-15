@@ -46,12 +46,14 @@ public class GetDatasApp {
         List<String> loadDataForTotalClosedTransactions = new ArrayList<>();
         List<String> loadDataForOpenTransactions = new ArrayList<>();
         List<String> loadDataForTotalOpenTransactions = new ArrayList<>();
+        List<String> loadDataForDepositsWithdrawals = new ArrayList<>();
 
         int loadAccountBalanceLines = 0, addAccountBalanceLines = 0,
                 loadClosedTransactionsLines = 0, addClosedTransactionsLines = 0,
                 loadTotalClosedTransactionsLines = 0, addTotalClosedTransactionsLines = 0,
                 loadOpenTranactionsLines = 0, addOpenTransactionsLines = 0,
-                loadTotalOpenTransactionsLines = 0, addTotalOpenTransactionsLines = 0;
+                loadTotalOpenTransactionsLines = 0, addTotalOpenTransactionsLines = 0,
+                loadDepositsWithdrawalsLines = 0, addDepositsWithdrawalsLines = 0;
 
         File directory = new File(filesDirectory);
         File[] filesList = directory.listFiles();
@@ -61,6 +63,7 @@ public class GetDatasApp {
             int typeAnalise = 0;
             String addToTotalCT = "";
             String addToTotalOpTr = "";
+            String addToDepositsWithdrawals = "";
 
             if (file.isFile()) {
                 try (BufferedReader bufferedReader = new BufferedReader(new FileReader(file))) {
@@ -142,6 +145,15 @@ public class GetDatasApp {
                         if (typeAnalise == 5 && currentLine.contains("Deposits/Withdrawals")) {
                             typeAnalise++;
                         }
+                        if (typeAnalise == 6 && AnaliseData.containsNumberValue(currentLine)) {
+                            System.out.println(currentLine);
+                            addToDepositsWithdrawals += actualDayValue + "\t" + currentLine;
+                            loadDataForDepositsWithdrawals.add(addToDepositsWithdrawals);
+                            loadDepositsWithdrawalsLines++;
+                            if (currentLine.contains("Deposit/Withdrawal")) {
+                                typeAnalise++;
+                            }
+                        }
                     }
                 } catch (FileNotFoundException e) {
                     e.printStackTrace();
@@ -155,13 +167,15 @@ public class GetDatasApp {
                     + loadClosedTransactionsLines + " lines for closedTransactions schema\n\t"
                     + loadTotalClosedTransactionsLines + " lines for totalClosedTransactions schema\n\t"
                     + loadOpenTranactionsLines + " lines for openTransactions schema\n\t"
-                    + loadTotalOpenTransactionsLines + " lines for totalOpenTransactions schema\n");
+                    + loadTotalOpenTransactionsLines + " lines for totalOpenTransactions schema\n\t"
+                    + loadDepositsWithdrawalsLines + " lines for depositsWithdrawals schema\n");
 
             loadAccountBalanceLines = 0;
             loadClosedTransactionsLines = 0;
             loadTotalClosedTransactionsLines = 0;
             loadOpenTranactionsLines = 0;
             loadTotalOpenTransactionsLines = 0;
+            loadDepositsWithdrawalsLines = 0;
         }
         logger.info("You analise " + filesWasAnalise + " files");
 
@@ -248,13 +262,7 @@ public class GetDatasApp {
                 PreparedStatement fillTotalOpenTransactionsSchema = connection.prepareStatement("INSERT " +
                         "INTO totalOpenTransactions (raportDate, commission, swap, profit, floating) " +
                         "VALUES (?, ?, ?, ?, ?)");
-                fillTotalOpenTransactionsSchema.setString(1, splitTotalOpenTranactionsData[0]);
-                fillTotalOpenTransactionsSchema.setString(2, splitTotalOpenTranactionsData[11]);
-                fillTotalOpenTransactionsSchema.setString(3, splitTotalOpenTranactionsData[12]);
-                fillTotalOpenTransactionsSchema.setString(4, splitTotalOpenTranactionsData[13]);
-                fillTotalOpenTransactionsSchema.setString(5, splitTotalOpenTranactionsData[25]);
-                fillTotalOpenTransactionsSchema.execute();
-                fillTotalOpenTransactionsSchema.close();
+                AnaliseData.fillTotalOpenTransactions(splitTotalOpenTranactionsData, fillTotalOpenTransactionsSchema);
                 addTotalOpenTransactionsLines++;
             } catch (Exception e) {
                 logger.error("-----UPS. ERROR IN FILL TOTALOPENTRANSACTION SCHEMA-----");

@@ -90,7 +90,9 @@ public class CreateMySqlSchemas {
                 "depositsWithdrawals_id INT NOT NULL AUTO_INCREMENT," +
                 "raportDate DATE," +
                 "ticket VARCHAR(12)," +
-                "openTime DATETIME, " +
+                "openDateTime VARCHAR(25), " +
+                "openDate DATE, " +
+                "openTime TIME , " +
                 "typeOperation VARCHAR(15)," +
                 "comment VARCHAR(150)," +
                 "deposit VARCHAR(10)," +

@@ -150,4 +150,14 @@ public class AnaliseData {
         fillOpenTransactionsSchema.close();
     }
 
+    public static void fillTotalOpenTransactions(String[] splitTotalOpenTranactionsData, PreparedStatement fillTotalOpenTransactionsSchema) throws SQLException {
+        fillTotalOpenTransactionsSchema.setString(1, splitTotalOpenTranactionsData[0]);
+        fillTotalOpenTransactionsSchema.setString(2, splitTotalOpenTranactionsData[11]);
+        fillTotalOpenTransactionsSchema.setString(3, splitTotalOpenTranactionsData[12]);
+        fillTotalOpenTransactionsSchema.setString(4, splitTotalOpenTranactionsData[13]);
+        fillTotalOpenTransactionsSchema.setString(5, splitTotalOpenTranactionsData[25]);
+        fillTotalOpenTransactionsSchema.execute();
+        fillTotalOpenTransactionsSchema.close();
+    }
+
 }
