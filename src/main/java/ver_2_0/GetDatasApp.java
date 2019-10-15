@@ -154,12 +154,14 @@ public class GetDatasApp {
                     + loadAccountBalanceLines + " lines for accountBalance schema\n\t"
                     + loadClosedTransactionsLines + " lines for closedTransactions schema\n\t"
                     + loadTotalClosedTransactionsLines + " lines for totalClosedTransactions schema\n\t"
-                    + loadOpenTranactionsLines + " lines for openTransactions schema\n");
+                    + loadOpenTranactionsLines + " lines for openTransactions schema\n\t"
+                    + loadTotalOpenTransactionsLines + " lines for totalOpenTransactions schema\n");
 
             loadAccountBalanceLines = 0;
             loadClosedTransactionsLines = 0;
             loadTotalClosedTransactionsLines = 0;
             loadOpenTranactionsLines = 0;
+            loadTotalOpenTransactionsLines = 0;
         }
         logger.info("You analise " + filesWasAnalise + " files");
 
@@ -209,13 +211,7 @@ public class GetDatasApp {
                 PreparedStatement fillTotalClosedTransactionsSchema = connection.prepareStatement(
                         "INSERT INTO totalClosedTransactions (raportDate, commission, swap, profit, closedTrade) " +
                                 "VALUES (?, ?, ?, ?, ?)");
-                fillTotalClosedTransactionsSchema.setString(1, splitTotalClosedTransactionsData[0]);
-                fillTotalClosedTransactionsSchema.setString(2, splitTotalClosedTransactionsData[12]);
-                fillTotalClosedTransactionsSchema.setString(3, splitTotalClosedTransactionsData[13]);
-                fillTotalClosedTransactionsSchema.setString(4, splitTotalClosedTransactionsData[14]);
-                fillTotalClosedTransactionsSchema.setString(5, splitTotalClosedTransactionsData[27]);
-                fillTotalClosedTransactionsSchema.execute();
-                fillTotalClosedTransactionsSchema.close();
+                AnaliseData.fillTotalClosedTransactions(splitTotalClosedTransactionsData, fillTotalClosedTransactionsSchema);
                 addTotalClosedTransactionsLines++;
             } catch (Exception e) {
                 logger.error("-----UPS. ERROR IN FILL TOTALCLOSEDTRANSACTION SCHEMA-----");
@@ -236,39 +232,48 @@ public class GetDatasApp {
                         "typeTransactions, lots, symbol, exchangeCode, assetClass, openPrice, marketPrise, " +
                         "conversionRate, commissions, swap, profit) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, " +
                         "?, ?, ?, ?, ?) ");
-                fillOpenTransactionsSchema.setString(1, splitOpenTransactionData[0]);
-                fillOpenTransactionsSchema.setString(2, splitOpenTransactionData[1]);
-                fillOpenTransactionsSchema.setString(3, splitOpenTransactionData[2]);
-                fillOpenTransactionsSchema.setString(4, openDate);
-                fillOpenTransactionsSchema.setString(5, openTime);
-                fillOpenTransactionsSchema.setString(6, splitOpenTransactionData[3]);
-                fillOpenTransactionsSchema.setString(7, splitOpenTransactionData[4]);
-                fillOpenTransactionsSchema.setString(8, splitOpenTransactionData[5]);
-                fillOpenTransactionsSchema.setString(9, splitOpenTransactionData[6]);
-                fillOpenTransactionsSchema.setString(10, splitOpenTransactionData[7]);
-                fillOpenTransactionsSchema.setString(11, splitOpenTransactionData[8]);
-                fillOpenTransactionsSchema.setString(12, splitOpenTransactionData[9]);
-                fillOpenTransactionsSchema.setString(13, splitOpenTransactionData[10]);
-                fillOpenTransactionsSchema.setString(14, splitOpenTransactionData[11]);
-                fillOpenTransactionsSchema.setString(15, splitOpenTransactionData[12]);
-                fillOpenTransactionsSchema.setString(16, splitOpenTransactionData[13]);
-                fillOpenTransactionsSchema.execute();
-                fillOpenTransactionsSchema.close();
+                AnaliseData.fillOpenTransactionsSchema(splitOpenTransactionData, openDate, openTime, fillOpenTransactionsSchema);
                 addOpenTransactionsLines++;
             } catch (Exception e) {
                 logger.error("-----UPS. ERROR IN FILL OPENTRANSACTION SCHEMA-----");
             }
         }
 
+//        put records from list into totalOpenTransactions schema
+        for (String totalOpenTransactionsData : loadDataForTotalOpenTransactions) {
+            String[] splitTotalOpenTranactionsData = totalOpenTransactionsData.trim().split("\t");
+
+            try (Connection connection = DriverManager.getConnection(connectionUrl, userName, password);
+                 Statement statement = connection.createStatement()) {
+                PreparedStatement fillTotalOpenTransactionsSchema = connection.prepareStatement("INSERT " +
+                        "INTO totalOpenTransactions (raportDate, commission, swap, profit, floating) " +
+                        "VALUES (?, ?, ?, ?, ?)");
+                fillTotalOpenTransactionsSchema.setString(1, splitTotalOpenTranactionsData[0]);
+                fillTotalOpenTransactionsSchema.setString(2, splitTotalOpenTranactionsData[11]);
+                fillTotalOpenTransactionsSchema.setString(3, splitTotalOpenTranactionsData[12]);
+                fillTotalOpenTransactionsSchema.setString(4, splitTotalOpenTranactionsData[13]);
+                fillTotalOpenTransactionsSchema.setString(5, splitTotalOpenTranactionsData[25]);
+                fillTotalOpenTransactionsSchema.execute();
+                fillTotalOpenTransactionsSchema.close();
+                addTotalOpenTransactionsLines++;
+            } catch (Exception e) {
+                logger.error("-----UPS. ERROR IN FILL TOTALOPENTRANSACTION SCHEMA-----");
+            }
+
+        }
+
+
         logger.info("\nYou have " + loadDataForAccountBalance.size() + " lines for accountBalance schema.\n" +
                 "You have " + loadDataForClosedTransactions.size() + " lines for closedTransactions schema.\n" +
                 "You have " + loadDataForTotalClosedTransactions.size() + " lines for totalClosedTransactions schema.\n" +
-                "You have " + loadDataForOpenTransactions.size() + " lines for openTransactions schema.\n");
+                "You have " + loadDataForOpenTransactions.size() + " lines for openTransactions schema.\n" +
+                "You have " + loadDataForTotalOpenTransactions.size() + " lines for totalOpenTransactions schema.\n");
 
         logger.info("\nYou add " + addAccountBalanceLines + " lines to accountBalance schema\n" +
                 "You add " + addClosedTransactionsLines + " lines to closedTransactions schema\n" +
                 "You add " + addTotalClosedTransactionsLines + " lines to totalClosedTransactions schema\n" +
-                "You add " + addOpenTransactionsLines + " lines to openTransactions schema\n");
+                "You add " + addOpenTransactionsLines + " lines to openTransactions schema\n" +
+                "You add " + addTotalOpenTransactionsLines + " lines to totalOpenTransactions schema\n");
 
 
     }
