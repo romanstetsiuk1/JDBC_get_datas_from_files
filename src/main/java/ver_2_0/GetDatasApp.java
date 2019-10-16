@@ -338,7 +338,8 @@ public class GetDatasApp {
                 "You add " + addTotalOpenTransactionsLines + " lines to totalOpenTransactions schema\n" +
                 "You add " + addDepositsWithdrawalsLines + " lines to depositsWithdrawals schema\n");
 
-        logger.info(moveFileInDoneDirectory + " files was moved in Done directory");
+        logger.info(moveFileInDoneDirectory + " files was moved in Done directory\n\n" +
+                "--------------------------------------------------------------------------------------------\n");
 
 
     }
