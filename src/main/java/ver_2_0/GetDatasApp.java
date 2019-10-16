@@ -187,6 +187,15 @@ public class GetDatasApp {
                 if (typeAnalise == 8) {
                     logger.warn("!!! You have data from report in end of day: " + actualDayValue);
                 }
+
+//                Move file in the DONE Directory
+                try {
+                    file.renameTo(new File(filesDoneDirectory + "DONE_" + file.getName()));
+                    moveFileInDoneDirectory++;
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
+
             }
             logger.info("End of day " + actualDayValue + ": You get\n\t"
                     + loadAccountBalanceLines + " lines for accountBalance schema\n\t"
@@ -328,6 +337,8 @@ public class GetDatasApp {
                 "You add " + addOpenTransactionsLines + " lines to openTransactions schema\n" +
                 "You add " + addTotalOpenTransactionsLines + " lines to totalOpenTransactions schema\n" +
                 "You add " + addDepositsWithdrawalsLines + " lines to depositsWithdrawals schema\n");
+
+        logger.info(moveFileInDoneDirectory + " files was moved in Done directory");
 
 
     }
