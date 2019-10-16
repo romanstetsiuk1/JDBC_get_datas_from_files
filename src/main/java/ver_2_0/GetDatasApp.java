@@ -48,6 +48,8 @@ public class GetDatasApp {
         List<String> loadDataForTotalOpenTransactions = new ArrayList<>();
         List<String> loadDataForDepositsWithdrawals = new ArrayList<>();
 
+        List<String> checkReportDateExist = new ArrayList<>();
+
         int loadAccountBalanceLines = 0, addAccountBalanceLines = 0,
                 loadClosedTransactionsLines = 0, addClosedTransactionsLines = 0,
                 loadTotalClosedTransactionsLines = 0, addTotalClosedTransactionsLines = 0,
@@ -77,6 +79,20 @@ public class GetDatasApp {
                         if (currentLine.contains("End of day")) {
                             actualDayValue = AnaliseData.getActualDayValue(actualDayValue, currentLine);
                             actualDayValue = AnaliseData.convertDataToMySqlFormat(actualDayValue);
+                        }
+
+//                        Check if report do not analise before
+                        try (Connection connection = DriverManager.getConnection(connectionUrl, userName, password);
+                             Statement statement = connection.createStatement()) {
+                            PreparedStatement getExistData = connection.prepareStatement("SELECT " +
+                                    "accountBalance_date FROM accountBalance;");
+                            ResultSet resultSet = getExistData.executeQuery();
+                            while (resultSet.next()) {
+                                checkReportDateExist.add(resultSet.getString("accountBalance_date"));
+                            }
+                        }
+                        if (checkReportDateExist.contains(actualDayValue)) {
+                            typeAnalise = 8;
                         }
 
 //                        typeAnalise = 1 -- in this state I get data for accountBalance schema
@@ -159,7 +175,6 @@ public class GetDatasApp {
 
 //                        typeAnalise = 7 -- end of analise in this report
                         if (typeAnalise == 7) {
-
                         }
                     }
                 } catch (FileNotFoundException e) {
@@ -168,6 +183,10 @@ public class GetDatasApp {
                     e.printStackTrace();
                 }
                 filesWasAnalise++;
+//                typeAnalise = 8 -- report of this day was analised
+                if (typeAnalise == 8) {
+                    logger.warn("!!! You have data from report in end of day: " + actualDayValue);
+                }
             }
             logger.info("End of day " + actualDayValue + ": You get\n\t"
                     + loadAccountBalanceLines + " lines for accountBalance schema\n\t"
@@ -312,8 +331,6 @@ public class GetDatasApp {
 
 
     }
-
-
 
 
 }
